@@ -1,0 +1,22 @@
+uuid: 708518db-7f3d-471b-952e-0f07b434abbe
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - sakt
+_core:
+  default_config_hash: eYL19CLDyinGTWYQfBD1DswWzglEotE_kHnHx3AxTXM
+id: sakt_powered
+theme: sakt
+region: sidebar_first
+weight: 0
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

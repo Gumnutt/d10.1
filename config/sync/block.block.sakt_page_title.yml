@@ -1,0 +1,20 @@
+uuid: ea45b0f2-c13b-44a0-8786-b3a54ce2b225
+langcode: en
+status: true
+dependencies:
+  theme:
+    - sakt
+_core:
+  default_config_hash: 6aOgWsNTXjqrDm98TXSAjP6qd2nCijD1xw45MrnbK-Y
+id: sakt_page_title
+theme: sakt
+region: sidebar_first
+weight: -5
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

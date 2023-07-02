@@ -1,0 +1,3 @@
+@layer component, variant;
+@import "css/_base.css" layer(component);
+@import './css/_variant.css' layer(variant);

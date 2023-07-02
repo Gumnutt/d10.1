@@ -1,0 +1,32 @@
+{% set card_attributes = create_attribute() %}
+
+{% set classes = [
+  'card',
+  variant ? 'card--' ~ variant,
+] %}
+
+{% set card_attributes = card_attributes.addClass(classes) %}
+
+<div class="_card-container">
+  <div {{ card_attributes }}>
+    <figure class="card__image">
+      {% if card_image %}
+        {{ card_image }}
+      {% else %}
+        <img src="{{ base_path ~ directory }}/src/images/icons/image.svg" alt="">
+      {% endif %}
+    </figure>
+    <div class="card__content">
+      <h2 class="card__header">{{ card_heading }}</h2>
+      <div class="card__body">
+        {% block card_body %}
+          Default contents for a card
+        {% endblock %}
+      </div>
+      {{ include('sakt:button', {
+      text: 'Sick button bro',
+      tag: 'button'
+    }) }}
+    </div>
+  </div>
+</div>

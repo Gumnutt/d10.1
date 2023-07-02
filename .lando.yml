@@ -1,0 +1,19 @@
+name: drupal
+recipe: drupal10
+config:
+  webroot: web
+
+# Cannot be edited from host machine for speed. Should not be needed with virtuofs.
+excludes:
+  # - web/themes/custom/sakt/node_modules
+  # - vendor
+services:
+  # For frontend development.
+  node:
+    type: node:18
+
+tooling:
+  npm:
+    service: node
+    description: Running npm commands in the Inveest NSW theme directory.
+    dir: /app/web/themes/custom/sakt

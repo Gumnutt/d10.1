@@ -1,0 +1,5 @@
+@import './variables/_colors.css';
+@import './variables/_sizes.css';
+:root{
+  --border-radius: 1.25rem;
+}

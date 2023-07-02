@@ -1,0 +1,13 @@
+global-js:
+  js:
+    src/main.js: { attributes: { type: "module" } }
+
+global-css:
+  css:
+    theme:
+      dist/main.css: {}
+
+hot-module-replacement:
+  header: true
+  js:
+    http://localhost:12321/@vite/client: { type: external, attributes: { type: "module" } }

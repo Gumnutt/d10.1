@@ -1,0 +1,21 @@
+.card--centered{
+  padding: var(--size-3);
+  place-items: center;
+  gap: var(--size-3, 1rem);
+  .card__image{
+    border-radius: calc(var(--border-radius, 1rem) - var(--size-3));
+  }
+  .card__content{
+    padding: 0;
+  }
+}
+
+.card--landscape{
+  height: unset;
+  @container (min-width: 15rem) {
+    grid-template-columns: 1fr 2fr;
+    .card__image{
+      height: 100%;
+    }
+  }
+}

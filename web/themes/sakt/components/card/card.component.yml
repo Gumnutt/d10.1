@@ -1,0 +1,32 @@
+$schema: https://git.drupalcode.org/project/sdc/-/raw/1.x/src/metadata.schema.json
+name: Card
+# Status can be: "experimental", "stable", "deprecated", "obsolete".
+status: experimental
+group: UI Basics
+props:
+  type: object
+  required:
+    - card_heading
+  properties:
+    card_heading:
+      type: string
+      title: Heading
+      description: The heading of the card
+
+    variant:
+      type: string
+      title: Variant
+      enum:
+        - compact
+        - reverse
+        - centered
+        - landscape
+slots:
+  card_body:
+    title: Body
+    description: The contents of the card.
+    examples:
+      - <p>Foo is <strong>NOT</strong> bar.</p>
+
+libraryDependencies:
+  - core/drupal

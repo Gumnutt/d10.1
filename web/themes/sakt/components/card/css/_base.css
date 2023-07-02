@@ -1,0 +1,36 @@
+._card-container{
+  height: 100%;
+  container: card / inline-size;
+}
+.card{
+  display: grid;
+  overflow: hidden;
+  border-radius: var(--border-radius, 1rem);
+  height: 100%;
+  background: var(--stone-1);
+  grid-template-columns: 1fr;
+  @container (min-width: 20rem) {
+    grid-template-columns: 1fr 2fr;
+    .card__image{
+      height: 100%;
+    }
+  }
+  .card__image{
+    display: grid;
+    margin:0;
+    width: 100%;
+    background: green;
+    place-items: center;
+    aspect-ratio: 16/9;
+    & img{
+      width: var(--size-9);
+      object-fit: cover;
+    }
+  }
+  .card__content{
+    padding: var(--size-3);
+    & h2{
+      margin-top: 0;
+    }
+  }
+}
