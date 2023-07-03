@@ -24,7 +24,6 @@ export default {
     rollupOptions: {
       // overwrite default .html entry
       input: [
-        //'/assets/styles/index.pcss',
         "/src/main.js",
       ],
       // Remove the [hash] since Drupal will take care of that.

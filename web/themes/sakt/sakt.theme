@@ -89,12 +89,14 @@ function sakt_vite_replace_library(array &$library, string $path, array $options
   }
 
   $local = Settings::get('hot_module_replacement');
+  $vite_url = 'http://localhost:12321';
+  list($status) = get_headers($vite_url);
   $dir = 'dist';
 
   // Remove the old library info.
   unset($library[$path]);
 
-  if ($local) {
+  if ($local && strpos($status, '200') !== FALSE) {
     $dir = 'http://localhost:12321';
     $options['type'] = 'external';
     if (preg_match('/.m?js$/', $path)) {

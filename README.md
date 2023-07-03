@@ -4,6 +4,8 @@
 
 `lando composer install`
 
+`lando drush cim`
+
 ## Theme things
 
 `cd web/theme/sakt`
@@ -14,6 +16,6 @@
 
 `npm run dev`
 
-## build files
+### build files
 
 `npm run build`
