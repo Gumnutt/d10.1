@@ -7,7 +7,6 @@ global-css:
     theme:
       dist/main.css: {}
 
-hot-module-replacement:
-  header: true
+live-reload:
   js:
-    http://localhost:12321/@vite/client: { type: external, attributes: { type: "module" } }
+    http://localhost:35729/livereload.js: {type: external}

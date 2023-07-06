@@ -9,9 +9,6 @@
   height: 100%;
   background: var(--stone-1);
   grid-template-columns: 1fr;
-  @media(--md){
-    background: goldenrod;
-  }
   @container (min-width: 20rem) {
     grid-template-columns: 1fr 2fr;
     .card__image{
@@ -22,7 +19,7 @@
     display: grid;
     margin:0;
     width: 100%;
-    background: green;
+    background: goldenrod;
     place-items: center;
     aspect-ratio: 16/9;
     & img{
