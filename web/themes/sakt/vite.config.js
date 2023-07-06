@@ -1,7 +1,25 @@
 import liveReload from "vite-plugin-live-reload"
 import vue from "@vitejs/plugin-vue"
 import { splitVendorChunkPlugin } from "vite"
-import { glob, globSync, globStream, globStreamSync, Glob } from 'glob'
+import glob from "glob";
+
+const assetsFileList = [];
+
+function readAssetsDir(dir, array) {
+  
+  (glob.sync(dir) || []).forEach(f => {
+      f = f.replace(/[\\/]+/g, '/');
+      if (f !== null){
+          array.push(f);
+      }
+  });
+
+  return array;
+}
+
+readAssetsDir('components/**/*.pcss', assetsFileList);
+
+console.log(assetsFileList);
 
 export default {
   plugins: [
@@ -25,7 +43,7 @@ export default {
     rollupOptions: {
       // overwrite default .html entry
       input: {
-        components: "./components/**/*.pcss",
+        components: assetsFileList,
         main: "/src/main.js",
       },
       output: {
