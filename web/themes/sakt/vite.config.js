@@ -14,6 +14,25 @@ export default {
     // }),
     liveReload(__dirname + "/**/*.(php|inc|theme|twig|js|css|pcss)"),
     // splitVendorChunkPlugin(),
+    {
+      name: 'my-glob-plugin',
+      // Add the globSync logic here
+      enforce: 'pre',
+      transform(code, id) {
+        // Use globSync to retrieve file paths based on a pattern
+        const fileMatches = glob.sync('./components/**/*.pcss');
+        console.log('File matches:', fileMatches);
+
+        // Modify the code or do other operations based on the file paths
+        // ...
+
+        // Return the modified code
+        return {
+          code,
+          map: null, // If you don't have a source map, set it to null
+        };
+      },
+    },
   ],
 
   // resolve: { alias: { vue: "vue/dist/vue.esm-bundler.js" } },
