@@ -1,25 +1,24 @@
 import liveReload from "vite-plugin-live-reload"
 import vue from "@vitejs/plugin-vue"
 import { splitVendorChunkPlugin } from "vite"
-import glob from "glob";
+import { glob, globSync, globStream, globStreamSync, Glob } from 'glob'
 
-const assetsFileList = [];
+//console.log(glob.sync('components/**/*.pcss'))
 
-function readAssetsDir(dir, array) {
-  
-  (glob.sync(dir) || []).forEach(f => {
-      f = f.replace(/[\\/]+/g, '/');
-      if (f !== null){
-          array.push(f);
-      }
-  });
-
-  return array;
+function getComponents() {
+  const components = glob.sync('components/**/*.pcss')
+  const componentsObj = {}
+  for (const component of components) {
+    const componentName = component.split('/')[1]
+    componentsObj[componentName] = component
+  }
+  return componentsObj
 }
 
-readAssetsDir('components/**/*.pcss', assetsFileList);
-
-console.log(assetsFileList);
+function getComponentName(assetInfo){
+  const inputName = assetInfo.name.split('.')[0]
+  return inputName
+}
 
 export default {
   plugins: [
@@ -43,19 +42,19 @@ export default {
     rollupOptions: {
       // overwrite default .html entry
       input: {
-        components: assetsFileList,
-        main: "/src/main.js",
+        ...getComponents(),
+        main: '/src/main.js',
       },
       output: {
+        dir: './',
         assetFileNames: (assetInfo) => {
-          console.log(assetInfo);
-          //const inputName = Object.keys(assetInfo.rollupEntrypoint)[0]; // Get the input name associated with the output file
-          if (assetInfo.name === `${inputName}.css`) {
-            // Output the component CSS file to the component-specific directory
-            return `components/${inputName}/${assetInfo.name}`;
-          } else {
-            // Output other files (main.pcss, assets) to the standard dist directory
+          const inputName = getComponentName(assetInfo);
+          if (assetInfo.name === 'main.css') {
+            console.log('Generic: ' + assetInfo.name)
             return `dist/${assetInfo.name}`;
+          } else {
+
+            return `components/${inputName}/${assetInfo.name}`;
           }
         }
       },
