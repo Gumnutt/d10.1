@@ -111,7 +111,7 @@ function sakt_vite_replace_library(array &$library, string $path, array $options
   }
 
   // Prepend the local development url.
-  $path = "${dir}/${path}";
+  $path = `${dir}/${path}`;
   // Add in the new altered library.
   $library[$path] = $options;
 

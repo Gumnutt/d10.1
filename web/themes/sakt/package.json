@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "vite dev",
+    "dev": "vite build --watch",
     "build": "vite build",
     "preview": "vite preview"
   },
@@ -23,6 +23,7 @@
     "autoprefixer": "^10.4.5",
     "axios": "^0.25.0",
     "css-paint-polyfill": "^3.3.0",
+    "glob": "^10.3.1",
     "lodash": "^4.17.21",
     "postcss-custom-media": "^9.1.2",
     "postcss-nested": "^6.0.1",
