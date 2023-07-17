@@ -19,17 +19,8 @@ let pcssFiles = glob.sync('components/**/*.pcss');
 
 pcssFiles.forEach((pcssFile) => {
   let outputDirectory = path.dirname(pcssFile);
-  mix.postCss(pcssFile, outputDirectory, [
-    require('postcss-import'),
-    require('autoprefixer'),
-  ]);
+  mix.postCss(pcssFile, outputDirectory);
 });
 
 // compile global styles
 mix.postCss('src/css/main.css', 'dist');
-
-// mix.browserSync({
-//   proxy: 'https://drupal.lndo.site',
-//   files: ["components/**/css/*.css",],
-//   port: 8888,
-// });

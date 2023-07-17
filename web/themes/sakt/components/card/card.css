@@ -29,7 +29,7 @@
     display: grid;
     margin:0;
     width: 100%;
-    background: goldenrod;
+    background: thistle;
     place-items: center;
     aspect-ratio: 16/9;
   }
