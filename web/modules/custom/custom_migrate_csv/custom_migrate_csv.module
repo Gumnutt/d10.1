@@ -1,0 +1,47 @@
+<?php
+
+use Drupal\migrate\Plugin\MigrationInterface;
+use Drupal\migrate\Row;
+
+/**
+ * Implements hook_migrate_api().
+ */
+function custom_migrate_csv_migrate_api() {
+  $api = [
+    'api' => 2,
+    'migrations' => [
+      'custom_csv_migration' => [
+        'label' => 'Custom CSV Migration',
+        'source' => [
+          'plugin' => 'csv',
+          'path' => 'file://custom_migrate_csv/emissions_reduction_fund_register.csv',
+          'header_row_count' => 1,
+        ],
+        'process' => [
+          'field_name' => [
+            'plugin' => 'callback',
+            'source' => 'column_name',
+            'callable' => 'createDynamicField',
+          ],
+        ],
+        'destination' => [
+          'plugin' => 'entity:node',
+          'default_bundle' => 'dataset',
+        ],
+      ],
+    ],
+  ];
+
+  return $api;
+}
+
+function createDynamicField($value, Row $row, $destination_property, array $process, MigrationInterface $migration) {
+  // Create a new field dynamically.
+  $field_name = '_' . $destination_property; // You can modify this naming convention as needed.
+
+  // Save the field value into the newly created field.
+  $row->setDestinationProperty($destination_property, $value);
+
+  // Return the field name.
+  return $field_name;
+}

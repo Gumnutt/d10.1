@@ -1,0 +1,8 @@
+name: 'custom_migrate_csv'
+type: module
+description: 'migrates csv data to dataset node'
+package: Custom
+core_version_requirement: ^10
+dependencies:
+  - drupal:migrate
+  - migrate:migrate
