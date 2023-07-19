@@ -1,0 +1,19 @@
+uuid: 3f8007cd-7e07-4d7b-b3d9-60d82247502b
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.dataset
+  module:
+    - user
+id: node.dataset.default
+targetEntityType: node
+bundle: dataset
+mode: default
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

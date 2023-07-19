@@ -1,0 +1,20 @@
+uuid: 6ff1a030-3fea-4a3d-8d1b-df2820ad9491
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.dataset
+  module:
+    - user
+id: node.dataset.teaser
+targetEntityType: node
+bundle: dataset
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }
