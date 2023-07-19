@@ -1,4 +1,4 @@
-uuid: fdaea403-5e9e-4b1a-8b31-56c08782ee4a
+uuid: f75a6438-5e70-422f-9284-57fc9083a892
 langcode: en
 status: true
 dependencies:
@@ -8,9 +8,8 @@ dependencies:
 id: node.nkaccus_units_2013_14
 field_name: nkaccus_units_2013_14
 entity_type: node
-type: text
-settings:
-  max_length: 255
+type: text_long
+settings: {  }
 module: text
 locked: false
 cardinality: 1

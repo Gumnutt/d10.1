@@ -79,7 +79,11 @@ function makenode($entity_type, $bundle) {
     $field_storage = FieldStorageConfig::create([
       'field_name' => $field_name,
       'entity_type' => $entity_type,
-      'type' => 'text',
+      'type' => 'text_long',
+      'settings' => [
+        'max_length' => 0, // 0 for unlimited length.
+        'is_ascii' => FALSE,
+      ],
       'cardinality' => 1,
     ]);
     $field_storage->save();
@@ -90,7 +94,7 @@ function makenode($entity_type, $bundle) {
       'bundle' => $bundle,
       'label' => $label,
       'settings' => [
-        'max_length' => 255,
+        'display_summary' => FALSE,
       ],
       'field_storage' => $field_storage,
     ]);

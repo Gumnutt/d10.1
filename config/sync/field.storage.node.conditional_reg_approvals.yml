@@ -1,4 +1,4 @@
-uuid: 55da680b-0ff7-4d52-b56e-5c7c2f0bed96
+uuid: b5f51613-167e-4b7c-8ea6-46ab90a7811f
 langcode: en
 status: true
 dependencies:
@@ -8,9 +8,8 @@ dependencies:
 id: node.conditional_reg_approvals
 field_name: conditional_reg_approvals
 entity_type: node
-type: text
-settings:
-  max_length: 255
+type: text_long
+settings: {  }
 module: text
 locked: false
 cardinality: 1

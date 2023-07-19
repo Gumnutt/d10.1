@@ -1,4 +1,4 @@
-uuid: 598bbb8b-f567-4d32-97b9-0663357dd7eb
+uuid: f26e4f3d-98de-4b95-9b4c-98e070f62a6d
 langcode: en
 status: true
 dependencies:
@@ -8,9 +8,8 @@ dependencies:
 id: node.carbon_est_area_mapping_file_url
 field_name: carbon_est_area_mapping_file_url
 entity_type: node
-type: text
-settings:
-  max_length: 255
+type: text_long
+settings: {  }
 module: text
 locked: false
 cardinality: 1

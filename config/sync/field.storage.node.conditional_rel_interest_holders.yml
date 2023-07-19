@@ -1,4 +1,4 @@
-uuid: 62009aed-1e9b-4949-a29c-0f3734f14d1d
+uuid: 238e417e-e93c-4f33-99a1-b49d51ee8765
 langcode: en
 status: true
 dependencies:
@@ -8,9 +8,8 @@ dependencies:
 id: node.conditional_rel_interest_holders
 field_name: conditional_rel_interest_holders
 entity_type: node
-type: text
-settings:
-  max_length: 255
+type: text_long
+settings: {  }
 module: text
 locked: false
 cardinality: 1

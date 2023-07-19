@@ -1,4 +1,4 @@
-uuid: d6e9d4c6-5a4a-4792-93d1-de8d0cb358c7
+uuid: 7638a7ea-1e36-48ac-a6af-ca8b80bea186
 langcode: en
 status: true
 dependencies:
@@ -8,9 +8,8 @@ dependencies:
 id: node.project_description
 field_name: project_description
 entity_type: node
-type: text
-settings:
-  max_length: 255
+type: text_long
+settings: {  }
 module: text
 locked: false
 cardinality: 1

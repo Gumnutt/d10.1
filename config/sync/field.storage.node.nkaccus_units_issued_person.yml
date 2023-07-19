@@ -1,4 +1,4 @@
-uuid: 4c23c612-31fd-485f-9a25-6fa2f55d0147
+uuid: 719415ed-38a4-4a1b-be6e-ecc989eff36c
 langcode: en
 status: true
 dependencies:
@@ -8,9 +8,8 @@ dependencies:
 id: node.nkaccus_units_issued_person
 field_name: nkaccus_units_issued_person
 entity_type: node
-type: text
-settings:
-  max_length: 255
+type: text_long
+settings: {  }
 module: text
 locked: false
 cardinality: 1

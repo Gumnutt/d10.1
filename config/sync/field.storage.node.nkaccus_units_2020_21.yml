@@ -1,4 +1,4 @@
-uuid: 91b9f7fe-7ab4-4a2f-a8ee-f9ec4f52e791
+uuid: da2018fa-1afd-4136-ab6b-95979f87027f
 langcode: en
 status: true
 dependencies:
@@ -8,9 +8,8 @@ dependencies:
 id: node.nkaccus_units_2020_21
 field_name: nkaccus_units_2020_21
 entity_type: node
-type: text
-settings:
-  max_length: 255
+type: text_long
+settings: {  }
 module: text
 locked: false
 cardinality: 1

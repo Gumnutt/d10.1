@@ -1,4 +1,4 @@
-uuid: 805fdcdc-12bf-449e-912a-6735b7064905
+uuid: fe8d6835-6a2e-49d2-8bec-2b105497d0f1
 langcode: en
 status: true
 dependencies:
@@ -8,9 +8,8 @@ dependencies:
 id: node.contract_id
 field_name: contract_id
 entity_type: node
-type: text
-settings:
-  max_length: 255
+type: text_long
+settings: {  }
 module: text
 locked: false
 cardinality: 1

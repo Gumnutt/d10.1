@@ -1,4 +1,4 @@
-uuid: 170fc2dd-8426-4f5a-a7da-19a872e11050
+uuid: 8188af6a-5101-4337-a694-21ce71ee4e15
 langcode: en
 status: true
 dependencies:
@@ -8,9 +8,8 @@ dependencies:
 id: node.joint_implementation_project
 field_name: joint_implementation_project
 entity_type: node
-type: text
-settings:
-  max_length: 255
+type: text_long
+settings: {  }
 module: text
 locked: false
 cardinality: 1

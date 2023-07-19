@@ -1,4 +1,4 @@
-uuid: 7388882a-f8ab-4db1-bf37-678f64ed8d4b
+uuid: 27f1b9df-a467-41e8-a18d-5c0266af23ee
 langcode: en
 status: true
 dependencies:
@@ -8,9 +8,8 @@ dependencies:
 id: node.regional_nrm_plan
 field_name: regional_nrm_plan
 entity_type: node
-type: text
-settings:
-  max_length: 255
+type: text_long
+settings: {  }
 module: text
 locked: false
 cardinality: 1

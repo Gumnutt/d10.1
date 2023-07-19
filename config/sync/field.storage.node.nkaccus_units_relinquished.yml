@@ -1,4 +1,4 @@
-uuid: 685a1247-c629-45ce-be81-4a03a79e4c8e
+uuid: a88d1cd7-e3ff-4077-8be4-5ce6fd7c503d
 langcode: en
 status: true
 dependencies:
@@ -8,9 +8,8 @@ dependencies:
 id: node.nkaccus_units_relinquished
 field_name: nkaccus_units_relinquished
 entity_type: node
-type: text
-settings:
-  max_length: 255
+type: text_long
+settings: {  }
 module: text
 locked: false
 cardinality: 1

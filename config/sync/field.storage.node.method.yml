@@ -1,4 +1,4 @@
-uuid: fc79ee73-c903-4017-8557-9a8e5d4e1b5f
+uuid: 0614e817-8abb-496a-83fc-aa3ba9ff24e2
 langcode: en
 status: true
 dependencies:
@@ -8,9 +8,8 @@ dependencies:
 id: node.method
 field_name: method
 entity_type: node
-type: text
-settings:
-  max_length: 255
+type: text_long
+settings: {  }
 module: text
 locked: false
 cardinality: 1

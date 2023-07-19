@@ -1,4 +1,4 @@
-uuid: 10801f02-4550-4ef2-ad6c-bcfc9fbd285c
+uuid: 950e8e07-b849-46ac-9d7f-1f68f1eb2653
 langcode: en
 status: true
 dependencies:
@@ -19,4 +19,4 @@ default_value: {  }
 default_value_callback: ''
 settings:
   allowed_formats: {  }
-field_type: text
+field_type: text_long

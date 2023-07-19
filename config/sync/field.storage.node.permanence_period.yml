@@ -1,4 +1,4 @@
-uuid: 43185895-aa5b-420b-a613-313cd59a00c9
+uuid: 8de58edb-c62d-4f46-b5c5-83f5cc747e3d
 langcode: en
 status: true
 dependencies:
@@ -8,9 +8,8 @@ dependencies:
 id: node.permanence_period
 field_name: permanence_period
 entity_type: node
-type: text
-settings:
-  max_length: 255
+type: text_long
+settings: {  }
 module: text
 locked: false
 cardinality: 1

@@ -1,4 +1,4 @@
-uuid: 801f54fb-cbf7-4f7b-8f13-437857996f9a
+uuid: 6fbdee55-8902-4a1b-8d5a-cd4c40a6650a
 langcode: en
 status: true
 dependencies:
@@ -8,9 +8,8 @@ dependencies:
 id: node.kaccus_units_2016_17
 field_name: kaccus_units_2016_17
 entity_type: node
-type: text
-settings:
-  max_length: 255
+type: text_long
+settings: {  }
 module: text
 locked: false
 cardinality: 1

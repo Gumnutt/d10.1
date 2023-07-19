@@ -1,4 +1,4 @@
-uuid: f50b15ee-bf28-4c7d-a1e9-5ed12b6ab401
+uuid: 8c9a7da3-cbbc-4977-9718-09e8d354e7c1
 langcode: en
 status: true
 dependencies:
@@ -8,9 +8,8 @@ dependencies:
 id: node.carbon_maintenance_obligation
 field_name: carbon_maintenance_obligation
 entity_type: node
-type: text
-settings:
-  max_length: 255
+type: text_long
+settings: {  }
 module: text
 locked: false
 cardinality: 1

@@ -1,4 +1,4 @@
-uuid: db646ae6-686c-4a13-aefe-247c8f354c06
+uuid: c1ecd2b9-c5b9-4b91-bcaa-33fb7a148b26
 langcode: en
 status: true
 dependencies:
@@ -8,9 +8,8 @@ dependencies:
 id: node.project_mapping_file_url
 field_name: project_mapping_file_url
 entity_type: node
-type: text
-settings:
-  max_length: 255
+type: text_long
+settings: {  }
 module: text
 locked: false
 cardinality: 1

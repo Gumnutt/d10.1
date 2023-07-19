@@ -1,4 +1,4 @@
-uuid: 1ac154eb-3903-42f2-b72b-50586aa32690
+uuid: 8d819fcb-462a-4f74-84be-1c6cc29abea0
 langcode: en
 status: true
 dependencies:
@@ -8,9 +8,8 @@ dependencies:
 id: node.carbon_est_area_sup_info
 field_name: carbon_est_area_sup_info
 entity_type: node
-type: text
-settings:
-  max_length: 255
+type: text_long
+settings: {  }
 module: text
 locked: false
 cardinality: 1

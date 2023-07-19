@@ -1,4 +1,4 @@
-uuid: 6fcd4bcd-d179-4162-80a6-3212bf7c96bb
+uuid: 4e728496-118c-408f-a40a-c2021b431918
 langcode: en
 status: true
 dependencies:
@@ -8,9 +8,8 @@ dependencies:
 id: node.kaccus_units_issued_person
 field_name: kaccus_units_issued_person
 entity_type: node
-type: text
-settings:
-  max_length: 255
+type: text_long
+settings: {  }
 module: text
 locked: false
 cardinality: 1

@@ -1,4 +1,4 @@
-uuid: 9210c8ac-18c4-4d79-99b3-8fb0a2321a21
+uuid: 26fdb944-923e-4817-9145-4ab66f556299
 langcode: en
 status: true
 dependencies:
@@ -8,9 +8,8 @@ dependencies:
 id: node.kaccus_total_units_issued
 field_name: kaccus_total_units_issued
 entity_type: node
-type: text
-settings:
-  max_length: 255
+type: text_long
+settings: {  }
 module: text
 locked: false
 cardinality: 1

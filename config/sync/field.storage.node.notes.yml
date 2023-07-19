@@ -1,4 +1,4 @@
-uuid: f8869fa3-cfc8-49cf-8407-dbf3417522b4
+uuid: 5962830d-ca82-4873-9362-7cceed42e4eb
 langcode: en
 status: true
 dependencies:
@@ -8,9 +8,8 @@ dependencies:
 id: node.notes
 field_name: notes
 entity_type: node
-type: text
-settings:
-  max_length: 255
+type: text_long
+settings: {  }
 module: text
 locked: false
 cardinality: 1

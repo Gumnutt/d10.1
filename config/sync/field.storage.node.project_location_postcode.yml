@@ -1,4 +1,4 @@
-uuid: 5ac5fd4c-61b2-4e0d-94f7-39dd7ef714a9
+uuid: ae9dc499-cdfe-413e-b9e5-5e0f2f1aae7f
 langcode: en
 status: true
 dependencies:
@@ -8,9 +8,8 @@ dependencies:
 id: node.project_location_postcode
 field_name: project_location_postcode
 entity_type: node
-type: text
-settings:
-  max_length: 255
+type: text_long
+settings: {  }
 module: text
 locked: false
 cardinality: 1

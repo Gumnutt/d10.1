@@ -1,4 +1,4 @@
-uuid: f0164522-112e-46a6-a244-78e2c6853fad
+uuid: a8e7a3c7-5252-4f0b-97c9-2db85fd2a6ab
 langcode: en
 status: true
 dependencies:
@@ -8,9 +8,8 @@ dependencies:
 id: node.nkaccus_units_2018_19
 field_name: nkaccus_units_2018_19
 entity_type: node
-type: text
-settings:
-  max_length: 255
+type: text_long
+settings: {  }
 module: text
 locked: false
 cardinality: 1
