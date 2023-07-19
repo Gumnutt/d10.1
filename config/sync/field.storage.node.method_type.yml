@@ -1,0 +1,20 @@
+uuid: 1c75c436-62f7-47c5-a41e-a81a7911e153
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.method_type
+field_name: method_type
+entity_type: node
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

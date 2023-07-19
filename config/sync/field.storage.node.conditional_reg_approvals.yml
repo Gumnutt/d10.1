@@ -1,0 +1,20 @@
+uuid: 55da680b-0ff7-4d52-b56e-5c7c2f0bed96
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.conditional_reg_approvals
+field_name: conditional_reg_approvals
+entity_type: node
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

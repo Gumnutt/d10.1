@@ -1,0 +1,20 @@
+uuid: afc63647-dd75-4559-b818-8b97aea5b83d
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.nkaccus_units_2019_20
+field_name: nkaccus_units_2019_20
+entity_type: node
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

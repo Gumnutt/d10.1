@@ -1,0 +1,20 @@
+uuid: a2a348b1-563f-4927-bd43-1cb1e90d1a9c
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.permanence_period_finish_date
+field_name: permanence_period_finish_date
+entity_type: node
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

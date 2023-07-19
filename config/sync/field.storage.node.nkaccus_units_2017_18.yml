@@ -1,0 +1,20 @@
+uuid: 10fe0561-d6ca-4942-8dc2-5c4db97de652
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.nkaccus_units_2017_18
+field_name: nkaccus_units_2017_18
+entity_type: node
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

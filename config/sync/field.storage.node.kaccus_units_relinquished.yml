@@ -1,0 +1,20 @@
+uuid: ecb716a2-1c85-4329-a6c1-eb4b3553c76d
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.kaccus_units_relinquished
+field_name: kaccus_units_relinquished
+entity_type: node
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

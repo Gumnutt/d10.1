@@ -1,0 +1,22 @@
+uuid: 94d5023f-33ab-4f1d-b521-ea5bc56fe18c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.regional_nrm_plan
+    - node.type.dataset
+  module:
+    - text
+id: node.dataset.regional_nrm_plan
+field_name: regional_nrm_plan
+entity_type: node
+bundle: dataset
+label: 'If the area-based project is covered by a regional natural resource management plan, is it consistent with that plan?'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text

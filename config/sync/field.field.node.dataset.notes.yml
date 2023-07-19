@@ -1,0 +1,22 @@
+uuid: 7a493e12-4ec2-4aad-9126-79064db03ea8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.notes
+    - node.type.dataset
+  module:
+    - text
+id: node.dataset.notes
+field_name: notes
+entity_type: node
+bundle: dataset
+label: Notes
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text

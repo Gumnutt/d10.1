@@ -1,0 +1,20 @@
+uuid: 6fcd4bcd-d179-4162-80a6-3212bf7c96bb
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.kaccus_units_issued_person
+field_name: kaccus_units_issued_person
+entity_type: node
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

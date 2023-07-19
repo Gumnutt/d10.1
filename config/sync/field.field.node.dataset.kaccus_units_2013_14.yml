@@ -1,0 +1,22 @@
+uuid: bddaf39a-78f1-4ca0-a7a7-b401ac358c4d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.kaccus_units_2013_14
+    - node.type.dataset
+  module:
+    - text
+id: node.dataset.kaccus_units_2013_14
+field_name: kaccus_units_2013_14
+entity_type: node
+bundle: dataset
+label: 'KACCUs Units Issued in Financial Year 2013/14'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text

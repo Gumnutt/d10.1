@@ -1,0 +1,22 @@
+uuid: 0f3128c7-e8cb-453c-919b-5cf978a5df44
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.accus_total_units_issued
+    - node.type.dataset
+  module:
+    - text
+id: node.dataset.accus_total_units_issued
+field_name: accus_total_units_issued
+entity_type: node
+bundle: dataset
+label: 'ACCUs Total units issued'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text

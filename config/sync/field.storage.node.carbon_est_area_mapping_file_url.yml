@@ -1,0 +1,20 @@
+uuid: 598bbb8b-f567-4d32-97b9-0663357dd7eb
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.carbon_est_area_mapping_file_url
+field_name: carbon_est_area_mapping_file_url
+entity_type: node
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

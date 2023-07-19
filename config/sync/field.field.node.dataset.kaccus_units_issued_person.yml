@@ -1,0 +1,22 @@
+uuid: 59d43e72-8973-4a21-8b24-5c6facd84f9f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.kaccus_units_issued_person
+    - node.type.dataset
+  module:
+    - text
+id: node.dataset.kaccus_units_issued_person
+field_name: kaccus_units_issued_person
+entity_type: node
+bundle: dataset
+label: 'Name of person/s to whom the KACCUs issued'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text

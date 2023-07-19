@@ -1,0 +1,20 @@
+uuid: 97aeb946-0e84-4581-8dd5-894a7032f57f
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.contracted_on
+field_name: contracted_on
+entity_type: node
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

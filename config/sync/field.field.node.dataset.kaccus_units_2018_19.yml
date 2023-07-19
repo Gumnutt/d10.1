@@ -1,0 +1,22 @@
+uuid: 9a4160ba-dbb9-4bd7-9704-70e0cb21597a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.kaccus_units_2018_19
+    - node.type.dataset
+  module:
+    - text
+id: node.dataset.kaccus_units_2018_19
+field_name: kaccus_units_2018_19
+entity_type: node
+bundle: dataset
+label: 'KACCUs Units Issued in Financial Year 2018/19'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text

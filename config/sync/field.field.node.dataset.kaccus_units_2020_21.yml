@@ -1,0 +1,22 @@
+uuid: f3fcc2ad-472c-4b0e-8a34-26304acafdf5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.kaccus_units_2020_21
+    - node.type.dataset
+  module:
+    - text
+id: node.dataset.kaccus_units_2020_21
+field_name: kaccus_units_2020_21
+entity_type: node
+bundle: dataset
+label: 'KACCUs Units Issued in Financial Year 2020/21'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text

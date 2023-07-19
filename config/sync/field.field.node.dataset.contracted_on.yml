@@ -1,0 +1,22 @@
+uuid: 32f48911-d115-4341-b5a1-398f447d3d79
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.contracted_on
+    - node.type.dataset
+  module:
+    - text
+id: node.dataset.contracted_on
+field_name: contracted_on
+entity_type: node
+bundle: dataset
+label: 'Contracted on'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text

@@ -1,0 +1,22 @@
+uuid: 117be308-e4fd-4296-9792-320f93df77fe
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.nkaccus_units_2013_14
+    - node.type.dataset
+  module:
+    - text
+id: node.dataset.nkaccus_units_2013_14
+field_name: nkaccus_units_2013_14
+entity_type: node
+bundle: dataset
+label: 'NKACCUs Units Issued in Financial Year 2013/14'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text

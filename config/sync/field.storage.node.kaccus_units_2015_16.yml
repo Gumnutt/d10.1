@@ -1,0 +1,20 @@
+uuid: 523123c6-7728-4228-a076-d68dbe25e609
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.kaccus_units_2015_16
+field_name: kaccus_units_2015_16
+entity_type: node
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,22 @@
+uuid: c39b3344-3729-4186-8b17-e0719493048e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.project_location
+    - node.type.dataset
+  module:
+    - text
+id: node.dataset.project_location
+field_name: project_location
+entity_type: node
+bundle: dataset
+label: 'Project location'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text

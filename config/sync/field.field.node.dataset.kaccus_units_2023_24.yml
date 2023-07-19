@@ -1,0 +1,22 @@
+uuid: b96814d3-28c8-4cdd-8e9b-f7d32d330687
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.kaccus_units_2023_24
+    - node.type.dataset
+  module:
+    - text
+id: node.dataset.kaccus_units_2023_24
+field_name: kaccus_units_2023_24
+entity_type: node
+bundle: dataset
+label: 'KACCUs Units Issued in Financial Year 2023/24'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text

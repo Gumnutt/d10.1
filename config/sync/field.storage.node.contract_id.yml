@@ -1,0 +1,20 @@
+uuid: 805fdcdc-12bf-449e-912a-6735b7064905
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.contract_id
+field_name: contract_id
+entity_type: node
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,22 @@
+uuid: ae2b57df-09a6-4c86-b162-07ac55ef1709
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.permanence_period
+    - node.type.dataset
+  module:
+    - text
+id: node.dataset.permanence_period
+field_name: permanence_period
+entity_type: node
+bundle: dataset
+label: 'Nominated Permanence Period, if applicable'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text

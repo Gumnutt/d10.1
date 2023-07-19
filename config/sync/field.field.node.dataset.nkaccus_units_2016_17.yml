@@ -1,0 +1,22 @@
+uuid: 0f9d3690-d8f2-41f6-8a57-a8ba5c408862
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.nkaccus_units_2016_17
+    - node.type.dataset
+  module:
+    - text
+id: node.dataset.nkaccus_units_2016_17
+field_name: nkaccus_units_2016_17
+entity_type: node
+bundle: dataset
+label: 'NKACCUs Units Issued in Financial Year 2016/17'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text

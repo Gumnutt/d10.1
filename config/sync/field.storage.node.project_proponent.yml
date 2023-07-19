@@ -1,0 +1,20 @@
+uuid: dd75f904-1df5-4a5f-8220-62987d8fe0a2
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.project_proponent
+field_name: project_proponent
+entity_type: node
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,22 @@
+uuid: 26a0e09d-49d2-4877-b7ac-ef2ff8c343b6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.carbon_maintenance_obligation
+    - node.type.dataset
+  module:
+    - text
+id: node.dataset.carbon_maintenance_obligation
+field_name: carbon_maintenance_obligation
+entity_type: node
+bundle: dataset
+label: 'Is the project area or project areas subject to a Carbon Maintenance Obligation (CMO)?'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text

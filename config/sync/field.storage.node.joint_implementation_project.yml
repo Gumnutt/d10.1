@@ -1,0 +1,20 @@
+uuid: 170fc2dd-8426-4f5a-a7da-19a872e11050
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.joint_implementation_project
+field_name: joint_implementation_project
+entity_type: node
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

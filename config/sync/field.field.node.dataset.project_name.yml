@@ -1,0 +1,22 @@
+uuid: 65b49e04-c8fa-4e63-8ab0-f62010ad8d7f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.project_name
+    - node.type.dataset
+  module:
+    - text
+id: node.dataset.project_name
+field_name: project_name
+entity_type: node
+bundle: dataset
+label: 'Project Name'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text

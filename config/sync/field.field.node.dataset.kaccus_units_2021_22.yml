@@ -1,0 +1,22 @@
+uuid: de6b08c0-8337-4293-9b8f-bffabbd72516
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.kaccus_units_2021_22
+    - node.type.dataset
+  module:
+    - text
+id: node.dataset.kaccus_units_2021_22
+field_name: kaccus_units_2021_22
+entity_type: node
+bundle: dataset
+label: 'KACCUs Units Issued in Financial Year 2021/22'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text

@@ -1,0 +1,20 @@
+uuid: 0efda382-4e41-4292-a002-ec3c8bedbb5d
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.nkaccus_units_2012_13
+field_name: nkaccus_units_2012_13
+entity_type: node
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

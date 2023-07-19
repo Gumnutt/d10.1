@@ -1,0 +1,22 @@
+uuid: 2d9a522e-52ca-4f2c-9142-fcb5f194c7e4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.method
+    - node.type.dataset
+  module:
+    - text
+id: node.dataset.method
+field_name: method
+entity_type: node
+bundle: dataset
+label: Method
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text

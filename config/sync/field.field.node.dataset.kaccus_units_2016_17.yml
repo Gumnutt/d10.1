@@ -1,0 +1,22 @@
+uuid: a30b0b38-0e1d-416b-b059-d0a3b5e5be9a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.kaccus_units_2016_17
+    - node.type.dataset
+  module:
+    - text
+id: node.dataset.kaccus_units_2016_17
+field_name: kaccus_units_2016_17
+entity_type: node
+bundle: dataset
+label: 'KACCUs Units Issued in Financial Year 2016/17'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text

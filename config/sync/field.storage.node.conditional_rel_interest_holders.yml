@@ -1,0 +1,20 @@
+uuid: 62009aed-1e9b-4949-a29c-0f3734f14d1d
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.conditional_rel_interest_holders
+field_name: conditional_rel_interest_holders
+entity_type: node
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

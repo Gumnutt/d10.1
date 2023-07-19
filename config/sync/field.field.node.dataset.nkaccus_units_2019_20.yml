@@ -1,0 +1,22 @@
+uuid: e39e3646-3047-42cc-ab97-2de90f336b13
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.nkaccus_units_2019_20
+    - node.type.dataset
+  module:
+    - text
+id: node.dataset.nkaccus_units_2019_20
+field_name: nkaccus_units_2019_20
+entity_type: node
+bundle: dataset
+label: 'NKACCUs Units Issued in Financial Year 2019/20'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text
