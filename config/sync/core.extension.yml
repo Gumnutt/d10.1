@@ -26,6 +26,9 @@ module:
   makenode: 0
   menu_link_content: 0
   menu_ui: 0
+  migrate: 0
+  migrate_plus: 0
+  migrate_source_csv: 0
   mysql: 0
   node: 0
   options: 0
