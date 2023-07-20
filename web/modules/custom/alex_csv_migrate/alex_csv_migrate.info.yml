@@ -1,0 +1,9 @@
+type: module
+name: Alex CSV Migration
+description: 'CSV Migration'
+package: Migration
+core_version_requirement: ^10
+dependencies:
+  - drupal:migrate
+  - migrate_source_csv:migrate_source_csv
+  - migrate_plus:migrate_plus

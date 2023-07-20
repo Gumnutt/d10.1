@@ -1,5 +1,0 @@
-name: 'makeNode'
-type: module
-description: 'make the dataset node'
-package: Custom
-core_version_requirement: ^10
