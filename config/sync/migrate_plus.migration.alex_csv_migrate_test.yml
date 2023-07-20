@@ -1,0 +1,248 @@
+uuid: 4318cf29-ebb0-4726-9f43-cd65a7b97a52
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: e22yZ6C4SuBw0bpNtIRdskY28YdLZFBDLl3YutIKDEM
+id: alex_csv_migrate_test
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags: null
+migration_group: default
+label: 'CSV Node Migration'
+source:
+  plugin: csv
+  path: modules/custom/alex_csv_migrate/sources/emissions_reduction_fund_register.csv
+  header_row_count: 1
+  ids:
+    - id
+  fields:
+    -
+      name: id
+      label: col-0
+    -
+      name: project_name
+      label: col-1
+    -
+      name: project_id
+      label: col-2
+    -
+      name: method
+      label: col-3
+    -
+      name: method_url
+      label: col-4
+    -
+      name: method_type
+      label: col-5
+    -
+      name: project_description
+      label: col-6
+    -
+      name: date_project_registered
+      label: col-7
+    -
+      name: project_location
+      label: col-8
+    -
+      name: project_location_postcode
+      label: col-9
+    -
+      name: project_area
+      label: col-10
+    -
+      name: project_mapping_file_url
+      label: col-11
+    -
+      name: carbon_est_area_mapping_file_url
+      label: col-12
+    -
+      name: carbon_est_area_sup_info
+      label: col-13
+    -
+      name: regional_nrm_plan
+      label: col-14
+    -
+      name: joint_implementation_project
+      label: col-15
+    -
+      name: carbon_maintenance_obligation
+      label: col-16
+    -
+      name: conditional_reg_approvals
+      label: col-17
+    -
+      name: conditional_rel_interest_holders
+      label: col-18
+    -
+      name: permanence_period
+      label: col-19
+    -
+      name: permanence_period_finish_date
+      label: col-20
+    -
+      name: contracted_on
+      label: col-21
+    -
+      name: contract_id
+      label: col-22
+    -
+      name: accus_total_units_issued
+      label: col-23
+    -
+      name: kaccus_total_units_issued
+      label: col-24
+    -
+      name: kaccus_units_2012_13
+      label: col-25
+    -
+      name: kaccus_units_2013_14
+      label: col-26
+    -
+      name: kaccus_units_2014_15
+      label: col-27
+    -
+      name: kaccus_units_2015_16
+      label: col-28
+    -
+      name: kaccus_units_2016_17
+      label: col-29
+    -
+      name: kaccus_units_2017_18
+      label: col-30
+    -
+      name: kaccus_units_2018_19
+      label: col-31
+    -
+      name: kaccus_units_2019_20
+      label: col-32
+    -
+      name: kaccus_units_2020_21
+      label: col-33
+    -
+      name: kaccus_units_2021_22
+      label: col-34
+    -
+      name: kaccus_units_2022_23
+      label: col-35
+    -
+      name: kaccus_units_2023_24
+      label: col-36
+    -
+      name: kaccus_units_issued_person
+      label: col-37
+    -
+      name: kaccus_units_relinquished
+      label: col-38
+    -
+      name: nkaccus_total_units_issued
+      label: col-39
+    -
+      name: nkaccus_units_2012_13
+      label: col-40
+    -
+      name: nkaccus_units_2013_14
+      label: col-41
+    -
+      name: nkaccus_units_2014_15
+      label: col-42
+    -
+      name: nkaccus_units_2015_16
+      label: col-43
+    -
+      name: nkaccus_units_2016_17
+      label: col-44
+    -
+      name: nkaccus_units_2017_18
+      label: col-45
+    -
+      name: nkaccus_units_2018_19
+      label: col-46
+    -
+      name: nkaccus_units_2019_20
+      label: col-47
+    -
+      name: nkaccus_units_2020_21
+      label: col-48
+    -
+      name: nkaccus_units_2021_22
+      label: col-49
+    -
+      name: nkaccus_units_2022_23
+      label: col-50
+    -
+      name: nkaccus_units_2023_24
+      label: col-51
+    -
+      name: nkaccus_units_issued_person
+      label: col-52
+    -
+      name: nkaccus_units_relinquished
+      label: col-53
+    -
+      name: notes
+      label: col-54
+process:
+  type:
+    plugin: default_value
+    default_value: dataset
+  title: id
+  project_proponent: id
+  project_name: project_name
+  project_id: project_id
+  method: method
+  method_url: method_url
+  project_description: project_description
+  date_project_registered: date_project_registered
+  project_location: project_location
+  project_location_postcode: project_location_postcode
+  project_area: project_area
+  project_mapping_file_url: project_mapping_file_url
+  carbon_est_area_mapping_file_url: carbon_est_area_mapping_file_url
+  carbon_est_area_sup_info: carbon_est_area_sup_info
+  regional_nrm_plan: regional_nrm_plan
+  joint_implementation_project: joint_implementation_project
+  carbon_maintenance_obligation: carbon_maintenance_obligation
+  conditional_reg_approvals: conditional_reg_approvals
+  conditional_rel_interest_holders: conditional_rel_interest_holders
+  permanence_period: permanence_period
+  permanence_period_finish_date: permanence_period_finish_date
+  contracted_on: contracted_on
+  contract_id: contract_id
+  accus_total_units_issued: accus_total_units_issued
+  kaccus_total_units_issued: kaccus_total_units_issued
+  kaccus_units_2012_13: kaccus_units_2012_13
+  kaccus_units_2013_14: kaccus_units_2013_14
+  kaccus_units_2014_15: kaccus_units_2014_15
+  kaccus_units_2015_16: kaccus_units_2015_16
+  kaccus_units_2016_17: kaccus_units_2016_17
+  kaccus_units_2017_18: kaccus_units_2017_18
+  kaccus_units_2018_19: kaccus_units_2018_19
+  kaccus_units_2019_20: kaccus_units_2019_20
+  kaccus_units_2020_21: kaccus_units_2020_21
+  kaccus_units_2021_22: kaccus_units_2021_22
+  kaccus_units_2022_23: kaccus_units_2022_23
+  kaccus_units_2023_24: kaccus_units_2023_24
+  kaccus_units_issued_person: kaccus_units_issued_person
+  kaccus_units_relinquished: kaccus_units_relinquished
+  nkaccus_total_units_issued: nkaccus_total_units_issued
+  nkaccus_units_2012_13: nkaccus_units_2012_13
+  nkaccus_units_2013_14: nkaccus_units_2013_14
+  nkaccus_units_2014_15: nkaccus_units_2014_15
+  nkaccus_units_2015_16: nkaccus_units_2015_16
+  nkaccus_units_2016_17: nkaccus_units_2016_17
+  nkaccus_units_2017_18: nkaccus_units_2017_18
+  nkaccus_units_2018_19: nkaccus_units_2018_19
+  nkaccus_units_2019_20: nkaccus_units_2019_20
+  nkaccus_units_2020_21: nkaccus_units_2020_21
+  nkaccus_units_2021_22: nkaccus_units_2021_22
+  nkaccus_units_2022_23: nkaccus_units_2022_23
+  nkaccus_units_2023_24: nkaccus_units_2023_24
+  nkaccus_units_issued_person: nkaccus_units_issued_person
+  nkaccus_units_relinquished: nkaccus_units_relinquished
+  notes: notes
+destination:
+  plugin: 'entity:node'
+  default_bundle: dataset
+migration_dependencies: null
