@@ -1,0 +1,19 @@
+uuid: 077d74d5-178d-439d-982b-a7ac8439cc83
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.kaccus_units_2014_15
+field_name: kaccus_units_2014_15
+entity_type: node
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

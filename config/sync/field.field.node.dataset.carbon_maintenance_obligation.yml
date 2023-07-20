@@ -1,0 +1,19 @@
+uuid: c464aabe-b54f-409c-9474-8cfb3dc91625
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.carbon_maintenance_obligation
+    - node.type.dataset
+id: node.dataset.carbon_maintenance_obligation
+field_name: carbon_maintenance_obligation
+entity_type: node
+bundle: dataset
+label: carbon_maintenance_obligation
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

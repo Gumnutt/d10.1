@@ -1,0 +1,19 @@
+uuid: f56d8e04-ca3e-4032-803b-8ab24f09a854
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.nkaccus_units_2021_22
+    - node.type.dataset
+id: node.dataset.nkaccus_units_2021_22
+field_name: nkaccus_units_2021_22
+entity_type: node
+bundle: dataset
+label: nkaccus_units_2021_22
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

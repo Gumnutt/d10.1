@@ -1,0 +1,19 @@
+uuid: fd4dff4e-bfa1-48c0-918c-6609bb35e379
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.nkaccus_units_2014_15
+    - node.type.dataset
+id: node.dataset.nkaccus_units_2014_15
+field_name: nkaccus_units_2014_15
+entity_type: node
+bundle: dataset
+label: nkaccus_units_2014_15
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

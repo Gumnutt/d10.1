@@ -1,0 +1,19 @@
+uuid: 1e06bcc6-15fe-462f-9c01-df0a0f0138bc
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.contract_id
+field_name: contract_id
+entity_type: node
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

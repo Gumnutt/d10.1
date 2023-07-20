@@ -1,0 +1,19 @@
+uuid: 9db17707-987f-4232-a9f5-3fce04332d30
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.nkaccus_units_2019_20
+    - node.type.dataset
+id: node.dataset.nkaccus_units_2019_20
+field_name: nkaccus_units_2019_20
+entity_type: node
+bundle: dataset
+label: nkaccus_units_2019_20
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

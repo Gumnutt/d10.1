@@ -1,0 +1,19 @@
+uuid: 1806c2ee-cc72-4534-aea5-f8da6a45fe00
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.kaccus_units_2021_22
+    - node.type.dataset
+id: node.dataset.kaccus_units_2021_22
+field_name: kaccus_units_2021_22
+entity_type: node
+bundle: dataset
+label: kaccus_units_2021_22
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

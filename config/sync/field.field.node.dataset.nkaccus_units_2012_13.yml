@@ -1,0 +1,19 @@
+uuid: 720671e1-6dd1-401e-8375-a8ee2cc91a9b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.nkaccus_units_2012_13
+    - node.type.dataset
+id: node.dataset.nkaccus_units_2012_13
+field_name: nkaccus_units_2012_13
+entity_type: node
+bundle: dataset
+label: nkaccus_units_2012_13
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

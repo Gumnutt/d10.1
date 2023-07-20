@@ -1,0 +1,19 @@
+uuid: 92e133fa-969a-4b9e-a0c0-daa92f421c13
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.regional_nrm_plan
+field_name: regional_nrm_plan
+entity_type: node
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

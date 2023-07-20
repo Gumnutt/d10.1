@@ -1,0 +1,19 @@
+uuid: e0c92f9c-f663-488c-aa15-ea6b5d64e6a1
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.carbon_est_area_sup_info
+field_name: carbon_est_area_sup_info
+entity_type: node
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

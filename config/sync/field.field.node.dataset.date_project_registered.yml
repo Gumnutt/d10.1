@@ -1,0 +1,19 @@
+uuid: 7968e15a-43f9-4488-9444-282d79d369ca
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.date_project_registered
+    - node.type.dataset
+id: node.dataset.date_project_registered
+field_name: date_project_registered
+entity_type: node
+bundle: dataset
+label: date_project_registered
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

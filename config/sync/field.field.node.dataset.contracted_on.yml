@@ -1,0 +1,19 @@
+uuid: de32516f-f032-4e42-80ac-df9c83e88926
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.contracted_on
+    - node.type.dataset
+id: node.dataset.contracted_on
+field_name: contracted_on
+entity_type: node
+bundle: dataset
+label: contracted_on
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

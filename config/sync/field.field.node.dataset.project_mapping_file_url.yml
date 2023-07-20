@@ -1,0 +1,19 @@
+uuid: edf90409-97aa-4bef-8e6c-7fc585d363e1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.project_mapping_file_url
+    - node.type.dataset
+id: node.dataset.project_mapping_file_url
+field_name: project_mapping_file_url
+entity_type: node
+bundle: dataset
+label: project_mapping_file_url
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

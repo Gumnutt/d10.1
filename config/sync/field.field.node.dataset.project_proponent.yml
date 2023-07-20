@@ -1,0 +1,19 @@
+uuid: f76eb97a-58ad-40f9-a31a-49b4b4e32f5b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.project_proponent
+    - node.type.dataset
+id: node.dataset.project_proponent
+field_name: project_proponent
+entity_type: node
+bundle: dataset
+label: project_proponent
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

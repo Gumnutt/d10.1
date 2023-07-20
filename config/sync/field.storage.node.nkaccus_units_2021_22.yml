@@ -1,0 +1,19 @@
+uuid: db994ae0-d87c-434f-84c8-34a1a3166c8e
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.nkaccus_units_2021_22
+field_name: nkaccus_units_2021_22
+entity_type: node
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

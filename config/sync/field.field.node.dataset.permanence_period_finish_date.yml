@@ -1,0 +1,19 @@
+uuid: 75093cdd-5675-4899-8af3-cdedaee33fd0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.permanence_period_finish_date
+    - node.type.dataset
+id: node.dataset.permanence_period_finish_date
+field_name: permanence_period_finish_date
+entity_type: node
+bundle: dataset
+label: permanence_period_finish_date
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

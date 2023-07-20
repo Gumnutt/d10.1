@@ -1,0 +1,19 @@
+uuid: 9f136208-9e96-4fa2-9f45-033981ae6418
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.project_location_postcode
+    - node.type.dataset
+id: node.dataset.project_location_postcode
+field_name: project_location_postcode
+entity_type: node
+bundle: dataset
+label: project_location_postcode
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

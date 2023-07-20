@@ -1,0 +1,19 @@
+uuid: 6b1f4e13-c788-4d43-9fd8-6ea72dd43feb
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.nkaccus_units_2022_23
+field_name: nkaccus_units_2022_23
+entity_type: node
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

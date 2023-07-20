@@ -1,0 +1,19 @@
+uuid: c39b5a8f-0fe4-4861-a43b-f58038b9efe1
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.nkaccus_units_issued_person
+field_name: nkaccus_units_issued_person
+entity_type: node
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,19 @@
+uuid: c9f33a27-5f03-4a43-a1cb-1f79d12e8571
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.kaccus_units_2020_21
+    - node.type.dataset
+id: node.dataset.kaccus_units_2020_21
+field_name: kaccus_units_2020_21
+entity_type: node
+bundle: dataset
+label: kaccus_units_2020_21
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

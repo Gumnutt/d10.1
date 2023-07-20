@@ -1,0 +1,19 @@
+uuid: f8c264ca-8252-4f99-bf5c-485118adc754
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.accus_total_units_issued
+field_name: accus_total_units_issued
+entity_type: node
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

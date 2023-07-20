@@ -1,0 +1,19 @@
+uuid: 0a16556c-6c4c-4600-bb8d-3b7c81d69624
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.nkaccus_units_relinquished
+field_name: nkaccus_units_relinquished
+entity_type: node
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -3,6 +3,61 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.dataset.accus_total_units_issued
+    - field.field.node.dataset.carbon_est_area_mapping_file_url
+    - field.field.node.dataset.carbon_est_area_sup_info
+    - field.field.node.dataset.carbon_maintenance_obligation
+    - field.field.node.dataset.conditional_reg_approvals
+    - field.field.node.dataset.conditional_rel_interest_holders
+    - field.field.node.dataset.contract_id
+    - field.field.node.dataset.contracted_on
+    - field.field.node.dataset.date_project_registered
+    - field.field.node.dataset.joint_implementation_project
+    - field.field.node.dataset.kaccus_total_units_issued
+    - field.field.node.dataset.kaccus_units_2012_13
+    - field.field.node.dataset.kaccus_units_2013_14
+    - field.field.node.dataset.kaccus_units_2014_15
+    - field.field.node.dataset.kaccus_units_2015_16
+    - field.field.node.dataset.kaccus_units_2016_17
+    - field.field.node.dataset.kaccus_units_2017_18
+    - field.field.node.dataset.kaccus_units_2018_19
+    - field.field.node.dataset.kaccus_units_2019_20
+    - field.field.node.dataset.kaccus_units_2020_21
+    - field.field.node.dataset.kaccus_units_2021_22
+    - field.field.node.dataset.kaccus_units_2022_23
+    - field.field.node.dataset.kaccus_units_2023_24
+    - field.field.node.dataset.kaccus_units_issued_person
+    - field.field.node.dataset.kaccus_units_relinquished
+    - field.field.node.dataset.method
+    - field.field.node.dataset.method_type
+    - field.field.node.dataset.method_url
+    - field.field.node.dataset.nkaccus_total_units_issued
+    - field.field.node.dataset.nkaccus_units_2012_13
+    - field.field.node.dataset.nkaccus_units_2013_14
+    - field.field.node.dataset.nkaccus_units_2014_15
+    - field.field.node.dataset.nkaccus_units_2015_16
+    - field.field.node.dataset.nkaccus_units_2016_17
+    - field.field.node.dataset.nkaccus_units_2017_18
+    - field.field.node.dataset.nkaccus_units_2018_19
+    - field.field.node.dataset.nkaccus_units_2019_20
+    - field.field.node.dataset.nkaccus_units_2020_21
+    - field.field.node.dataset.nkaccus_units_2021_22
+    - field.field.node.dataset.nkaccus_units_2022_23
+    - field.field.node.dataset.nkaccus_units_2023_24
+    - field.field.node.dataset.nkaccus_units_issued_person
+    - field.field.node.dataset.nkaccus_units_relinquished
+    - field.field.node.dataset.notes
+    - field.field.node.dataset.permanence_period
+    - field.field.node.dataset.permanence_period_finish_date
+    - field.field.node.dataset.project_area
+    - field.field.node.dataset.project_description
+    - field.field.node.dataset.project_id
+    - field.field.node.dataset.project_location
+    - field.field.node.dataset.project_location_postcode
+    - field.field.node.dataset.project_mapping_file_url
+    - field.field.node.dataset.project_name
+    - field.field.node.dataset.project_proponent
+    - field.field.node.dataset.regional_nrm_plan
     - node.type.dataset
   module:
     - user
@@ -11,9 +66,394 @@ targetEntityType: node
 bundle: dataset
 mode: default
 content:
+  accus_total_units_issued:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 124
+    region: content
+  carbon_est_area_mapping_file_url:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 113
+    region: content
+  carbon_est_area_sup_info:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 114
+    region: content
+  carbon_maintenance_obligation:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 117
+    region: content
+  conditional_reg_approvals:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 118
+    region: content
+  conditional_rel_interest_holders:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 119
+    region: content
+  contract_id:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 123
+    region: content
+  contracted_on:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 122
+    region: content
+  date_project_registered:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 108
+    region: content
+  joint_implementation_project:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 116
+    region: content
+  kaccus_total_units_issued:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 125
+    region: content
+  kaccus_units_2012_13:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 126
+    region: content
+  kaccus_units_2013_14:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 127
+    region: content
+  kaccus_units_2014_15:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 128
+    region: content
+  kaccus_units_2015_16:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 129
+    region: content
+  kaccus_units_2016_17:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 130
+    region: content
+  kaccus_units_2017_18:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 131
+    region: content
+  kaccus_units_2018_19:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 132
+    region: content
+  kaccus_units_2019_20:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 133
+    region: content
+  kaccus_units_2020_21:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 134
+    region: content
+  kaccus_units_2021_22:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 135
+    region: content
+  kaccus_units_2022_23:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 136
+    region: content
+  kaccus_units_2023_24:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 137
+    region: content
+  kaccus_units_issued_person:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 138
+    region: content
+  kaccus_units_relinquished:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 139
+    region: content
   links:
     settings: {  }
     third_party_settings: {  }
     weight: 100
+    region: content
+  method:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  method_type:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  method_url:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  nkaccus_total_units_issued:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 140
+    region: content
+  nkaccus_units_2012_13:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 141
+    region: content
+  nkaccus_units_2013_14:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 142
+    region: content
+  nkaccus_units_2014_15:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 143
+    region: content
+  nkaccus_units_2015_16:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 144
+    region: content
+  nkaccus_units_2016_17:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 145
+    region: content
+  nkaccus_units_2017_18:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 146
+    region: content
+  nkaccus_units_2018_19:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 147
+    region: content
+  nkaccus_units_2019_20:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 148
+    region: content
+  nkaccus_units_2020_21:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 149
+    region: content
+  nkaccus_units_2021_22:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 150
+    region: content
+  nkaccus_units_2022_23:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 151
+    region: content
+  nkaccus_units_2023_24:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 152
+    region: content
+  nkaccus_units_issued_person:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 153
+    region: content
+  nkaccus_units_relinquished:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 154
+    region: content
+  notes:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 155
+    region: content
+  permanence_period:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 120
+    region: content
+  permanence_period_finish_date:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 121
+    region: content
+  project_area:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 111
+    region: content
+  project_description:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 107
+    region: content
+  project_id:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  project_location:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 109
+    region: content
+  project_location_postcode:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 110
+    region: content
+  project_mapping_file_url:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 112
+    region: content
+  project_name:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  project_proponent:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  regional_nrm_plan:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 115
     region: content
 hidden: {  }

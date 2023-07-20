@@ -1,0 +1,19 @@
+uuid: 433dda51-3f3f-4467-aa8d-7f81893d40c0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.nkaccus_total_units_issued
+    - node.type.dataset
+id: node.dataset.nkaccus_total_units_issued
+field_name: nkaccus_total_units_issued
+entity_type: node
+bundle: dataset
+label: nkaccus_total_units_issued
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

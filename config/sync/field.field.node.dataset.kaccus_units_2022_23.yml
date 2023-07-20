@@ -1,0 +1,19 @@
+uuid: 59527941-c278-4001-a00b-47bab046ba19
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.kaccus_units_2022_23
+    - node.type.dataset
+id: node.dataset.kaccus_units_2022_23
+field_name: kaccus_units_2022_23
+entity_type: node
+bundle: dataset
+label: kaccus_units_2022_23
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

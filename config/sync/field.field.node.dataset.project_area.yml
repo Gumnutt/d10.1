@@ -1,0 +1,19 @@
+uuid: af9d5714-f426-4b74-81f3-d53137ea2c74
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.project_area
+    - node.type.dataset
+id: node.dataset.project_area
+field_name: project_area
+entity_type: node
+bundle: dataset
+label: project_area
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

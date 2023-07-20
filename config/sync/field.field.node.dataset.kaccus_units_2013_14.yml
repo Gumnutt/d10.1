@@ -1,0 +1,19 @@
+uuid: 46960564-4337-4c4e-a31f-28c3a72eb0db
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.kaccus_units_2013_14
+    - node.type.dataset
+id: node.dataset.kaccus_units_2013_14
+field_name: kaccus_units_2013_14
+entity_type: node
+bundle: dataset
+label: kaccus_units_2013_14
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

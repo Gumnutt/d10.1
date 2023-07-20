@@ -1,0 +1,19 @@
+uuid: f8d7e13e-5fd1-460b-9694-c6caca90f75f
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.project_location_postcode
+field_name: project_location_postcode
+entity_type: node
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

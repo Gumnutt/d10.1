@@ -1,0 +1,19 @@
+uuid: 8cfe0554-7e78-4cc7-8566-de3b7f842978
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.conditional_rel_interest_holders
+    - node.type.dataset
+id: node.dataset.conditional_rel_interest_holders
+field_name: conditional_rel_interest_holders
+entity_type: node
+bundle: dataset
+label: conditional_rel_interest_holders
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

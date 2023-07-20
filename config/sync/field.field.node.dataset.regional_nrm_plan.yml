@@ -1,0 +1,19 @@
+uuid: c0580aa4-d2af-4145-855a-0e39cce581a7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.regional_nrm_plan
+    - node.type.dataset
+id: node.dataset.regional_nrm_plan
+field_name: regional_nrm_plan
+entity_type: node
+bundle: dataset
+label: regional_nrm_plan
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long
