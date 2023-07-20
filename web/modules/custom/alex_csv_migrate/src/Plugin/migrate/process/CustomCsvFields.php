@@ -18,7 +18,6 @@ class CustomCsvFields extends ProcessPluginBase {
     $columns = $this->configuration['columns'];
     $field_values = [];
     foreach ($columns as $column) {
-      dump($column);
       $field_name = 'field_' . $column;
       $field_value = $row->getSourceProperty($column);
       $field_values[$field_name] = [
