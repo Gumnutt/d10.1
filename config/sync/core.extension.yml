@@ -23,7 +23,6 @@ module:
   history: 0
   image: 0
   link: 0
-  makenode: 0
   menu_link_content: 0
   menu_ui: 0
   migrate: 0
