@@ -1,184 +1,185 @@
-id: alex_csv_migrate_test
+id: alex_csv_migrate_node
 label: CSV Node Migration
 migration_group: default
 source:
   plugin: csv
-  path: modules/custom/alex_csv_migrate/sources/emissions_reduction_fund_register.csv
+  path: modules/custom/alex_csv_migrate/sources/mega.csv
   header_row_count: 1
   ids:
     - id
   fields:
+    #this section links the header row columns to a name which can be used in the process section.
     0:
       name: id
-      label: 'col-0'
+      label: 'Project Proponent'
     1:
-      name: project_proponent
-      label: 'col-1'
-    2:
       name: project_name
-      label: 'col-2'
-    3:
+      label: 'Project Name'
+    2:
       name: project_id
-      label: 'col-3'
-    4:
+      label: 'Project ID'
+    3:
       name: method
-      label: 'col-4'
-    5:
+      label: 'Method'
+    4:
       name: method_url
-      label: 'col-5'
-    6:
+      label: 'Method URL'
+    5:
       name: method_type
-      label: 'col-6'
-    7:
+      label: 'Method Type'
+    6:
       name: project_description
-      label: 'col-7'
-    8:
+      label: 'Project Description'
+    7:
       name: date_project_registered
-      label: 'col-8'
-    9:
+      label: 'Date Project Registered'
+    8:
       name: project_location
-      label: 'col-9'
-    10:
+      label: 'Project location'
+    9:
       name: project_location_postcode
-      label: 'col-10'
-    11:
+      label: 'Project location (postcode)'
+    10:
       name: project_area
-      label: 'col-11'
-    12:
+      label: 'Project Area(s), where the project is an area based offsets project'
+    11:
       name: project_mapping_file_url
-      label: 'col-12'
-    13:
+      label: 'Project Mapping File URL'
+    12:
       name: carbon_est_area_mapping_file_url
-      label: 'col-13'
-    14:
+      label: 'Carbon Estimation Area mapping file URL'
+    13:
       name: carbon_est_area_sup_info
-      label: 'col-14'
-    15:
+      label: 'Carbon Estimation Area Supplementary information'
+    14:
       name: regional_nrm_plan
-      label: 'col-15'
-    16:
+      label: 'If the area-based project is covered by a regional natural resource management plan, is it consistent with that plan?'
+    15:
       name: joint_implementation_project
-      label: 'col-16'
-    17:
+      label: 'Joint Implementation project'
+    16:
       name: carbon_maintenance_obligation
-      label: 'col-17'
-    18:
+      label: 'Is the project area or project areas subject to a Carbon Maintenance Obligation (CMO)?'
+    17:
       name: conditional_reg_approvals
-      label: 'col-18'
-    19:
+      label: 'Conditional upon all regulatory approvals being obtained'
+    18:
       name: conditional_rel_interest_holders
-      label: 'col-19'
-    20:
+      label: 'Conditional upon the written consent of relevant interest holders'
+    19:
       name: permanence_period
-      label: 'col-20'
-    21:
+      label: 'Nominated Permanence Period, if applicable'
+    20:
       name: permanence_period_finish_date
-      label: 'col-21'
-    22:
+      label: 'Finish date of permanence period, if applicable'
+    21:
       name: contracted_on
-      label: 'col-22'
-    23:
+      label: 'Contracted on'
+    22:
       name: contract_id
-      label: 'col-23'
-    24:
+      label: 'Contract ID'
+    23:
       name: accus_total_units_issued
-      label: 'col-24'
-    25:
+      label: 'ACCUs Total units issued'
+    24:
       name: kaccus_total_units_issued
-      label: 'col-25'
-    26:
+      label: 'KACCUs Total units issued'
+    25:
       name: kaccus_units_2012_13
-      label: 'col-26'
-    27:
+      label: 'KACCUs Units Issued in Financial Year 2012/13'
+    26:
       name: kaccus_units_2013_14
-      label: 'col-27'
-    28:
+      label: 'KACCUs Units Issued in Financial Year 2013/14'
+    27:
       name: kaccus_units_2014_15
-      label: 'col-28'
-    29:
+      label: 'KACCUs Units Issued in Financial Year 2014/15'
+    28:
       name: kaccus_units_2015_16
-      label: 'col-29'
-    30:
+      label: 'KACCUs Units Issued in Financial Year 2015/16'
+    29:
       name: kaccus_units_2016_17
-      label: 'col-30'
-    31:
+      label: 'KACCUs Units Issued in Financial Year 2016/17'
+    30:
       name: kaccus_units_2017_18
-      label: 'col-31'
-    32:
+      label: 'KACCUs Units Issued in Financial Year 2017/18'
+    31:
       name: kaccus_units_2018_19
-      label: 'col-32'
-    33:
+      label: 'KACCUs Units Issued in Financial Year 2018/19'
+    32:
       name: kaccus_units_2019_20
-      label: 'col-33'
-    34:
+      label: 'KACCUs Units Issued in Financial Year 2019/20'
+    33:
       name: kaccus_units_2020_21
-      label: 'col-34'
-    35:
+      label: 'KACCUs Units Issued in Financial Year 2020/21'
+    34:
       name: kaccus_units_2021_22
-      label: 'col-35'
-    36:
+      label: 'KACCUs Units Issued in Financial Year 2021/22'
+    35:
       name: kaccus_units_2022_23
-      label: 'col-36'
-    37:
+      label: 'KACCUs Units Issued in Financial Year 2022/23'
+    36:
       name: kaccus_units_2023_24
-      label: 'col-37'
-    38:
+      label: 'KACCUs Units Issued in Financial Year 2023/24'
+    37:
       name: kaccus_units_issued_person
-      label: 'col-38'
-    39:
+      label: 'Name of person/s to whom the KACCUs issued'
+    38:
       name: kaccus_units_relinquished
-      label: 'col-39'
-    40:
+      label: 'Total Number of KACCUs units relinquished'
+    39:
       name: nkaccus_total_units_issued
-      label: 'col-40'
-    41:
+      label: 'NKACCUs Total units issued'
+    40:
       name: nkaccus_units_2012_13
-      label: 'col-41'
-    42:
+      label: 'NKACCUs Units Issued in Financial Year 2012/13'
+    41:
       name: nkaccus_units_2013_14
-      label: 'col-42'
-    43:
+      label: 'NKACCUs Units Issued in Financial Year 2013/14'
+    42:
       name: nkaccus_units_2014_15
-      label: 'col-43'
-    44:
+      label: 'NKACCUs Units Issued in Financial Year 2014/15'
+    43:
       name: nkaccus_units_2015_16
-      label: 'col-44'
-    45:
+      label: 'NKACCUs Units Issued in Financial Year 2015/16'
+    44:
       name: nkaccus_units_2016_17
-      label: 'col-45'
-    46:
+      label: 'NKACCUs Units Issued in Financial Year 2016/17'
+    45:
       name: nkaccus_units_2017_18
-      label: 'col-46'
-    47:
+      label: 'NKACCUs Units Issued in Financial Year 2017/18'
+    46:
       name: nkaccus_units_2018_19
-      label: 'col-47'
-    48:
+      label: 'NKACCUs Units Issued in Financial Year 2018/19'
+    47:
       name: nkaccus_units_2019_20
-      label: 'col-48'
-    49:
+      label: 'NKACCUs Units Issued in Financial Year 2019/20'
+    48:
       name: nkaccus_units_2020_21
-      label: 'col-49'
-    50:
+      label: 'NKACCUs Units Issued in Financial Year 2020/21'
+    49:
       name: nkaccus_units_2021_22
-      label: 'col-50'
-    51:
+      label: 'NKACCUs Units Issued in Financial Year 2021/22'
+    50:
       name: nkaccus_units_2022_23
-      label: 'col-51'
-    52:
+      label: 'NKACCUs Units Issued in Financial Year 2022/23'
+    51:
       name: nkaccus_units_2023_24
-      label: 'col-52'
-    53:
+      label: 'NKACCUs Units Issued in Financial Year 2023/24'
+    52:
       name: nkaccus_units_issued_person
-      label: 'col-53'
-    54:
+      label: 'Name of person/s to whom the NKACCUs issued'
+    53:
       name: nkaccus_units_relinquished
-      label: 'col-54'
-    55:
+      label: 'Total Number of NKACCUs units relinquished'
+    54:
       name: notes
-      label: 'col-55'
+      label: 'Notes'
 
 
 process:
+  #this section maps the header row columns to the destination fields within the destination node.
+  #the plugin used is a process plugin, which can be found in 'web/modules/custom/alex_csv_migrate/src/Plugin/migrate/process/'
+  #the plugin converts the encoding of the source data to UTF-8.
   type:
     plugin: default_value
     default_value: dataset
@@ -349,5 +350,6 @@ process:
     source: notes
 
 destination:
+  #this section defines the destination entity type and bundle.
   plugin: 'entity:node'
   default_bundle: dataset

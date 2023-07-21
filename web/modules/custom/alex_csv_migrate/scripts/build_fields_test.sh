@@ -19,7 +19,7 @@ formatted_header=$(echo "$header" | awk 'BEGIN {FS=OFS=","} {
     print;
 }')
 
-formatted_label=$(echo "$header" | awk 'BEGIN {FS=OFS=","} {for (i=1; i<=NF; i++) { gsub(/"/, "", $i); $i=tolower($i); gsub(/ /, "_", $i) } gsub(/,/, " ", $0); print}')
+formatted_label=$(echo "$header" | awk 'BEGIN {FS=OFS=","} {for (i=1; i<=NF; i++) { gsub(/"/, "", $i)} gsub(/,/, " ", $0); print}')
 
 declare -a fields=($formatted_header)
 declare -a fieldsLabel=($formatted_label)
