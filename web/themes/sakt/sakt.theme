@@ -5,3 +5,51 @@ function sakt_preprocess_page(&$variables) {
     $variables['#attached']['library'][] = 'sakt/live-reload';
   }
 }
+
+function sakt_preprocess_media(&$variables) {
+  $bundle = $variables['media']->bundle();
+
+  if ($bundle == 'report') {
+    $filepath = $variables['media']->field_media_file->entity->getFileUri();
+    $variables['json'] = _sakt_csv_to_json($filepath);
+  }
+}
+
+function sakt_preprocess_paragraph__project_summary(&$variables) {
+  $filepath = $variables['elements']['#paragraph']->field_media->entity->field_media_file->entity->getFileUri();
+  $variables['json'] = _sakt_csv_to_json($filepath);
+}
+
+function _sakt_csv_to_json($file){
+  $csv = fopen($file, 'r');
+  $rows = array();
+  $headers = fgetcsv($csv);
+  $headers = array_map('_sakt_to_snake_case', $headers);
+  while ($row = fgetcsv($csv)) {
+    $row = array_map(function($field) {
+      return mb_convert_encoding($field, 'UTF-8');
+    }, $row);
+    $rows[] = array_combine($headers, $row);
+  }
+
+  // Convert the array into a JSON string
+  $json = json_encode($rows, JSON_PRETTY_PRINT);
+  if ($json) {
+    // Save the JSON string to a file
+    return $json;
+  } else {
+      // json_encode() failed. Check the error message
+      echo json_last_error_msg();
+  }
+}
+
+function _sakt_to_snake_case($str) {
+  $str = preg_replace('~[^\pL\d]+~u', '_', $str);
+  $str = iconv('utf-8', 'us-ascii//TRANSLIT', $str);
+  $str = preg_replace('~[^-\w]+~', '', $str);
+  $str = trim($str, '_');
+  $str = strtolower($str);
+  $str = preg_replace('~\s+~', '_', $str);
+
+  return $str;
+}

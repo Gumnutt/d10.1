@@ -10,3 +10,8 @@ global-css:
 live-reload:
   js:
     http://localhost:35729/livereload.js: {type: external}
+
+vuejs:
+  js:
+    dist/vue.js: { attributes: { type: "module" } }
+    

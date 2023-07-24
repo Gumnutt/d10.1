@@ -1,0 +1,29 @@
+uuid: b809075a-16de-42e3-bca9-980c544c1e7f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_media
+    - media.type.report
+    - paragraphs.paragraphs_type.project_summary
+id: paragraph.project_summary.field_media
+field_name: field_media
+entity_type: paragraph
+bundle: project_summary
+label: media
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      report: report
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

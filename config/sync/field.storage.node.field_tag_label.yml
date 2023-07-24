@@ -1,0 +1,21 @@
+uuid: 88e49d43-6cbf-4b49-ab54-9586c1d4130e
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_tag_label
+field_name: field_tag_label
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 2
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

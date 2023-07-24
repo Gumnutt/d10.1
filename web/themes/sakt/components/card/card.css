@@ -1,10 +1,5 @@
-@layer component, variant;
-@custom-media --sm (min-width: 36rem);
-@custom-media --md (min-width: 48rem);
-@custom-media --lg (min-width: 62rem);
-@custom-media --xl (min-width: 75rem);
-@custom-media --highContrast (prefers-contrast: more);
-@layer component{
+
+@media layer(component) {
 ._card-container{
   height: 100%;
   container: card / inline-size;
@@ -17,7 +12,7 @@
   background: var(--stone-1);
   grid-template-columns: 1fr;
 }
-  @container (min-width: 20rem) {
+@container (min-width: 20rem) {
 .card{
     grid-template-columns: 1fr 2fr
 }
@@ -25,7 +20,7 @@
       height: 100%;
     }
   }
-  .card .card__image{
+.card .card__image{
     display: grid;
     margin:0;
     width: 100%;
@@ -33,20 +28,19 @@
     place-items: center;
     aspect-ratio: 16/9;
   }
-    .card .card__image img{
+.card .card__image img{
       width: var(--size-9);
       -o-object-fit: cover;
          object-fit: cover;
     }
-  .card .card__content{
+.card .card__content{
     padding: var(--size-3);
   }
-    .card .card__content h2{
+.card .card__content h2{
       margin-top: 0;
     }
 }
-@layer variant{
-
+@media layer(variant) {
 .card--centered{
   padding: var(--size-3);
   place-items: center;
@@ -62,7 +56,8 @@
 .card--landscape{
   height: unset;
 }
-  @container (min-width: 15rem) {
+
+@container (min-width: 15rem) {
 
 .card--landscape{
     grid-template-columns: 1fr 2fr
@@ -72,3 +67,4 @@
     }
   }
 }
+@layer component, variant;

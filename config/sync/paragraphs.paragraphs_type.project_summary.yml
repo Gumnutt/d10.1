@@ -1,0 +1,10 @@
+uuid: b8d31685-6a90-42b1-84ef-04d80b545902
+langcode: en
+status: true
+dependencies: {  }
+id: project_summary
+label: 'project summary'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

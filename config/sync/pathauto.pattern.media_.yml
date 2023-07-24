@@ -1,0 +1,14 @@
+uuid: 1b669bdf-014d-4b7a-8a4c-cab9a98440b1
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media_
+label: 'media pattern'
+type: 'canonical_entities:media'
+pattern: '[media:bundle]/[media:uuid]'
+selection_criteria: {  }
+selection_logic: and
+weight: -5
+relationships: {  }

@@ -1,0 +1,32 @@
+uuid: 497d5ea4-bcf8-4e47-b8d7-8c913353ab75
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.media_library
+    - field.field.media.report.field_media_file
+    - image.style.medium
+    - media.type.report
+  module:
+    - image
+id: media.report.media_library
+targetEntityType: media
+bundle: report
+mode: media_library
+content:
+  thumbnail:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: medium
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  field_media_file: true
+  name: true
+  uid: true

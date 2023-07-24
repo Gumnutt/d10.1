@@ -1,0 +1,24 @@
+uuid: f9312e69-7770-4f32-a315-e874e14e8534
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.project_summary.field_media
+    - paragraphs.paragraphs_type.project_summary
+  module:
+    - media_library
+id: paragraph.project_summary.default
+targetEntityType: paragraph
+bundle: project_summary
+mode: default
+content:
+  field_media:
+    type: media_library_widget
+    weight: 0
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

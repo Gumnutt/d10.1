@@ -1,0 +1,13 @@
+uuid: 0e62920d-1fec-4bfe-844c-ff7af24c51fd
+langcode: en
+status: true
+dependencies: {  }
+id: report
+label: Report
+description: ''
+source: file
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_file
+field_map: {  }

@@ -1,0 +1,22 @@
+uuid: 19a8f95d-8652-44d4-94ba-7ad4006cd102
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.project_summary.field_media
+    - paragraphs.paragraphs_type.project_summary
+id: paragraph.project_summary.default
+targetEntityType: paragraph
+bundle: project_summary
+mode: default
+content:
+  field_media:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

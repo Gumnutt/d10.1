@@ -6,6 +6,7 @@ let LiveReloadWebpackPlugin = require('@kooneko/livereload-webpack-plugin');
 mix.webpackConfig({
   plugins: [new LiveReloadWebpackPlugin()]
 });
+
 mix.options({
   postCss: [
     require("postcss-nested"),
@@ -24,3 +25,6 @@ pcssFiles.forEach((pcssFile) => {
 
 // compile global styles
 mix.postCss('src/css/main.css', 'dist');
+
+// compile vue components
+mix.js('src/js/vue.js', 'dist').vue();
