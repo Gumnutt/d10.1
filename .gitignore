@@ -6,3 +6,4 @@ web/themes/contrib/
 web/profiles/contrib/
 /web/sites/*
 !/web/sites/default/
+/web/sites/default/files/*

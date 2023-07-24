@@ -1,0 +1,17 @@
+id: dynamic_entity_import
+label: Import Dynamic Entities
+source:
+  plugin: csv
+  path: "path/to/your.csv"
+  header_row_count: 1
+  keys:
+    - id
+  column_names:
+    0:
+      id: "Unique Id"
+    # Add additional column mappings here.
+destination:
+  plugin: "entity:dynamic_entity"
+process:
+  id: id
+  # Add additional field mappings here.

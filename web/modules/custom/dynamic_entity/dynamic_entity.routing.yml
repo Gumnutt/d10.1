@@ -1,0 +1,7 @@
+dynamic_entity.settings_form:
+  path: "/admin/config/content/dynamic_entity"
+  defaults:
+    _form: '\Drupal\dynamic_entity\Form\DynamicEntitySettingsForm'
+    _title: "Dynamic Entity Settings"
+  requirements:
+    _permission: "administer site configuration"
