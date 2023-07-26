@@ -311,10 +311,11 @@
   --border-radius: 1.25rem;
 }
 
-.grid{
+.grid {
   display: grid;
   padding-block: var(--size-9);
   grid-template-columns: repeat(var(--column-count, 3), 1fr);
   gap: var(--gap, 1rem);
 }
+
 
