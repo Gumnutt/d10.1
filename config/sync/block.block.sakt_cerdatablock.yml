@@ -1,0 +1,22 @@
+uuid: 85f511af-8e12-47b5-9e74-170bbd94e822
+langcode: en
+status: true
+dependencies:
+  module:
+    - cer_data_block
+  theme:
+    - sakt
+id: sakt_cerdatablock
+theme: sakt
+region: content
+weight: 0
+provider: null
+plugin: cer_data_block
+settings:
+  id: cer_data_block
+  label: 'CER Data Block'
+  label_display: visible
+  provider: cer_data_block
+  example: 'Hello world!'
+  dataset_reference: '2'
+visibility: {  }

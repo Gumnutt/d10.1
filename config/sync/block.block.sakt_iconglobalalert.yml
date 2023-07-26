@@ -1,0 +1,24 @@
+uuid: 54f25617-7d7e-4d5d-9098-8971319017c3
+langcode: en
+status: true
+dependencies:
+  module:
+    - icon_global_alert
+  theme:
+    - sakt
+id: sakt_iconglobalalert
+theme: sakt
+region: header
+weight: 0
+provider: null
+plugin: global_alert
+settings:
+  id: global_alert
+  label: 'Icon global alert'
+  label_display: visible
+  provider: icon_global_alert
+  foo: 'Hello world!'
+  alert_content:
+    value: '<p>very cool and normal</p>'
+    format: full_html
+visibility: {  }

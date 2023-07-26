@@ -1,20 +1,19 @@
-uuid: 88e49d43-6cbf-4b49-ab54-9586c1d4130e
+uuid: 73a2101b-7c05-4ef8-b5a0-76a79ca4ecdc
 langcode: en
 status: true
 dependencies:
   module:
+    - data_pipelines
     - node
-id: node.field_tag_label
-field_name: field_tag_label
+id: node.field_data
+field_name: field_data
 entity_type: node
-type: string
+type: entity_reference
 settings:
-  max_length: 255
-  case_sensitive: false
-  is_ascii: false
+  target_type: data_pipelines
 module: core
 locked: false
-cardinality: 2
+cardinality: 1
 translatable: true
 indexes: {  }
 persist_with_no_fields: false

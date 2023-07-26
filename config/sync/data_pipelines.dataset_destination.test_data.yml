@@ -1,0 +1,10 @@
+uuid: d160ae43-48eb-4ad1-8b91-048f7fa3837c
+langcode: en
+status: true
+dependencies: {  }
+id: test_data
+label: 'Test data'
+destination: file_json
+destinationSettings:
+  scheme: public
+  dir: json-data

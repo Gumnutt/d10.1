@@ -1,0 +1,10 @@
+uuid: f73ac12e-7bcf-4c86-a81d-feccce9e2416
+langcode: en
+status: true
+dependencies: {  }
+id: data_bundle
+label: 'Data bundle'
+destination: file_json
+destinationSettings:
+  scheme: public
+  dir: data-bundle

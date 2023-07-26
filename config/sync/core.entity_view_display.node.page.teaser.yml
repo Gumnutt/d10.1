@@ -5,13 +5,9 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.page.body
-    - field.field.node.page.field1
-    - field.field.node.page.field2
-    - field.field.node.page.field3
-    - field.field.node.page.field4
-    - field.field.node.page.field5
     - field.field.node.page.field_components
-    - field.field.node.page.field_tag_label
+    - field.field.node.page.field_data
+    - field.field.node.page.field_dynamo_block
     - node.type.page
   module:
     - text
@@ -35,10 +31,7 @@ content:
     weight: 101
     region: content
 hidden:
-  field1: true
-  field2: true
-  field3: true
-  field4: true
-  field5: true
   field_components: true
-  field_tag_label: true
+  field_data: true
+  field_dynamo_block: true
+  search_api_excerpt: true
