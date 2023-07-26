@@ -17,14 +17,17 @@
     "require": {
         "composer/installers": "^2.0",
         "drupal/admin_toolbar": "^3.4",
+        "drupal/block_field": "^1.0@RC",
         "drupal/core-composer-scaffold": "10.1.0",
         "drupal/core-project-message": "10.1.0",
         "drupal/core-recommended": "10.1.0",
+        "drupal/data_pipelines": "^1.0@alpha",
         "drupal/datafield": "^1.0",
         "drupal/gin": "^3.0@rc",
         "drupal/gin_toolbar": "^1.0@rc",
         "drupal/paragraphs": "^1.15",
         "drupal/pathauto": "^1.11",
+        "drupal/search_api_opensearch": "^2.0@beta",
         "drush/drush": "^12.1"
     },
     "require-dev": {

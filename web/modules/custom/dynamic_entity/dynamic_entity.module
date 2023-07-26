@@ -1,5 +1,0 @@
-<?php
-
-function dynamic_entity_entity_type_build(array &$entity_types) {
-  $entity_types['dynamic_entity']->setClass('Drupal\dynamic_entity\Entity\DynamicEntity');
-}

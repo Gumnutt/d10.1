@@ -16,8 +16,10 @@ function sakt_preprocess_media(&$variables) {
 }
 
 function sakt_preprocess_paragraph__project_summary(&$variables) {
-  $filepath = $variables['elements']['#paragraph']->field_media->entity->field_media_file->entity->getFileUri();
-  $variables['json'] = _sakt_csv_to_json($filepath);
+  if($variables['elements']['#paragraph']->field_media->entity->field_media_file->entity){
+    $filepath = $variables['elements']['#paragraph']->field_media->entity->field_media_file->entity->getFileUri();
+    $variables['json'] = _sakt_csv_to_json($filepath);
+  }
 }
 
 function _sakt_csv_to_json($file){

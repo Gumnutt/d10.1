@@ -1,0 +1,13 @@
+<?php
+
+/**
+ * Implements hook_theme().
+ */
+function cer_data_block_theme($existing, $type, $theme, $path) {
+  $path .= '/templates';
+  return [
+    'cer__data_block' => [
+      'variables' => ['json' => NULL],
+    ],
+  ];
+}

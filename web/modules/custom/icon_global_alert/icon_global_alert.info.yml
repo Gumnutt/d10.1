@@ -1,0 +1,5 @@
+name: Icon global alert
+type: module
+description: Sets a global alert block
+package: Icon
+core_version_requirement: ^9 || ^10

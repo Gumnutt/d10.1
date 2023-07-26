@@ -1,0 +1,16 @@
+<?php
+
+/**
+ * Implements hook_theme().
+ */
+function icon_global_alert_theme($existing, $type, $theme, $path) {
+  $path .= '/templates';
+  return [
+    'icon__global_alert' => [
+      'template' => 'icon--global-alert',
+      'variables' => [
+        'alert_content' => NULL,
+      ],
+    ],
+  ];
+}

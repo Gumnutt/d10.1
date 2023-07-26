@@ -1,0 +1,7 @@
+name: CER Data
+type: module
+description: "Converts a CSV file to JSON."
+package: Custom
+core_version_requirement: ^9 || ^10
+dependencies:
+  - data_pipelines:data_pipelines
