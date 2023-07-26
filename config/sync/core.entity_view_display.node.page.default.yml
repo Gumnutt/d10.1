@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.page.body
+    - field.field.node.page.field_dynamo_block
     - node.type.page
   module:
     - text
@@ -22,7 +23,16 @@ content:
     third_party_settings: {  }
     weight: 100
     region: content
+  field_dynamo_block:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 105
+    region: content
   links:
     weight: 101
     region: content
-hidden: {  }
+hidden:
+  search_api_excerpt: true

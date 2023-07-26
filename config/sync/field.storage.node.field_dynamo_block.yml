@@ -1,0 +1,19 @@
+uuid: f156d220-afc1-46ad-b8d2-190040ec2557
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_dynamo_block
+field_name: field_dynamo_block
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
