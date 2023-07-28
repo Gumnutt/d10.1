@@ -68,486 +68,486 @@ bundle: dataset
 mode: default
 content:
   accus_total_units_issued:
-    type: text_textarea
+    type: number
     weight: 144
     region: content
     settings:
       rows: 5
-      placeholder: ''
-    third_party_settings: {  }
+      placeholder: ""
+    third_party_settings: {}
   carbon_est_area_mapping_file_url:
     type: text_textarea
     weight: 133
     region: content
     settings:
       rows: 5
-      placeholder: ''
-    third_party_settings: {  }
+      placeholder: ""
+    third_party_settings: {}
   carbon_est_area_sup_info:
     type: text_textarea
     weight: 134
     region: content
     settings:
       rows: 5
-      placeholder: ''
-    third_party_settings: {  }
+      placeholder: ""
+    third_party_settings: {}
   carbon_maintenance_obligation:
     type: text_textarea
     weight: 137
     region: content
     settings:
       rows: 5
-      placeholder: ''
-    third_party_settings: {  }
+      placeholder: ""
+    third_party_settings: {}
   conditional_reg_approvals:
     type: text_textarea
     weight: 138
     region: content
     settings:
       rows: 5
-      placeholder: ''
-    third_party_settings: {  }
+      placeholder: ""
+    third_party_settings: {}
   conditional_rel_interest_holders:
     type: text_textarea
     weight: 139
     region: content
     settings:
       rows: 5
-      placeholder: ''
-    third_party_settings: {  }
+      placeholder: ""
+    third_party_settings: {}
   contract_id:
     type: text_textarea
     weight: 143
     region: content
     settings:
       rows: 5
-      placeholder: ''
-    third_party_settings: {  }
+      placeholder: ""
+    third_party_settings: {}
   contracted_on:
     type: text_textarea
     weight: 142
     region: content
     settings:
       rows: 5
-      placeholder: ''
-    third_party_settings: {  }
+      placeholder: ""
+    third_party_settings: {}
   created:
     type: datetime_timestamp
     weight: 10
     region: content
-    settings: {  }
-    third_party_settings: {  }
+    settings: {}
+    third_party_settings: {}
   date_project_registered:
     type: text_textarea
     weight: 128
     region: content
     settings:
       rows: 5
-      placeholder: ''
-    third_party_settings: {  }
+      placeholder: ""
+    third_party_settings: {}
   joint_implementation_project:
     type: text_textarea
     weight: 136
     region: content
     settings:
       rows: 5
-      placeholder: ''
-    third_party_settings: {  }
+      placeholder: ""
+    third_party_settings: {}
   kaccus_total_units_issued:
     type: text_textarea
     weight: 145
     region: content
     settings:
       rows: 5
-      placeholder: ''
-    third_party_settings: {  }
+      placeholder: ""
+    third_party_settings: {}
   kaccus_units_2012_13:
     type: text_textarea
     weight: 146
     region: content
     settings:
       rows: 5
-      placeholder: ''
-    third_party_settings: {  }
+      placeholder: ""
+    third_party_settings: {}
   kaccus_units_2013_14:
     type: text_textarea
     weight: 147
     region: content
     settings:
       rows: 5
-      placeholder: ''
-    third_party_settings: {  }
+      placeholder: ""
+    third_party_settings: {}
   kaccus_units_2014_15:
     type: text_textarea
     weight: 148
     region: content
     settings:
       rows: 5
-      placeholder: ''
-    third_party_settings: {  }
+      placeholder: ""
+    third_party_settings: {}
   kaccus_units_2015_16:
     type: text_textarea
     weight: 149
     region: content
     settings:
       rows: 5
-      placeholder: ''
-    third_party_settings: {  }
+      placeholder: ""
+    third_party_settings: {}
   kaccus_units_2016_17:
     type: text_textarea
     weight: 150
     region: content
     settings:
       rows: 5
-      placeholder: ''
-    third_party_settings: {  }
+      placeholder: ""
+    third_party_settings: {}
   kaccus_units_2017_18:
     type: text_textarea
     weight: 151
     region: content
     settings:
       rows: 5
-      placeholder: ''
-    third_party_settings: {  }
+      placeholder: ""
+    third_party_settings: {}
   kaccus_units_2018_19:
     type: text_textarea
     weight: 152
     region: content
     settings:
       rows: 5
-      placeholder: ''
-    third_party_settings: {  }
+      placeholder: ""
+    third_party_settings: {}
   kaccus_units_2019_20:
     type: text_textarea
     weight: 153
     region: content
     settings:
       rows: 5
-      placeholder: ''
-    third_party_settings: {  }
+      placeholder: ""
+    third_party_settings: {}
   kaccus_units_2020_21:
     type: text_textarea
     weight: 154
     region: content
     settings:
       rows: 5
-      placeholder: ''
-    third_party_settings: {  }
+      placeholder: ""
+    third_party_settings: {}
   kaccus_units_2021_22:
     type: text_textarea
     weight: 155
     region: content
     settings:
       rows: 5
-      placeholder: ''
-    third_party_settings: {  }
+      placeholder: ""
+    third_party_settings: {}
   kaccus_units_2022_23:
     type: text_textarea
     weight: 156
     region: content
     settings:
       rows: 5
-      placeholder: ''
-    third_party_settings: {  }
+      placeholder: ""
+    third_party_settings: {}
   kaccus_units_2023_24:
     type: text_textarea
     weight: 157
     region: content
     settings:
       rows: 5
-      placeholder: ''
-    third_party_settings: {  }
+      placeholder: ""
+    third_party_settings: {}
   kaccus_units_issued_person:
     type: text_textarea
     weight: 158
     region: content
     settings:
       rows: 5
-      placeholder: ''
-    third_party_settings: {  }
+      placeholder: ""
+    third_party_settings: {}
   kaccus_units_relinquished:
     type: text_textarea
     weight: 159
     region: content
     settings:
       rows: 5
-      placeholder: ''
-    third_party_settings: {  }
+      placeholder: ""
+    third_party_settings: {}
   method:
     type: text_textarea
     weight: 124
     region: content
     settings:
       rows: 5
-      placeholder: ''
-    third_party_settings: {  }
+      placeholder: ""
+    third_party_settings: {}
   method_type:
     type: text_textarea
     weight: 126
     region: content
     settings:
       rows: 5
-      placeholder: ''
-    third_party_settings: {  }
+      placeholder: ""
+    third_party_settings: {}
   method_url:
     type: text_textarea
     weight: 125
     region: content
     settings:
       rows: 5
-      placeholder: ''
-    third_party_settings: {  }
+      placeholder: ""
+    third_party_settings: {}
   nkaccus_total_units_issued:
     type: text_textarea
     weight: 160
     region: content
     settings:
       rows: 5
-      placeholder: ''
-    third_party_settings: {  }
+      placeholder: ""
+    third_party_settings: {}
   nkaccus_units_2012_13:
     type: text_textarea
     weight: 161
     region: content
     settings:
       rows: 5
-      placeholder: ''
-    third_party_settings: {  }
+      placeholder: ""
+    third_party_settings: {}
   nkaccus_units_2013_14:
     type: text_textarea
     weight: 162
     region: content
     settings:
       rows: 5
-      placeholder: ''
-    third_party_settings: {  }
+      placeholder: ""
+    third_party_settings: {}
   nkaccus_units_2014_15:
     type: text_textarea
     weight: 163
     region: content
     settings:
       rows: 5
-      placeholder: ''
-    third_party_settings: {  }
+      placeholder: ""
+    third_party_settings: {}
   nkaccus_units_2015_16:
     type: text_textarea
     weight: 164
     region: content
     settings:
       rows: 5
-      placeholder: ''
-    third_party_settings: {  }
+      placeholder: ""
+    third_party_settings: {}
   nkaccus_units_2016_17:
     type: text_textarea
     weight: 165
     region: content
     settings:
       rows: 5
-      placeholder: ''
-    third_party_settings: {  }
+      placeholder: ""
+    third_party_settings: {}
   nkaccus_units_2017_18:
     type: text_textarea
     weight: 166
     region: content
     settings:
       rows: 5
-      placeholder: ''
-    third_party_settings: {  }
+      placeholder: ""
+    third_party_settings: {}
   nkaccus_units_2018_19:
     type: text_textarea
     weight: 167
     region: content
     settings:
       rows: 5
-      placeholder: ''
-    third_party_settings: {  }
+      placeholder: ""
+    third_party_settings: {}
   nkaccus_units_2019_20:
     type: text_textarea
     weight: 168
     region: content
     settings:
       rows: 5
-      placeholder: ''
-    third_party_settings: {  }
+      placeholder: ""
+    third_party_settings: {}
   nkaccus_units_2020_21:
     type: text_textarea
     weight: 169
     region: content
     settings:
       rows: 5
-      placeholder: ''
-    third_party_settings: {  }
+      placeholder: ""
+    third_party_settings: {}
   nkaccus_units_2021_22:
     type: text_textarea
     weight: 170
     region: content
     settings:
       rows: 5
-      placeholder: ''
-    third_party_settings: {  }
+      placeholder: ""
+    third_party_settings: {}
   nkaccus_units_2022_23:
     type: text_textarea
     weight: 171
     region: content
     settings:
       rows: 5
-      placeholder: ''
-    third_party_settings: {  }
+      placeholder: ""
+    third_party_settings: {}
   nkaccus_units_2023_24:
     type: text_textarea
     weight: 172
     region: content
     settings:
       rows: 5
-      placeholder: ''
-    third_party_settings: {  }
+      placeholder: ""
+    third_party_settings: {}
   nkaccus_units_issued_person:
     type: text_textarea
     weight: 173
     region: content
     settings:
       rows: 5
-      placeholder: ''
-    third_party_settings: {  }
+      placeholder: ""
+    third_party_settings: {}
   nkaccus_units_relinquished:
     type: text_textarea
     weight: 174
     region: content
     settings:
       rows: 5
-      placeholder: ''
-    third_party_settings: {  }
+      placeholder: ""
+    third_party_settings: {}
   notes:
     type: text_textarea
     weight: 175
     region: content
     settings:
       rows: 5
-      placeholder: ''
-    third_party_settings: {  }
+      placeholder: ""
+    third_party_settings: {}
   path:
     type: path
     weight: 30
     region: content
-    settings: {  }
-    third_party_settings: {  }
+    settings: {}
+    third_party_settings: {}
   permanence_period:
     type: text_textarea
     weight: 140
     region: content
     settings:
       rows: 5
-      placeholder: ''
-    third_party_settings: {  }
+      placeholder: ""
+    third_party_settings: {}
   permanence_period_finish_date:
     type: text_textarea
     weight: 141
     region: content
     settings:
       rows: 5
-      placeholder: ''
-    third_party_settings: {  }
+      placeholder: ""
+    third_party_settings: {}
   project_area:
     type: text_textarea
     weight: 131
     region: content
     settings:
       rows: 5
-      placeholder: ''
-    third_party_settings: {  }
+      placeholder: ""
+    third_party_settings: {}
   project_description:
     type: text_textarea
     weight: 127
     region: content
     settings:
       rows: 5
-      placeholder: ''
-    third_party_settings: {  }
+      placeholder: ""
+    third_party_settings: {}
   project_id:
     type: text_textarea
     weight: 123
     region: content
     settings:
       rows: 5
-      placeholder: ''
-    third_party_settings: {  }
+      placeholder: ""
+    third_party_settings: {}
   project_location:
     type: text_textarea
     weight: 129
     region: content
     settings:
       rows: 5
-      placeholder: ''
-    third_party_settings: {  }
+      placeholder: ""
+    third_party_settings: {}
   project_location_postcode:
     type: text_textarea
     weight: 130
     region: content
     settings:
       rows: 5
-      placeholder: ''
-    third_party_settings: {  }
+      placeholder: ""
+    third_party_settings: {}
   project_mapping_file_url:
     type: text_textarea
     weight: 132
     region: content
     settings:
       rows: 5
-      placeholder: ''
-    third_party_settings: {  }
+      placeholder: ""
+    third_party_settings: {}
   project_name:
     type: text_textarea
     weight: 122
     region: content
     settings:
       rows: 5
-      placeholder: ''
-    third_party_settings: {  }
+      placeholder: ""
+    third_party_settings: {}
   project_proponent:
     type: text_textarea
     weight: 121
     region: content
     settings:
       rows: 5
-      placeholder: ''
-    third_party_settings: {  }
+      placeholder: ""
+    third_party_settings: {}
   promote:
     type: boolean_checkbox
     weight: 15
     region: content
     settings:
       display_label: true
-    third_party_settings: {  }
+    third_party_settings: {}
   regional_nrm_plan:
     type: text_textarea
     weight: 135
     region: content
     settings:
       rows: 5
-      placeholder: ''
-    third_party_settings: {  }
+      placeholder: ""
+    third_party_settings: {}
   status:
     type: boolean_checkbox
     weight: 120
     region: content
     settings:
       display_label: true
-    third_party_settings: {  }
+    third_party_settings: {}
   sticky:
     type: boolean_checkbox
     weight: 16
     region: content
     settings:
       display_label: true
-    third_party_settings: {  }
+    third_party_settings: {}
   title:
     type: string_textfield
     weight: -5
     region: content
     settings:
       size: 60
-      placeholder: ''
-    third_party_settings: {  }
+      placeholder: ""
+    third_party_settings: {}
   uid:
     type: entity_reference_autocomplete
     weight: 5
@@ -556,6 +556,6 @@ content:
       match_operator: CONTAINS
       match_limit: 10
       size: 60
-      placeholder: ''
-    third_party_settings: {  }
-hidden: {  }
+      placeholder: ""
+    third_party_settings: {}
+hidden: {}

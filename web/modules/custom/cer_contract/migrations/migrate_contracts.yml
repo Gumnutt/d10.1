@@ -1,0 +1,37 @@
+id: migrate_contracts
+migration_tags:
+  - CSV
+label: "CER COntracts migration"
+source:
+  plugin: csv
+  path: modules/custom/cer_contract/sources/contracts.csv
+  header_row_count: 1
+  ids: [Carbon Abatement Contract ID]
+process:
+  type:
+    plugin: default_value
+    default_value: contract
+  title: Carbon Abatement Contract ID
+  carbon_abatement_contract_id: "Carbon Abatement Contract ID"
+  contractor_name: "Contractor name"
+  projects: "Projects"
+  project_id: "Project ID"
+  delivery_obligation: "Delivery obligation"
+  conditions_precedent_contract: "Subject to Conditions Precedent at time of contract"
+  actual_contract_end_date: "Actual contract end date"
+  contract_status: "Status"
+  auction_date: "Auction date"
+  original_volume_of_abatement: "Original volume of abatement committed under contract"
+  current_volume_of_abatement: "Current volume of abatement committed under Optional Delivery contract"
+  volume_of_abatement: "Volume of abatement sold to the Commonwealth under contract"
+  delivery_period_in_years: "Delivery period in years (as set out in the contract)"
+  total_contract_length: "Total contract length including time to fulfil Conditions Precedent (as set out in the contract)"
+  contract_duration_commence_date: "Actual contract duration from commencement date"
+  contract_duration_contract_date: "Actual contract duration from contract date"
+
+destination:
+  plugin: "entity:node"
+  default_bundle: contract
+migration_dependencies:
+  required: {}
+  optional: {}

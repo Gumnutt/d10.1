@@ -1,0 +1,168 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.contract.actual_contract_end_date
+    - field.field.node.contract.auction_date
+    - field.field.node.contract.carbon_abatement_contract_id
+    - field.field.node.contract.conditions_precedent_contract
+    - field.field.node.contract.contract_duration_commence_date
+    - field.field.node.contract.contract_duration_contract_date
+    - field.field.node.contract.contract_status
+    - field.field.node.contract.contractor_name
+    - field.field.node.contract.current_volume_of_abatement
+    - field.field.node.contract.delivery_obligation
+    - field.field.node.contract.delivery_period_in_years
+    - field.field.node.contract.original_volume_of_abatement
+    - field.field.node.contract.project_id
+    - field.field.node.contract.projects
+    - field.field.node.contract.total_contract_length
+    - field.field.node.contract.volume_of_abatement
+    - node.type.contract
+  module:
+    - user
+id: node.contract.default
+targetEntityType: node
+bundle: contract
+mode: default
+content:
+  actual_contract_end_date:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  auction_date:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 107
+    region: content
+  carbon_abatement_contract_id:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  conditions_precedent_contract:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 114
+    region: content
+  contract_duration_commence_date:
+    type: number_decimal
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 115
+    region: content
+  contract_duration_contract_date:
+    type: number_decimal
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 113
+    region: content
+  contract_status:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  contractor_name:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  current_volume_of_abatement:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 109
+    region: content
+  delivery_obligation:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  delivery_period_in_years:
+    type: number_decimal
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 111
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+  original_volume_of_abatement:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 108
+    region: content
+  project_id:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  projects:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  total_contract_length:
+    type: number_decimal
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 112
+    region: content
+  volume_of_abatement:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 110
+    region: content
+hidden: {  }

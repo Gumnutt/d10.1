@@ -1,0 +1,51 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.contract.actual_contract_end_date
+    - field.field.node.contract.auction_date
+    - field.field.node.contract.carbon_abatement_contract_id
+    - field.field.node.contract.conditions_precedent_contract
+    - field.field.node.contract.contract_duration_commence_date
+    - field.field.node.contract.contract_duration_contract_date
+    - field.field.node.contract.contract_status
+    - field.field.node.contract.contractor_name
+    - field.field.node.contract.current_volume_of_abatement
+    - field.field.node.contract.delivery_obligation
+    - field.field.node.contract.delivery_period_in_years
+    - field.field.node.contract.original_volume_of_abatement
+    - field.field.node.contract.project_id
+    - field.field.node.contract.projects
+    - field.field.node.contract.total_contract_length
+    - field.field.node.contract.volume_of_abatement
+    - node.type.contract
+  module:
+    - user
+id: node.contract.teaser
+targetEntityType: node
+bundle: contract
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  actual_contract_end_date: true
+  auction_date: true
+  carbon_abatement_contract_id: true
+  conditions_precedent_contract: true
+  contract_duration_commence_date: true
+  contract_duration_contract_date: true
+  contract_status: true
+  contractor_name: true
+  current_volume_of_abatement: true
+  delivery_obligation: true
+  delivery_period_in_years: true
+  original_volume_of_abatement: true
+  project_id: true
+  projects: true
+  total_contract_length: true
+  volume_of_abatement: true
