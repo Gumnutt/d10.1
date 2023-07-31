@@ -9,18 +9,11 @@ integerfield_labels=("Original volume of abatement committed under contract" "Cu
 decimalfield_keys=("delivery_period_in_years" "total_contract_length" "contract_duration_commence_date" "contract_duration_contract_date")
 decimalfield_labels=("Delivery period in years (as set out in the contract)" "Total contract length including time to fulfil Conditions Precedent (as set out in the contract)" "Actual contract duration from commencement date" "Actual contract duration from contract date")
 
-
-# for index in ${!textfield_keys[*]}; do
-#     echo "Key: ${textfield_keys[$index]}"
-#     echo "Value: ${textfield_labels[$index]}"
-# done
-
 if [[ $# -eq 0 ]] || [[ $1 == "textfields" ]]
 then
     for i in ${!textfield_keys[*]}
     do
       echo lando drush field-create node contract --field-name=${textfield_keys[$i]} --field-label=\"${textfield_labels[$i]}\" --field-type=string_long --field-widget=text_textarea --is-required=0 --cardinality=1 --field-description=
-      # lando drush field-create node contract --field-name=${textfield_keys[$i]} --field-label=\"${textfield_labels[$i]}\" --field-type=string_long --field-widget=text_textarea --cardinality=1
     done
 fi
 

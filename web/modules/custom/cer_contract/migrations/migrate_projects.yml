@@ -1,11 +1,12 @@
-id: alex_csv_migrate_node
-label: CSV Node Migration
-migration_group: default
+id: migrate_projects
+migration_tags:
+  - CSV
+label: "CER Projectss migration"
 source:
   plugin: csv
-  path: modules/custom/alex_csv_migrate/sources/mega.csv
+  path: modules/custom/cer_contract/sources/projects.csv
   header_row_count: 1
-  ids: [ID]
+  ids: [Project ID]
 process:
   type:
     plugin: default_value
@@ -45,6 +46,9 @@ process:
     source: Project Area(s), where the project is an area based offsets project
   project_mapping_file_url:
     plugin: sanitize_process
+    source: Project Mapping File URL
+  field_kml_file:
+    plugin: fetch_kml
     source: Project Mapping File URL
   carbon_est_area_mapping_file_url:
     plugin: sanitize_process
