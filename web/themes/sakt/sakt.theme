@@ -1,8 +1,6 @@
 <?php
 
-use Drupal\Core\Render\Element\Value;
 use Drupal\Core\Url;
-use Drupal\views\Views;
 
 function sakt_preprocess_page(&$variables) {
   if (getenv('LANDO_INFO')) {
@@ -19,8 +17,10 @@ function sakt_preprocess_paragraph(&$variables){
     $display_id = $variables['elements']['field_view'][0]['#display_id'];
     $type = $paragraph->field_type[0]->value;
     $library = $paragraph->field_js_library[0]->value;
+    $displayPath = Url::fromRoute('view.' . $id . "." . $display_id)->toString();
 
-    $url = Url::fromUri('http://drupal.lndo.site/' . $display_id);
+
+    $url = Url::fromUri('http://drupal.lndo.site' . $displayPath);
     // Fetch the JSON data from the JSON:API endpoint.
     $response = \Drupal::httpClient()->get($url->toString());
     // Check if the request was successful (HTTP status code 200).
