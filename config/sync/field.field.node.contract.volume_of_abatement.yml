@@ -1,0 +1,23 @@
+uuid: 7a7b9e77-710d-432e-b554-51ccbc9a0488
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.volume_of_abatement
+    - node.type.contract
+id: node.contract.volume_of_abatement
+field_name: volume_of_abatement
+entity_type: node
+bundle: contract
+label: 'Volume of abatement sold to the Commonwealth under contract'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

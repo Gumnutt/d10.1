@@ -1,0 +1,20 @@
+uuid: 0e7e9c96-9406-47a7-885c-629033c26c74
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.contract_duration_contract_date
+field_name: contract_duration_contract_date
+entity_type: node
+type: decimal
+settings:
+  precision: 10
+  scale: 2
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

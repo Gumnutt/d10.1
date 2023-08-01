@@ -1,4 +1,4 @@
-uuid: 7a8d2d92-3811-4a3d-aaab-920530cb3bcd
+uuid: eac8ca4b-8ab1-4d51-887f-ac12db79abbd
 langcode: en
 status: true
 dependencies:
@@ -9,7 +9,7 @@ id: node.dataset.notes
 field_name: notes
 entity_type: node
 bundle: dataset
-label: notes
+label: Notes
 description: ''
 required: true
 translatable: false

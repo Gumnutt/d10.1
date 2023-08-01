@@ -1,4 +1,4 @@
-uuid: d974011c-079a-48b5-82a2-c6d76a4d0b51
+uuid: e561ccfa-1763-4604-a126-857d80c33010
 langcode: en
 status: true
 dependencies:
@@ -7,9 +7,10 @@ dependencies:
 id: node.nkaccus_units_2013_14
 field_name: nkaccus_units_2013_14
 entity_type: node
-type: string_long
+type: integer
 settings:
-  case_sensitive: false
+  unsigned: false
+  size: normal
 module: core
 locked: false
 cardinality: 1

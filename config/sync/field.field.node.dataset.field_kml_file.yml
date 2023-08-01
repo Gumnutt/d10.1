@@ -1,0 +1,27 @@
+uuid: 9e005e9f-ab6f-432c-8d5b-007a232746c1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_kml_file
+    - node.type.dataset
+  module:
+    - file
+id: node.dataset.field_kml_file
+field_name: field_kml_file
+entity_type: node
+bundle: dataset
+label: 'KML file'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: kml
+  max_filesize: ''
+  description_field: false
+field_type: file

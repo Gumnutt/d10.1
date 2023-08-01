@@ -1,0 +1,20 @@
+uuid: b91c98e4-1653-4bcb-8579-620398cd805d
+langcode: en
+status: true
+dependencies:
+  theme:
+    - sakt
+_core:
+  default_config_hash: CdXfDmRgAvms7EQovxxWPdYi0GitxeRbVtScYK16ZH0
+id: sakt_local_actions
+theme: sakt
+region: content
+weight: -5
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

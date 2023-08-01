@@ -1,4 +1,4 @@
-uuid: b419d7d0-f310-490f-b911-5f6016a3f5c7
+uuid: 1c466d69-1117-4b61-b561-00fce4a7c8f8
 langcode: en
 status: true
 dependencies:
@@ -9,7 +9,7 @@ id: node.dataset.permanence_period_finish_date
 field_name: permanence_period_finish_date
 entity_type: node
 bundle: dataset
-label: permanence_period_finish_date
+label: 'Permanence period finish date'
 description: ''
 required: true
 translatable: false

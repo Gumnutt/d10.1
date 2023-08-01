@@ -1,4 +1,4 @@
-uuid: 71646459-37e6-463d-9a20-ec8863724eaa
+uuid: d5164d84-301e-40b8-a236-55fc8961e9df
 langcode: en
 status: true
 dependencies:
@@ -12,6 +12,7 @@ dependencies:
     - field.field.node.dataset.contract_id
     - field.field.node.dataset.contracted_on
     - field.field.node.dataset.date_project_registered
+    - field.field.node.dataset.field_kml_file
     - field.field.node.dataset.joint_implementation_project
     - field.field.node.dataset.kaccus_total_units_issued
     - field.field.node.dataset.kaccus_units_2012_13
@@ -60,6 +61,7 @@ dependencies:
     - field.field.node.dataset.regional_nrm_plan
     - node.type.dataset
   module:
+    - file
     - path
     - text
 id: node.dataset.default
@@ -68,16 +70,15 @@ bundle: dataset
 mode: default
 content:
   accus_total_units_issued:
-    type: text_textarea
-    weight: 144
+    type: number
+    weight: 146
     region: content
     settings:
-      rows: 5
       placeholder: ''
     third_party_settings: {  }
   carbon_est_area_mapping_file_url:
     type: text_textarea
-    weight: 133
+    weight: 132
     region: content
     settings:
       rows: 5
@@ -85,7 +86,7 @@ content:
     third_party_settings: {  }
   carbon_est_area_sup_info:
     type: text_textarea
-    weight: 134
+    weight: 133
     region: content
     settings:
       rows: 5
@@ -93,7 +94,7 @@ content:
     third_party_settings: {  }
   carbon_maintenance_obligation:
     type: text_textarea
-    weight: 137
+    weight: 136
     region: content
     settings:
       rows: 5
@@ -101,7 +102,7 @@ content:
     third_party_settings: {  }
   conditional_reg_approvals:
     type: text_textarea
-    weight: 138
+    weight: 137
     region: content
     settings:
       rows: 5
@@ -109,7 +110,7 @@ content:
     third_party_settings: {  }
   conditional_rel_interest_holders:
     type: text_textarea
-    weight: 139
+    weight: 138
     region: content
     settings:
       rows: 5
@@ -117,7 +118,7 @@ content:
     third_party_settings: {  }
   contract_id:
     type: text_textarea
-    weight: 143
+    weight: 142
     region: content
     settings:
       rows: 5
@@ -125,7 +126,7 @@ content:
     third_party_settings: {  }
   contracted_on:
     type: text_textarea
-    weight: 142
+    weight: 141
     region: content
     settings:
       rows: 5
@@ -139,143 +140,136 @@ content:
     third_party_settings: {  }
   date_project_registered:
     type: text_textarea
-    weight: 128
+    weight: 127
     region: content
     settings:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
+  field_kml_file:
+    type: file_generic
+    weight: 175
+    region: content
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
   joint_implementation_project:
     type: text_textarea
-    weight: 136
+    weight: 135
     region: content
     settings:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
   kaccus_total_units_issued:
-    type: text_textarea
-    weight: 145
-    region: content
-    settings:
-      rows: 5
-      placeholder: ''
-    third_party_settings: {  }
-  kaccus_units_2012_13:
-    type: text_textarea
-    weight: 146
-    region: content
-    settings:
-      rows: 5
-      placeholder: ''
-    third_party_settings: {  }
-  kaccus_units_2013_14:
-    type: text_textarea
+    type: number
     weight: 147
     region: content
     settings:
-      rows: 5
       placeholder: ''
     third_party_settings: {  }
-  kaccus_units_2014_15:
-    type: text_textarea
+  kaccus_units_2012_13:
+    type: number
     weight: 148
     region: content
     settings:
-      rows: 5
       placeholder: ''
     third_party_settings: {  }
-  kaccus_units_2015_16:
-    type: text_textarea
+  kaccus_units_2013_14:
+    type: number
     weight: 149
     region: content
     settings:
-      rows: 5
       placeholder: ''
     third_party_settings: {  }
-  kaccus_units_2016_17:
-    type: text_textarea
+  kaccus_units_2014_15:
+    type: number
     weight: 150
     region: content
     settings:
-      rows: 5
       placeholder: ''
     third_party_settings: {  }
-  kaccus_units_2017_18:
-    type: text_textarea
+  kaccus_units_2015_16:
+    type: number
     weight: 151
     region: content
     settings:
-      rows: 5
       placeholder: ''
     third_party_settings: {  }
-  kaccus_units_2018_19:
-    type: text_textarea
+  kaccus_units_2016_17:
+    type: number
     weight: 152
     region: content
     settings:
-      rows: 5
       placeholder: ''
     third_party_settings: {  }
-  kaccus_units_2019_20:
-    type: text_textarea
+  kaccus_units_2017_18:
+    type: number
     weight: 153
     region: content
     settings:
-      rows: 5
       placeholder: ''
     third_party_settings: {  }
-  kaccus_units_2020_21:
-    type: text_textarea
+  kaccus_units_2018_19:
+    type: number
     weight: 154
     region: content
     settings:
-      rows: 5
       placeholder: ''
     third_party_settings: {  }
-  kaccus_units_2021_22:
-    type: text_textarea
+  kaccus_units_2019_20:
+    type: number
     weight: 155
     region: content
     settings:
-      rows: 5
       placeholder: ''
     third_party_settings: {  }
-  kaccus_units_2022_23:
-    type: text_textarea
+  kaccus_units_2020_21:
+    type: number
     weight: 156
     region: content
     settings:
-      rows: 5
       placeholder: ''
     third_party_settings: {  }
-  kaccus_units_2023_24:
-    type: text_textarea
+  kaccus_units_2021_22:
+    type: number
     weight: 157
     region: content
     settings:
-      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  kaccus_units_2022_23:
+    type: number
+    weight: 158
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  kaccus_units_2023_24:
+    type: number
+    weight: 159
+    region: content
+    settings:
       placeholder: ''
     third_party_settings: {  }
   kaccus_units_issued_person:
     type: text_textarea
-    weight: 158
+    weight: 143
     region: content
     settings:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
   kaccus_units_relinquished:
-    type: text_textarea
-    weight: 159
+    type: number
+    weight: 160
     region: content
     settings:
-      rows: 5
       placeholder: ''
     third_party_settings: {  }
   method:
     type: text_textarea
-    weight: 124
+    weight: 123
     region: content
     settings:
       rows: 5
@@ -283,7 +277,7 @@ content:
     third_party_settings: {  }
   method_type:
     type: text_textarea
-    weight: 126
+    weight: 125
     region: content
     settings:
       rows: 5
@@ -291,135 +285,121 @@ content:
     third_party_settings: {  }
   method_url:
     type: text_textarea
-    weight: 125
+    weight: 124
     region: content
     settings:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
   nkaccus_total_units_issued:
-    type: text_textarea
-    weight: 160
-    region: content
-    settings:
-      rows: 5
-      placeholder: ''
-    third_party_settings: {  }
-  nkaccus_units_2012_13:
-    type: text_textarea
+    type: number
     weight: 161
     region: content
     settings:
-      rows: 5
       placeholder: ''
     third_party_settings: {  }
-  nkaccus_units_2013_14:
-    type: text_textarea
+  nkaccus_units_2012_13:
+    type: number
     weight: 162
     region: content
     settings:
-      rows: 5
       placeholder: ''
     third_party_settings: {  }
-  nkaccus_units_2014_15:
-    type: text_textarea
+  nkaccus_units_2013_14:
+    type: number
     weight: 163
     region: content
     settings:
-      rows: 5
       placeholder: ''
     third_party_settings: {  }
-  nkaccus_units_2015_16:
-    type: text_textarea
+  nkaccus_units_2014_15:
+    type: number
     weight: 164
     region: content
     settings:
-      rows: 5
       placeholder: ''
     third_party_settings: {  }
-  nkaccus_units_2016_17:
-    type: text_textarea
+  nkaccus_units_2015_16:
+    type: number
     weight: 165
     region: content
     settings:
-      rows: 5
       placeholder: ''
     third_party_settings: {  }
-  nkaccus_units_2017_18:
-    type: text_textarea
+  nkaccus_units_2016_17:
+    type: number
     weight: 166
     region: content
     settings:
-      rows: 5
       placeholder: ''
     third_party_settings: {  }
-  nkaccus_units_2018_19:
-    type: text_textarea
+  nkaccus_units_2017_18:
+    type: number
     weight: 167
     region: content
     settings:
-      rows: 5
       placeholder: ''
     third_party_settings: {  }
-  nkaccus_units_2019_20:
-    type: text_textarea
+  nkaccus_units_2018_19:
+    type: number
     weight: 168
     region: content
     settings:
-      rows: 5
       placeholder: ''
     third_party_settings: {  }
-  nkaccus_units_2020_21:
-    type: text_textarea
+  nkaccus_units_2019_20:
+    type: number
     weight: 169
     region: content
     settings:
-      rows: 5
       placeholder: ''
     third_party_settings: {  }
-  nkaccus_units_2021_22:
-    type: text_textarea
+  nkaccus_units_2020_21:
+    type: number
     weight: 170
     region: content
     settings:
-      rows: 5
       placeholder: ''
     third_party_settings: {  }
-  nkaccus_units_2022_23:
-    type: text_textarea
+  nkaccus_units_2021_22:
+    type: number
     weight: 171
     region: content
     settings:
-      rows: 5
       placeholder: ''
     third_party_settings: {  }
-  nkaccus_units_2023_24:
-    type: text_textarea
+  nkaccus_units_2022_23:
+    type: number
     weight: 172
     region: content
     settings:
-      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  nkaccus_units_2023_24:
+    type: number
+    weight: 173
+    region: content
+    settings:
       placeholder: ''
     third_party_settings: {  }
   nkaccus_units_issued_person:
     type: text_textarea
-    weight: 173
+    weight: 144
     region: content
     settings:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
   nkaccus_units_relinquished:
-    type: text_textarea
+    type: number
     weight: 174
     region: content
     settings:
-      rows: 5
       placeholder: ''
     third_party_settings: {  }
   notes:
     type: text_textarea
-    weight: 175
+    weight: 145
     region: content
     settings:
       rows: 5
@@ -433,7 +413,7 @@ content:
     third_party_settings: {  }
   permanence_period:
     type: text_textarea
-    weight: 140
+    weight: 139
     region: content
     settings:
       rows: 5
@@ -441,7 +421,7 @@ content:
     third_party_settings: {  }
   permanence_period_finish_date:
     type: text_textarea
-    weight: 141
+    weight: 140
     region: content
     settings:
       rows: 5
@@ -449,7 +429,7 @@ content:
     third_party_settings: {  }
   project_area:
     type: text_textarea
-    weight: 131
+    weight: 130
     region: content
     settings:
       rows: 5
@@ -457,7 +437,7 @@ content:
     third_party_settings: {  }
   project_description:
     type: text_textarea
-    weight: 127
+    weight: 126
     region: content
     settings:
       rows: 5
@@ -473,7 +453,7 @@ content:
     third_party_settings: {  }
   project_location:
     type: text_textarea
-    weight: 129
+    weight: 128
     region: content
     settings:
       rows: 5
@@ -481,7 +461,7 @@ content:
     third_party_settings: {  }
   project_location_postcode:
     type: text_textarea
-    weight: 130
+    weight: 129
     region: content
     settings:
       rows: 5
@@ -489,7 +469,7 @@ content:
     third_party_settings: {  }
   project_mapping_file_url:
     type: text_textarea
-    weight: 132
+    weight: 131
     region: content
     settings:
       rows: 5
@@ -520,7 +500,7 @@ content:
     third_party_settings: {  }
   regional_nrm_plan:
     type: text_textarea
-    weight: 135
+    weight: 134
     region: content
     settings:
       rows: 5

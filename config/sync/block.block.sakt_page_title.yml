@@ -1,15 +1,15 @@
-uuid: ea45b0f2-c13b-44a0-8786-b3a54ce2b225
+uuid: 41e83950-bc3b-4a92-9be1-f4bbde0b3b15
 langcode: en
 status: true
 dependencies:
   theme:
     - sakt
 _core:
-  default_config_hash: 6aOgWsNTXjqrDm98TXSAjP6qd2nCijD1xw45MrnbK-Y
+  default_config_hash: fNwDdW063tk_ktzSWzZVeQS9wzvLooVO280BQ9WrsIs
 id: sakt_page_title
 theme: sakt
-region: sidebar_first
-weight: -5
+region: header
+weight: -30
 provider: null
 plugin: page_title_block
 settings:

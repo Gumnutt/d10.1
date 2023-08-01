@@ -1,4 +1,4 @@
-uuid: 47284d0b-5881-43a2-a69e-e005a4d4dfdd
+uuid: 116abfa4-96c5-47bd-a6a9-c2e4b82cdbfa
 langcode: en
 status: true
 dependencies:
@@ -9,7 +9,7 @@ id: node.dataset.date_project_registered
 field_name: date_project_registered
 entity_type: node
 bundle: dataset
-label: date_project_registered
+label: 'Date project registered'
 description: ''
 required: true
 translatable: false

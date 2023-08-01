@@ -1,0 +1,105 @@
+id: migrate_projects
+migration_tags:
+  - CSV
+label: "CER Projectss migration"
+source:
+  plugin: csv
+  path: modules/custom/cer_contract/sources/projects.csv
+  header_row_count: 1
+  ids: [Project ID]
+process:
+  type:
+    plugin: default_value
+    default_value: dataset
+  title:
+    plugin: sanitize_process
+    source: Project Proponent
+  project_proponent:
+    plugin: sanitize_process
+    source: Project Proponent
+  project_name:
+    plugin: sanitize_process
+    source: Project Name
+  project_id:
+    plugin: sanitize_process
+    source: Project ID
+  method:
+    plugin: sanitize_process
+    source: Method
+  method_url:
+    plugin: sanitize_process
+    source: Method URL
+  project_description:
+    plugin: sanitize_process
+    source: Project Description
+  date_project_registered:
+    plugin: sanitize_process
+    source: Date Project Registered
+  project_location:
+    plugin: sanitize_process
+    source: Project location
+  project_location_postcode:
+    plugin: sanitize_process
+    source: Project location (postcode)
+  project_area:
+    plugin: sanitize_process
+    source: Project Area(s), where the project is an area based offsets project
+  project_mapping_file_url:
+    plugin: sanitize_process
+    source: Project Mapping File URL
+  field_kml_file:
+    plugin: fetch_kml
+    source: Project Mapping File URL
+  carbon_est_area_mapping_file_url:
+    plugin: sanitize_process
+    source: Carbon Estimation Area mapping file URL
+  carbon_est_area_sup_info:
+    plugin: sanitize_process
+    source: Carbon Estimation Area Supplementary information
+  regional_nrm_plan:
+    plugin: sanitize_process
+    source: If the area-based project is covered by a regional natural resource management plan, is it consistent with that plan?
+  joint_implementation_project:
+    plugin: sanitize_process
+    source: Joint Implementation project
+  carbon_maintenance_obligation:
+    plugin: sanitize_process
+    source: Is the project area or project areas subject to a Carbon Maintenance Obligation (CMO)?
+  conditional_reg_approvals:
+    plugin: sanitize_process
+    source: Conditional upon all regulatory approvals being obtained
+  conditional_rel_interest_holders:
+    plugin: sanitize_process
+    source: Conditional upon the written consent of relevant interest holders
+  contract_id:
+    plugin: sanitize_process
+    source: contract_id
+  accus_total_units_issued:
+    plugin: sanitize_process
+    source: ACCUs Total units issued
+  kaccus_total_units_issued:
+    plugin: sanitize_process
+    source: KACCUs Total units issued
+  kaccus_units_issued_person:
+    plugin: sanitize_process
+    source: Name of person/s to whom the KACCUs issued
+  kaccus_units_relinquished:
+    plugin: sanitize_process
+    source: Total Number of KACCUs units relinquished
+  nkaccus_total_units_issued:
+    plugin: sanitize_process
+    source: NKACCUs Total units issued
+  nkaccus_units_issued_person:
+    plugin: sanitize_process
+    source: Name of person/s to whom the NKACCUs issued
+  nkaccus_units_relinquished:
+    plugin: sanitize_process
+    source: Total Number of NKACCUs units relinquished
+  notes:
+    plugin: sanitize_process
+    source: Notes
+
+destination:
+  #this section defines the destination entity type and bundle.
+  plugin: "entity:node"
+  default_bundle: dataset

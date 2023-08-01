@@ -1,0 +1,19 @@
+uuid: 2fe642d9-2df3-4dad-932f-6ebc0e6f9870
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.contractor_name
+    - node.type.contract
+id: node.contract.contractor_name
+field_name: contractor_name
+entity_type: node
+bundle: contract
+label: 'Contractor name'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

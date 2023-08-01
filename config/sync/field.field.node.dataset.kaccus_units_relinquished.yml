@@ -1,4 +1,4 @@
-uuid: 3c19bb1f-0079-4a4d-ad1a-ec616322d119
+uuid: 534ed0e8-3d13-474c-ab4a-175cbaccfdfb
 langcode: en
 status: true
 dependencies:
@@ -9,11 +9,15 @@ id: node.dataset.kaccus_units_relinquished
 field_name: kaccus_units_relinquished
 entity_type: node
 bundle: dataset
-label: kaccus_units_relinquished
+label: 'KACCUs relinquished'
 description: ''
 required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''
-settings: {  }
-field_type: string_long
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

@@ -1,0 +1,23 @@
+uuid: 6c2c6cd7-f3e4-4cb1-9a75-e5283f84c1b2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.current_volume_of_abatement
+    - node.type.contract
+id: node.contract.current_volume_of_abatement
+field_name: current_volume_of_abatement
+entity_type: node
+bundle: contract
+label: 'Current volume of abatement committed under Optional Delivery contract'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

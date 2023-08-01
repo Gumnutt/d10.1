@@ -1,4 +1,4 @@
-uuid: 9b5473ec-a922-445f-b5e9-e78ed2bb2560
+uuid: 69c2fb06-16de-4221-ad4b-9461e13b7d00
 langcode: en
 status: true
 dependencies:
@@ -9,7 +9,7 @@ id: node.dataset.project_location_postcode
 field_name: project_location_postcode
 entity_type: node
 bundle: dataset
-label: project_location_postcode
+label: 'Project location postcode'
 description: ''
 required: true
 translatable: false

@@ -1,0 +1,25 @@
+uuid: 495984ef-f841-45d9-a5ed-076a61192ea2
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.projects_relationships
+  module:
+    - views
+  theme:
+    - sakt
+id: sakt_views_block__projects_relationships_block_1
+theme: sakt
+region: content
+weight: -2
+provider: null
+plugin: 'views_block:projects_relationships-block_1'
+settings:
+  id: 'views_block:projects_relationships-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility: {  }
