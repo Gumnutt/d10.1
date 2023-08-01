@@ -28,6 +28,10 @@ pcssFiles.forEach((pcssFile) => {
 // compile global styles
 mix.postCss('src/css/main.css', 'dist');
 
+// compile vue components
+mix.js('src/vue/vueapp.js', 'dist').vue();
+mix.js('src/vue/vueHigh.js', 'dist').vue();
+
 // mix.browserSync({
 //   proxy: 'https://drupal.lndo.site',
 //   files: ["components/**/css/*.css",],

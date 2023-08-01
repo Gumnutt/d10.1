@@ -7,6 +7,14 @@ global-css:
     theme:
       dist/main.css: {}
 
+vue-chart:
+  js:
+    dist/vueapp.js: { attributes: { type: "module" } }
+
+vue-highcharts:
+  js:
+    dist/vueHigh.js: { attributes: { type: "module" } }
+
 live-reload:
   js:
-    http://localhost:35729/livereload.js: {type: external}
+    http://localhost:35729/livereload.js: { type: external }

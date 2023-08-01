@@ -25,6 +25,8 @@
         "drupal/datafield": "^1.0",
         "drupal/gin": "^3.0@rc",
         "drupal/gin_toolbar": "^1.0@rc",
+        "drupal/jsonapi_extras": "^3.23",
+        "drupal/jsonapi_views": "^1.1",
         "drupal/migrate_plus": "^6.0",
         "drupal/migrate_source_csv": "^3.5",
         "drupal/migrate_tools": "^6.0",
@@ -32,6 +34,8 @@
         "drupal/pathauto": "^1.11",
         "drupal/search_api_opensearch": "^2.0@beta",
         "drupal/token": "^1.12",
+        "drupal/viewfield": "^3.0@beta",
+        "drupal/views_json_source": "^1.4",
         "drush/drush": "^12.1"
     },
     "require-dev": {

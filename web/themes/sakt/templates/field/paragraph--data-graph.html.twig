@@ -1,0 +1,16 @@
+<h1>Name: {{ g_name }} / {{ g_id }}<br>Display MName: {{ g_display_id }}<br>Library: {{ g_library }}<br>Type: {{ g_type }}</h1>
+<p>JSON:<br>{{ g_json }}</p>
+
+{% if g_library == 'chartjs' %}
+  <div id="vue-app">
+    <vue-app name="{{ g_name }}" id="{{ g_id }}" data="{{ g_json }}" type="{{ g_type }}"></vue-app>
+  </div>
+  {{ attach_library('sakt/vue-chart') }}
+{% else %}
+  <div id="app">
+    <app name="{{ g_name }}" id="{{ g_id }}" data="{{ g_json }}" type="{{ g_type }}"></app>
+  </div>
+  {{ attach_library('sakt/vue-highcharts') }}
+{% endif %}
+
+

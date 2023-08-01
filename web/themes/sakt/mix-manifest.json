@@ -1,6 +1,7 @@
 {
-    "/dist/vue.js": "/dist/vue.js",
+    "/dist/vueapp.js": "/dist/vueapp.js",
+    "/dist/vueHigh.js": "/dist/vueHigh.js",
     "/dist/main.css": "/dist/main.css",
-    "/components/card/card.css": "/components/card/card.css",
-    "/components/button/button.css": "/components/button/button.css"
+    "/components/button/button.css": "/components/button/button.css",
+    "/components/card/card.css": "/components/card/card.css"
 }

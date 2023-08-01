@@ -1,7 +1,48 @@
 <?php
 
+use Drupal\Core\Render\Element\Value;
+use Drupal\Core\Url;
+use Drupal\views\Views;
+
 function sakt_preprocess_page(&$variables) {
   if (getenv('LANDO_INFO')) {
     $variables['#attached']['library'][] = 'sakt/live-reload';
   }
+}
+
+function sakt_preprocess_paragraph(&$variables){
+  $paragraph = $variables['paragraph'];
+
+  if ($paragraph->bundle() == 'data_graph') {
+    $name = $variables['elements']['field_view_data'][0]['#title'];
+    $id = $paragraph->field_view_data[0]->target_id;
+    $display_id = $variables['elements']['field_view'][0]['#display_id'];
+    $type = $paragraph->field_type[0]->value;
+    $library = $paragraph->field_js_library[0]->value;
+
+    $url = Url::fromUri('http://drupal.lndo.site/' . $display_id);
+    // Fetch the JSON data from the JSON:API endpoint.
+    $response = \Drupal::httpClient()->get($url->toString());
+    // Check if the request was successful (HTTP status code 200).
+    if ($response->getStatusCode() === 200) {
+      // Get the JSON response as a string.
+      $jsonString = json_encode($response->getBody()->getContents());
+      // Convert the JSON string to an associative array using Drupal's JSON decoder.
+      $jsonData = json_decode($jsonString, TRUE);
+
+      $variables['g_json'] = $jsonData;
+      $variables['g_name'] = $name;
+      $variables['g_id'] = $id;
+      $variables['g_type'] = $type;
+      $variables['g_library'] = $library;
+      $variables['g_display_id'] = $display_id;
+    }
+
+    // $variables['#attached']['drupalSettings']['vueapp'] = [
+    //   'name' => $name,
+    //   'type' => $type,
+    //   'data' => $jsonData
+    // ];
+  }
+
 }
