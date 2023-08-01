@@ -1,4 +1,4 @@
-uuid: 395a9791-048c-409e-bca2-dcf48b849399
+uuid: 2085d84e-47f8-4d82-839a-8f468152e7c7
 langcode: en
 status: true
 dependencies:
@@ -7,9 +7,10 @@ dependencies:
 id: node.kaccus_units_2016_17
 field_name: kaccus_units_2016_17
 entity_type: node
-type: string_long
+type: integer
 settings:
-  case_sensitive: false
+  unsigned: false
+  size: normal
 module: core
 locked: false
 cardinality: 1

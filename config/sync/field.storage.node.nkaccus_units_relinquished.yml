@@ -1,4 +1,4 @@
-uuid: 89dc2b58-cd77-4e07-b281-75f368a1d5c5
+uuid: f579b626-de8b-4020-9a86-8f24cba1c82d
 langcode: en
 status: true
 dependencies:
@@ -7,9 +7,10 @@ dependencies:
 id: node.nkaccus_units_relinquished
 field_name: nkaccus_units_relinquished
 entity_type: node
-type: string_long
+type: integer
 settings:
-  case_sensitive: false
+  unsigned: false
+  size: normal
 module: core
 locked: false
 cardinality: 1

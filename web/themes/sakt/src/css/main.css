@@ -3,4 +3,6 @@
 @import "./_base.css";
 @import "./_grid.css";
 
-@import "./components/table.css";
+@import "./generic/_fields.css";
+
+@import "./components/_table.css";

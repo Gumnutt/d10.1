@@ -1,4 +1,4 @@
-uuid: 5890c724-c7d9-4966-ad38-f33bceae4cd1
+uuid: 7905a515-e9a4-4550-ab4f-fd4a41327371
 langcode: en
 status: true
 dependencies:
@@ -7,7 +7,7 @@ dependencies:
   theme:
     - sakt
 _core:
-  default_config_hash: VhBzWb7lMRtIOg9G7VSw_0uopi-7zXeHq4vXqqV1HFE
+  default_config_hash: NjcxOBrPOiK5-38t56DwFBDVY4yer7YSlbRWXFuHe7A
 id: sakt_breadcrumbs
 theme: sakt
 region: breadcrumb

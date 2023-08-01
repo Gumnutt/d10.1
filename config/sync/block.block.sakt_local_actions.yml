@@ -1,14 +1,14 @@
-uuid: c1630fa3-eabf-4ccb-86db-42689bf48fbc
+uuid: b91c98e4-1653-4bcb-8579-620398cd805d
 langcode: en
 status: true
 dependencies:
   theme:
     - sakt
 _core:
-  default_config_hash: Q9_2whdOj1YIomfvsIfopROW4FT_X5pY0DjdOiOaQ5U
-id: sakt_primary_admin_actions
+  default_config_hash: CdXfDmRgAvms7EQovxxWPdYi0GitxeRbVtScYK16ZH0
+id: sakt_local_actions
 theme: sakt
-region: highlighted
+region: content
 weight: -5
 provider: null
 plugin: local_actions_block

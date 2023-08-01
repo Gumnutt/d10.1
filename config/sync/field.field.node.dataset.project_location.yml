@@ -1,4 +1,4 @@
-uuid: 0e6dde46-2d79-4ba3-b7a9-e6c5e02fd12a
+uuid: c8e92441-590b-4b8d-8d21-3b0d264418c5
 langcode: en
 status: true
 dependencies:
@@ -9,7 +9,7 @@ id: node.dataset.project_location
 field_name: project_location
 entity_type: node
 bundle: dataset
-label: project_location
+label: 'Project location'
 description: ''
 required: true
 translatable: false

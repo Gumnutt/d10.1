@@ -1,4 +1,4 @@
-uuid: 9701d632-a632-466f-8f4e-c8cb1abf6a79
+uuid: a2f85df5-917f-475c-8810-53803cb6f063
 langcode: en
 status: true
 dependencies:
@@ -9,7 +9,7 @@ id: node.dataset.project_area
 field_name: project_area
 entity_type: node
 bundle: dataset
-label: project_area
+label: 'Project area'
 description: ''
 required: true
 translatable: false

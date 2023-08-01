@@ -1,4 +1,4 @@
-uuid: 8c6be0b4-b05d-44f2-932f-897bac50f8b9
+uuid: 30bea310-c3db-489f-9ce1-8ebf2c252c62
 langcode: en
 status: true
 dependencies:
@@ -9,11 +9,15 @@ id: node.dataset.nkaccus_units_relinquished
 field_name: nkaccus_units_relinquished
 entity_type: node
 bundle: dataset
-label: nkaccus_units_relinquished
+label: 'NKACCUs relinquished'
 description: ''
 required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''
-settings: {  }
-field_type: string_long
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

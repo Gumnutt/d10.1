@@ -1,4 +1,4 @@
-uuid: 4738110d-21a8-4a56-bff1-74de45680590
+uuid: a8850975-9305-4edd-9789-9106c342f637
 langcode: en
 status: true
 dependencies:
@@ -7,11 +7,11 @@ dependencies:
   theme:
     - sakt
 _core:
-  default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
+  default_config_hash: a0Yyx1GeyKarZ4T_yXQBR_ZFKnXiFLtxAb6gWLd8nr0
 id: sakt_content
 theme: sakt
 region: content
-weight: 0
+weight: -4
 provider: null
 plugin: system_main_block
 settings:

@@ -1,4 +1,4 @@
-uuid: 00df9267-7c83-43b3-8789-cac944d21b7c
+uuid: 435e1377-babb-4333-bb1f-954545c46910
 langcode: en
 status: true
 dependencies:
@@ -9,11 +9,15 @@ id: node.dataset.kaccus_total_units_issued
 field_name: kaccus_total_units_issued
 entity_type: node
 bundle: dataset
-label: kaccus_total_units_issued
+label: 'Total KACCUs issued'
 description: ''
 required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''
-settings: {  }
-field_type: string_long
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

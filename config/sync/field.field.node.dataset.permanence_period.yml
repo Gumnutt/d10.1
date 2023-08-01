@@ -1,4 +1,4 @@
-uuid: a8bf9599-2ffa-42ff-aee8-e5a16727a5ad
+uuid: 70ebe5af-0bce-4787-9b3e-487857b45c96
 langcode: en
 status: true
 dependencies:
@@ -9,7 +9,7 @@ id: node.dataset.permanence_period
 field_name: permanence_period
 entity_type: node
 bundle: dataset
-label: permanence_period
+label: 'Permanence period'
 description: ''
 required: true
 translatable: false

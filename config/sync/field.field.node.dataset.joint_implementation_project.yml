@@ -1,4 +1,4 @@
-uuid: 63c533fb-bb3c-4ce5-b701-986625a8858a
+uuid: 3df9484d-368f-4759-b608-6b72f3a2c5ce
 langcode: en
 status: true
 dependencies:
@@ -9,7 +9,7 @@ id: node.dataset.joint_implementation_project
 field_name: joint_implementation_project
 entity_type: node
 bundle: dataset
-label: joint_implementation_project
+label: 'Joint implementation project'
 description: ''
 required: true
 translatable: false

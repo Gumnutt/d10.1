@@ -1,4 +1,4 @@
-uuid: a59bc678-a170-481a-8192-30361c76b582
+uuid: a776e7e0-7170-42d7-ad8b-4c2e6e092cff
 langcode: en
 status: true
 dependencies:
@@ -9,11 +9,15 @@ id: node.dataset.accus_total_units_issued
 field_name: accus_total_units_issued
 entity_type: node
 bundle: dataset
-label: accus_total_units_issued
+label: 'Total ACCUs issued'
 description: ''
 required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''
-settings: {  }
-field_type: string_long
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

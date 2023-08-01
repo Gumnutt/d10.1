@@ -1,4 +1,4 @@
-uuid: 1247d475-86b2-45b5-aa33-c53b7c17df7b
+uuid: 7ffc5272-d66a-4f89-901a-6d0008a6e50e
 langcode: en
 status: true
 dependencies:
@@ -15,5 +15,9 @@ required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''
-settings: {  }
-field_type: string_long
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

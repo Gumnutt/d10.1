@@ -1,4 +1,4 @@
-uuid: 3bfd9912-1332-41f4-81b9-ecdd6bbcbe0a
+uuid: a4c7e550-34b1-478f-891a-470f71771a0f
 langcode: en
 status: true
 dependencies:
@@ -7,10 +7,10 @@ dependencies:
   theme:
     - sakt
 _core:
-  default_config_hash: VfPFqqxfkomud5CO8DUijw85QIl9GIxh_nIxLOYESxg
+  default_config_hash: jccFSSVqV0WCDb6NtML1VWAWTtDbZ-zn5YgTRMgMrIM
 id: sakt_help
 theme: sakt
-region: sidebar_first
+region: help
 weight: 0
 provider: null
 plugin: help_block

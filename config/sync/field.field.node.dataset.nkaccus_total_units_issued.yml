@@ -1,4 +1,4 @@
-uuid: 54afdade-e230-40ed-8540-10da861cd564
+uuid: 29286cd1-ebb5-49d3-99c9-78f077857d55
 langcode: en
 status: true
 dependencies:
@@ -9,11 +9,15 @@ id: node.dataset.nkaccus_total_units_issued
 field_name: nkaccus_total_units_issued
 entity_type: node
 bundle: dataset
-label: nkaccus_total_units_issued
+label: 'Total NKACCUs issued'
 description: ''
 required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''
-settings: {  }
-field_type: string_long
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

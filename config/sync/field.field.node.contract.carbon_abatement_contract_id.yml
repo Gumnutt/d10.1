@@ -1,0 +1,19 @@
+uuid: 2badea1d-26dd-4688-8e12-366520ddb146
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.carbon_abatement_contract_id
+    - node.type.contract
+id: node.contract.carbon_abatement_contract_id
+field_name: carbon_abatement_contract_id
+entity_type: node
+bundle: contract
+label: 'Carbon Abatement Contract ID'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

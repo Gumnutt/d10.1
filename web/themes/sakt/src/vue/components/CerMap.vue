@@ -43,7 +43,7 @@ export default {
 
       // fit the map to the geojson layer
       this.map.fitBounds(layer.getBounds())
-      this.map.setZoom(11)
+      this.map.setZoom(10)
     },
   },
   computed: {
@@ -61,7 +61,7 @@ export default {
 
 <style scoped>
 #mapContainer {
-  width: 32rem;
-  aspect-ratio: 1;
+  width: 100%;
+  aspect-ratio: 16/9;
 }
 </style>
