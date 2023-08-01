@@ -3,7 +3,7 @@
 
 {% if g_library == 'chartjs' %}
   <div id="vue-app">
-    <vue-app name="{{ g_name }}" id="{{ g_id }}" data="{{ g_json }}" type="{{ g_type }}" types="{{g_all_types}}"></vue-app>
+    <vue-app name="{{ g_name }}" id="{{ g_id }}" data="{{ g_json }}" type="{{ g_type }}" types="{{ g_all_types }}" displays="{{ g_all_displays }}"></vue-app>
   </div>
   {{ attach_library('sakt/vue-chart') }}
 {% else %}

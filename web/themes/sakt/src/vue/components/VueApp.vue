@@ -1,16 +1,46 @@
 <template>
   <div>
     <label for="componentSelect">Select a component:</label>
-    <select id="componentSelect" v-model="selectedComponent">
+    <select id="componentSelect" v-model="selectedComponent" @input="">
       <option v-for="(type, index) in getTypes" :key="type" :value="type">
         {{ type }}
       </option>
     </select>
-    <div v-if="selectedComponent">
-      <component :is="selectedComponent" :data="structuredObj" :options="graphOptions" :key="name" :style="customStyles"/>
+
+    <br>
+
+    <label for="dataSelect">Select a dataset:</label>
+    <select id="dataSelect" v-model="selectedData" @input="updateComponent">
+      <option v-for="(display, index) in getDisplays" :key="display" :value="display" >
+        {{ display }}
+      </option>
+    </select>
+
+    <!-- <Transition name="fade" mode="out-in">
+      <h1  v-if="selectedComponent" :key="selectedComponent"> fade </h1>
+    </Transition> -->
+    <Transition name="fade">
+      <div v-if="chosenComponent" :key="chosenComponent">
+        <h1>{{ chosenComponent }}</h1>
+        <div>
+          <component :is="chosenComponent" :data="structuredObj" :options="graphOptions" :key="name" :style="customStyles"/>
+        </div>
+      </div>
+    </Transition>
     </div>
-  </div>
 </template>
+
+<style scoped>
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 1s ease;
+}
+
+.fade-enter-from,
+.fade-leave-active {
+  opacity: 0;
+}
+</style>
 
 <script>
 import { reactive } from 'vue';
@@ -46,6 +76,8 @@ export default {
   data() {
     return {
       selectedComponent: this.type,
+      selectedData: this.name,
+      chosenComponent: this.type,
     };
   },
   props: {
@@ -68,6 +100,10 @@ export default {
     types: {
       type: String,
       default: ''
+    },
+    displays: {
+      type: String,
+      default: ''
     }
   },
   components: {
@@ -80,6 +116,9 @@ export default {
   computed:{
     getTypes(){
       return JSON.parse(this.types);
+    },
+    getDisplays(){
+      return JSON.parse(this.displays);
     },
     getIdIndex(){
       return this.getTypes.indexOf(this.type)
@@ -135,7 +174,12 @@ export default {
     }
   },
   methods: {
-
+    updateComponent() {
+      setTimeout(() => {
+        this.chosenComponent = this.getTypes[this.getIdIndex];
+      }, 1000);
+      console.log(this.chosenComponent );
+    }
   },
 }
 </script>

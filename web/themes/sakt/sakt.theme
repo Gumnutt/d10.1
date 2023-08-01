@@ -20,6 +20,17 @@ function sakt_preprocess_paragraph(&$variables){
     $library = $paragraph->field_js_library[0]->value;
     $displayPath = Url::fromRoute('view.' . $id . "." . $display_id)->toString();
 
+    $allDisplays = [];
+    $view = \Drupal\views\Entity\View::load($id);
+    if ($view) {
+        $displays = $view->get('display');
+        foreach ($displays as $display_id => $display) {
+            if ($display['display_plugin'] == 'rest_export') {
+                $allDisplays[$display_id] = $display['display_title'];
+            }
+        }
+    }
+
     $url = Url::fromUri('http://drupal.lndo.site' . $displayPath);
     // Fetch the JSON data from the JSON:API endpoint.
     $response = \Drupal::httpClient()->get($url->toString());
@@ -38,6 +49,7 @@ function sakt_preprocess_paragraph(&$variables){
       $variables['g_display_id'] = $display_id;
       $variables['g_display_path'] = $displayPath;
       $variables['g_all_types'] = $allTypes;
+      $variables['g_all_displays'] = json_encode($allDisplays);
     }
 
     // $variables['#attached']['drupalSettings']['vueapp'] = [
