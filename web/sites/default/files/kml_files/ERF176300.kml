@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Folder><name>ERF176300</name>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>116.146173896092,-31.6951829390802,0 116.146163628349,-31.6975020165174,0 116.146153346232,-31.6998210933114,0 116.149717512733,-31.6998222244726,0 116.153281680132,-31.6998232578036,0 116.155200380968,-31.6998237752334,0 116.157324132149,-31.6998242918989,0 116.157600945308,-31.6988197771487,0 116.158137078735,-31.6968740865373,0 116.157302366867,-31.6951901750517,0 116.152530688555,-31.695187200255,0 116.147759026412,-31.6951840282594,0 116.146173896092,-31.6951829390802,0</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+</Folder>
+</Document></kml>

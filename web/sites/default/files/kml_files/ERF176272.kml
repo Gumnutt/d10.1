@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Folder><name>ERF176272</name>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>140.6996997,-36.3276055 140.6996752,-36.3233338 140.6912564,-36.3241996 140.6913441,-36.3297952 140.6941543,-36.3298121 140.6975072,-36.3298394 140.7003711,-36.3298643 140.6996997,-36.3276055</coordinates></LinearRing></outerBoundaryIs></Polygon><Polygon><outerBoundaryIs><LinearRing><coordinates>140.7146361,-36.3278327 140.7157136,-36.3273608 140.7156768,-36.3220234 140.713778,-36.3218481 140.7081908,-36.3224366 140.6999011,-36.3233066 140.6999269,-36.327627 140.700256,-36.3287273 140.7082594,-36.3283619 140.7082795,-36.3300919 140.7063247,-36.3315899 140.7082726,-36.3329191 140.7146361,-36.3278327</coordinates></LinearRing></outerBoundaryIs></Polygon><Polygon><outerBoundaryIs><LinearRing><coordinates>140.7081815,-36.3222506 140.7081128,-36.3127634 140.7008893,-36.312791 140.699819,-36.316087 140.6998811,-36.323117 140.7081815,-36.3222506</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+</Folder>
+</Document></kml>

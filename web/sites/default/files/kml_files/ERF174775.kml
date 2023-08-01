@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Folder><name>ERF174775</name>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>143.6440661,-37.248718 143.6485242,-37.2489646 143.6483239,-37.2500013 143.6508761,-37.2493133 143.6531851,-37.2475237 143.644506,-37.2464231 143.6440661,-37.248718</coordinates></LinearRing></outerBoundaryIs></Polygon><Polygon><outerBoundaryIs><LinearRing><coordinates>143.6454224,-37.2650136 143.6465883,-37.2651595 143.6507935,-37.2568274 143.6471187,-37.2562373 143.6454224,-37.2650136</coordinates></LinearRing></outerBoundaryIs></Polygon><Polygon><outerBoundaryIs><LinearRing><coordinates>143.6616445,-37.2548968 143.6626024,-37.2550561 143.6624015,-37.2559168 143.6614501,-37.2557541 143.661334,-37.2562713 143.6610512,-37.2577828 143.662088,-37.2580017 143.6626931,-37.2551841 143.6658834,-37.2542799 143.6685263,-37.2527611 143.6671972,-37.2525819 143.6662411,-37.2532279 143.6625904,-37.2546602 143.6617209,-37.2545478 143.6616445,-37.2548968</coordinates></LinearRing></outerBoundaryIs></Polygon><Polygon><outerBoundaryIs><LinearRing><coordinates>143.7076277,-37.2620873 143.711513,-37.2638294 143.7112527,-37.2648277 143.7153451,-37.2653698 143.7153757,-37.265228 143.7119797,-37.2619927 143.7113955,-37.262464 143.7079452,-37.2604167 143.7076277,-37.2620873</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+</Folder>
+</Document></kml>

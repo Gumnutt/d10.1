@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Schema name="EOP100829" id="EOP100829">
+	<SimpleField name="PROJ_ID" type="string"></SimpleField>
+</Schema>
+<Folder><name>EOP100829</name>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#EOP100829">
+		<SimpleData name="PROJ_ID">EOP100829</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>145.186715170955,-31.7081141024108 145.253585473915,-31.6636332214617 145.23485697691,-31.6423590884676 145.213703123918,-31.6464922094575 145.200764559921,-31.6439755814543 145.192779957923,-31.6440219874514 145.173109050917,-31.6202666164585 145.130163089942,-31.6456881494277 145.186715170955,-31.7081141024108</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+</Folder>
+</Document></kml>

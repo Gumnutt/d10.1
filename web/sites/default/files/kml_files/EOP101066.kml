@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Schema name="EOP101066" id="EOP101066">
+	<SimpleField name="PROJ_ID" type="string"></SimpleField>
+</Schema>
+<Folder><name>EOP101066</name>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#EOP101066">
+		<SimpleData name="PROJ_ID">EOP101066</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>149.699767353538,-35.48165481468 149.664620585545,-35.477321378671 149.662207338553,-35.4918324326612 149.662145460553,-35.4918828136611 149.697477862546,-35.4962658426701 149.697663497546,-35.4955101646707 149.697601619545,-35.4947544796711 149.696920960544,-35.4924873836723 149.696735325544,-35.4909255676732 149.696735325543,-35.4894644876741 149.696487813543,-35.4887087456745 149.696302179541,-35.486239940676 149.696487813541,-35.4845268476771 149.69636405754,-35.4838718316775 149.69580715354,-35.4823098486782 149.699581718539,-35.4828641046792 149.699767353538,-35.48165481468</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+</Folder>
+</Document></kml>

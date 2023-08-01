@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Schema name="ERF159517" id="ERF159517">
+	<SimpleField name="PROJ_ID" type="string"></SimpleField>
+</Schema>
+<Folder><name>ERF159517</name>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#ERF159517">
+		<SimpleData name="PROJ_ID">ERF159517</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>151.569557057341,-24.3851206234441 151.557469481342,-24.3835824734402 151.557631673342,-24.3845152564397 151.551774384343,-24.3837695724379 151.553794095347,-24.3953870764313 151.567930752346,-24.3971950724358 151.568447994344,-24.3941400654379 151.568352976344,-24.3923305134391 151.569557057341,-24.3851206234441</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+</Folder>
+</Document></kml>
