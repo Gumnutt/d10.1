@@ -1,6 +1,14 @@
 <template>
   <div>
-    <component :is="type" :data="structuredObj" :options="graphOptions" :key="name" :style="customStyles"/>
+    <label for="componentSelect">Select a component:</label>
+    <select id="componentSelect" v-model="selectedComponent">
+      <option v-for="(type, index) in getTypes" :key="type" :value="type">
+        {{ type }}
+      </option>
+    </select>
+    <div v-if="selectedComponent">
+      <component :is="selectedComponent" :data="structuredObj" :options="graphOptions" :key="name" :style="customStyles"/>
+    </div>
   </div>
 </template>
 
@@ -35,6 +43,11 @@ ChartJS.register(
 )
 
 export default {
+  data() {
+    return {
+      selectedComponent: this.type,
+    };
+  },
   props: {
     data:{
       type: String,
@@ -51,6 +64,10 @@ export default {
     id: {
       type: String,
       default: ''
+    },
+    types: {
+      type: String,
+      default: ''
     }
   },
   components: {
@@ -61,6 +78,12 @@ export default {
     PolarArea,
   },
   computed:{
+    getTypes(){
+      return JSON.parse(this.types);
+    },
+    getIdIndex(){
+      return this.getTypes.indexOf(this.type)
+    },
     structuredObj(){
       var data = JSON.parse(this.data);
       const result = reactive({
@@ -110,6 +133,9 @@ export default {
         position: 'relative'
       }
     }
+  },
+  methods: {
+
   },
 }
 </script>

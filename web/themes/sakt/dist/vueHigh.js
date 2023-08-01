@@ -16937,21 +16937,19 @@ highcharts_modules_exporting__WEBPACK_IMPORTED_MODULE_2___default()((highcharts_
           }
         });
       });
-      console.log(result, "<- reuslt");
       return result;
     }
   },
   methods: {
     getId: function getId() {
       var data = JSON.parse(this.data);
-      // console.log(data.map(item => item.id));
       return data.map(function (item) {
         return item.id;
       });
     },
     getSeries: function getSeries() {
       var data = JSON.parse(this.data);
-      var idKey = "id"; // Change this to the actual key that represents the id in your data objects
+      var idKey = "id";
       var series = [];
       for (var key in data[0]) {
         if (key !== idKey) {
@@ -16960,9 +16958,7 @@ highcharts_modules_exporting__WEBPACK_IMPORTED_MODULE_2___default()((highcharts_
             data: data.map(function (item) {
               return parseFloat(item[key].replace(/,/g, ''));
             })
-            // Additional series options can be added here
           };
-
           series.push(seriesObj);
         }
       }
@@ -16994,7 +16990,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     "class": "hc",
     options: $data.chartOptions,
     ref: "chart"
-  }, null, 8 /* PROPS */, ["options"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(this.getSeries()), 1 /* TEXT */)]);
+  }, null, 8 /* PROPS */, ["options"])]);
 }
 
 /***/ }),

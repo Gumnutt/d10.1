@@ -1,7 +1,6 @@
 <template>
   <div>
     <highcharts class="hc" :options="chartOptions" ref="chart"></highcharts>
-    {{ this.getSeries() }}
   </div>
 </template>
 
@@ -106,19 +105,17 @@ export default {
           }
         });
       });
-      console.log(result, "<- reuslt");
       return result;
     },
   },
   methods: {
     getId(){
       var data = JSON.parse(this.data)
-      // console.log(data.map(item => item.id));
       return data.map(item => item.id)
     },
     getSeries() {
       var data = JSON.parse(this.data);
-      var idKey = "id"; // Change this to the actual key that represents the id in your data objects
+      var idKey = "id";
       var series = [];
 
       for (var key in data[0]) {
@@ -126,7 +123,6 @@ export default {
           var seriesObj = {
             name: key,
             data: data.map(item => parseFloat(item[key].replace(/,/g, ''))),
-            // Additional series options can be added here
           };
           series.push(seriesObj);
         }
