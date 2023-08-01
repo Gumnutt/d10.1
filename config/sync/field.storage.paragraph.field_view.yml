@@ -1,0 +1,21 @@
+uuid: 54b5f8c4-a2ec-48d0-b228-263ca056f3c5
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - viewfield
+    - views
+id: paragraph.field_view
+field_name: field_view
+entity_type: paragraph
+type: viewfield
+settings:
+  target_type: view
+module: viewfield
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

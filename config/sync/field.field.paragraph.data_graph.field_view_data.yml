@@ -1,0 +1,23 @@
+uuid: a5a8f2de-f0d6-48a7-836d-6411ab37022c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_view_data
+    - paragraphs.paragraphs_type.data_graph
+id: paragraph.data_graph.field_view_data
+field_name: field_view_data
+entity_type: paragraph
+bundle: data_graph
+label: 'View Data'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:view'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: entity_reference

@@ -3,6 +3,7 @@ _core:
 module:
   admin_toolbar: 0
   admin_toolbar_tools: 0
+  alex_csv_migrate: 0
   automated_cron: 0
   big_pipe: 0
   block: 0
@@ -31,12 +32,15 @@ module:
   menu_link_content: 0
   menu_ui: 0
   migrate: 0
+  migrate_plus: 0
+  migrate_source_csv: 0
   mysql: 0
   node: 0
   options: 0
   page_cache: 0
   path: 0
   path_alias: 0
+  rest: 0
   sdc: 0
   search: 0
   serialization: 0
@@ -49,6 +53,7 @@ module:
   tour: 0
   update: 0
   user: 0
+  viewfield: 0
   views_ui: 0
   pathauto: 1
   views: 10

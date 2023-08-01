@@ -1,0 +1,44 @@
+uuid: 16db319f-d1f0-46d0-af32-9046fdb03531
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.data_graph.field_js_library
+    - field.field.paragraph.data_graph.field_type
+    - field.field.paragraph.data_graph.field_view
+    - field.field.paragraph.data_graph.field_view_data
+    - paragraphs.paragraphs_type.data_graph
+  module:
+    - viewfield
+id: paragraph.data_graph.default
+targetEntityType: paragraph
+bundle: data_graph
+mode: default
+content:
+  field_js_library:
+    type: options_select
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_type:
+    type: options_select
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_view:
+    type: viewfield_select
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_view_data:
+    type: options_select
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

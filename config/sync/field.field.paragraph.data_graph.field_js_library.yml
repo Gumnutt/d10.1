@@ -1,0 +1,21 @@
+uuid: 1130d42c-79c3-42f4-a15e-6084b2f676d8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_js_library
+    - paragraphs.paragraphs_type.data_graph
+  module:
+    - options
+id: paragraph.data_graph.field_js_library
+field_name: field_js_library
+entity_type: paragraph
+bundle: data_graph
+label: 'JS Library'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

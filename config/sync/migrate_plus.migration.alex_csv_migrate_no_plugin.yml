@@ -1,0 +1,248 @@
+uuid: c18b277f-1be5-43b3-8bcb-84acb400e350
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: BaIhTfwmTsfZKCKVfNnBJqniQ6ssRF0OnzrwHzgNv4s
+id: alex_csv_migrate_no_plugin
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags: null
+migration_group: default
+label: 'CSV Node Migration'
+source:
+  plugin: csv
+  path: modules/custom/alex_csv_migrate/sources/mega.csv
+  header_row_count: 1
+  ids:
+    - id
+  fields:
+    -
+      name: id
+      label: 'Unique Id'
+    -
+      name: project_name
+      label: 'Project Name'
+    -
+      name: project_id
+      label: 'Project ID'
+    -
+      name: method
+      label: Method
+    -
+      name: method_url
+      label: 'Method URL'
+    -
+      name: method_type
+      label: 'Method Type'
+    -
+      name: project_description
+      label: 'Project Description'
+    -
+      name: date_project_registered
+      label: 'Date Project Registered'
+    -
+      name: project_location
+      label: 'Project location'
+    -
+      name: project_location_postcode
+      label: 'Project location (postcode)'
+    -
+      name: project_area
+      label: 'Project Area(s), where the project is an area based offsets project'
+    -
+      name: project_mapping_file_url
+      label: 'Project Mapping File URL'
+    -
+      name: carbon_est_area_mapping_file_url
+      label: 'Carbon Estimation Area mapping file URL'
+    -
+      name: carbon_est_area_sup_info
+      label: 'Carbon Estimation Area Supplementary information'
+    -
+      name: regional_nrm_plan
+      label: 'If the area-based project is covered by a regional natural resource management plan, is it consistent with that plan?'
+    -
+      name: joint_implementation_project
+      label: 'Joint Implementation project'
+    -
+      name: carbon_maintenance_obligation
+      label: 'Is the project area or project areas subject to a Carbon Maintenance Obligation (CMO)?'
+    -
+      name: conditional_reg_approvals
+      label: 'Conditional upon all regulatory approvals being obtained'
+    -
+      name: conditional_rel_interest_holders
+      label: 'Conditional upon the written consent of relevant interest holders'
+    -
+      name: permanence_period
+      label: 'Nominated Permanence Period, if applicable'
+    -
+      name: permanence_period_finish_date
+      label: 'Finish date of permanence period, if applicable'
+    -
+      name: contracted_on
+      label: 'Contracted on'
+    -
+      name: contract_id
+      label: 'Contract ID'
+    -
+      name: accus_total_units_issued
+      label: 'ACCUs Total units issued'
+    -
+      name: kaccus_total_units_issued
+      label: 'KACCUs Total units issued'
+    -
+      name: kaccus_units_2012_13
+      label: 'KACCUs Units Issued in Financial Year 2012/13'
+    -
+      name: kaccus_units_2013_14
+      label: 'KACCUs Units Issued in Financial Year 2013/14'
+    -
+      name: kaccus_units_2014_15
+      label: 'KACCUs Units Issued in Financial Year 2014/15'
+    -
+      name: kaccus_units_2015_16
+      label: 'KACCUs Units Issued in Financial Year 2015/16'
+    -
+      name: kaccus_units_2016_17
+      label: 'KACCUs Units Issued in Financial Year 2016/17'
+    -
+      name: kaccus_units_2017_18
+      label: 'KACCUs Units Issued in Financial Year 2017/18'
+    -
+      name: kaccus_units_2018_19
+      label: 'KACCUs Units Issued in Financial Year 2018/19'
+    -
+      name: kaccus_units_2019_20
+      label: 'KACCUs Units Issued in Financial Year 2019/20'
+    -
+      name: kaccus_units_2020_21
+      label: 'KACCUs Units Issued in Financial Year 2020/21'
+    -
+      name: kaccus_units_2021_22
+      label: 'KACCUs Units Issued in Financial Year 2021/22'
+    -
+      name: kaccus_units_2022_23
+      label: 'KACCUs Units Issued in Financial Year 2022/23'
+    -
+      name: kaccus_units_2023_24
+      label: 'KACCUs Units Issued in Financial Year 2023/24'
+    -
+      name: kaccus_units_issued_person
+      label: 'Name of person/s to whom the KACCUs issued'
+    -
+      name: kaccus_units_relinquished
+      label: 'Total Number of KACCUs units relinquished'
+    -
+      name: nkaccus_total_units_issued
+      label: 'NKACCUs Total units issued'
+    -
+      name: nkaccus_units_2012_13
+      label: 'NKACCUs Units Issued in Financial Year 2012/13'
+    -
+      name: nkaccus_units_2013_14
+      label: 'NKACCUs Units Issued in Financial Year 2013/14'
+    -
+      name: nkaccus_units_2014_15
+      label: 'NKACCUs Units Issued in Financial Year 2014/15'
+    -
+      name: nkaccus_units_2015_16
+      label: 'NKACCUs Units Issued in Financial Year 2015/16'
+    -
+      name: nkaccus_units_2016_17
+      label: 'NKACCUs Units Issued in Financial Year 2016/17'
+    -
+      name: nkaccus_units_2017_18
+      label: 'NKACCUs Units Issued in Financial Year 2017/18'
+    -
+      name: nkaccus_units_2018_19
+      label: 'NKACCUs Units Issued in Financial Year 2018/19'
+    -
+      name: nkaccus_units_2019_20
+      label: 'NKACCUs Units Issued in Financial Year 2019/20'
+    -
+      name: nkaccus_units_2020_21
+      label: 'NKACCUs Units Issued in Financial Year 2020/21'
+    -
+      name: nkaccus_units_2021_22
+      label: 'NKACCUs Units Issued in Financial Year 2021/22'
+    -
+      name: nkaccus_units_2022_23
+      label: 'NKACCUs Units Issued in Financial Year 2022/23'
+    -
+      name: nkaccus_units_2023_24
+      label: 'NKACCUs Units Issued in Financial Year 2023/24'
+    -
+      name: nkaccus_units_issued_person
+      label: 'Name of person/s to whom the NKACCUs issued'
+    -
+      name: nkaccus_units_relinquished
+      label: 'Total Number of NKACCUs units relinquished'
+    -
+      name: notes
+      label: Notes
+process:
+  type:
+    plugin: default_value
+    default_value: dataset
+  title: id
+  project_proponent: id
+  project_name: project_name
+  project_id: project_id
+  method: method
+  method_url: method_url
+  project_description: project_description
+  date_project_registered: date_project_registered
+  project_location: project_location
+  project_location_postcode: project_location_postcode
+  project_area: project_area
+  project_mapping_file_url: project_mapping_file_url
+  carbon_est_area_mapping_file_url: carbon_est_area_mapping_file_url
+  carbon_est_area_sup_info: carbon_est_area_sup_info
+  regional_nrm_plan: regional_nrm_plan
+  joint_implementation_project: joint_implementation_project
+  carbon_maintenance_obligation: carbon_maintenance_obligation
+  conditional_reg_approvals: conditional_reg_approvals
+  conditional_rel_interest_holders: conditional_rel_interest_holders
+  permanence_period: permanence_period
+  permanence_period_finish_date: permanence_period_finish_date
+  contracted_on: contracted_on
+  contract_id: contract_id
+  accus_total_units_issued: accus_total_units_issued
+  kaccus_total_units_issued: kaccus_total_units_issued
+  kaccus_units_2012_13: kaccus_units_2012_13
+  kaccus_units_2013_14: kaccus_units_2013_14
+  kaccus_units_2014_15: kaccus_units_2014_15
+  kaccus_units_2015_16: kaccus_units_2015_16
+  kaccus_units_2016_17: kaccus_units_2016_17
+  kaccus_units_2017_18: kaccus_units_2017_18
+  kaccus_units_2018_19: kaccus_units_2018_19
+  kaccus_units_2019_20: kaccus_units_2019_20
+  kaccus_units_2020_21: kaccus_units_2020_21
+  kaccus_units_2021_22: kaccus_units_2021_22
+  kaccus_units_2022_23: kaccus_units_2022_23
+  kaccus_units_2023_24: kaccus_units_2023_24
+  kaccus_units_issued_person: kaccus_units_issued_person
+  kaccus_units_relinquished: kaccus_units_relinquished
+  nkaccus_total_units_issued: nkaccus_total_units_issued
+  nkaccus_units_2012_13: nkaccus_units_2012_13
+  nkaccus_units_2013_14: nkaccus_units_2013_14
+  nkaccus_units_2014_15: nkaccus_units_2014_15
+  nkaccus_units_2015_16: nkaccus_units_2015_16
+  nkaccus_units_2016_17: nkaccus_units_2016_17
+  nkaccus_units_2017_18: nkaccus_units_2017_18
+  nkaccus_units_2018_19: nkaccus_units_2018_19
+  nkaccus_units_2019_20: nkaccus_units_2019_20
+  nkaccus_units_2020_21: nkaccus_units_2020_21
+  nkaccus_units_2021_22: nkaccus_units_2021_22
+  nkaccus_units_2022_23: nkaccus_units_2022_23
+  nkaccus_units_2023_24: nkaccus_units_2023_24
+  nkaccus_units_issued_person: nkaccus_units_issued_person
+  nkaccus_units_relinquished: nkaccus_units_relinquished
+  notes: notes
+destination:
+  plugin: 'entity:node'
+  default_bundle: dataset
+migration_dependencies: null

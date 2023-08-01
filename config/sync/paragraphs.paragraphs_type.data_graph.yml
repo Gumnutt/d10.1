@@ -1,0 +1,10 @@
+uuid: 0d300b58-fc83-4acc-8c3d-a26337341b94
+langcode: en
+status: true
+dependencies: {  }
+id: data_graph
+label: 'Data Graph'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

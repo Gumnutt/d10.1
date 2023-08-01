@@ -1,0 +1,27 @@
+uuid: 8f66ca3e-eada-4f83-ba8c-2e5e35f137d9
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_js_library
+field_name: field_js_library
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: chartjs
+      label: ChartJS
+    -
+      value: highcharts
+      label: Highcharts
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

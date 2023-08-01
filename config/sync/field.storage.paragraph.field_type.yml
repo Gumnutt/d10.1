@@ -1,0 +1,42 @@
+uuid: 4c38b135-d956-4de7-8067-dcf85ab3e6da
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_type
+field_name: field_type
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: bar
+      label: Bar
+    -
+      value: line
+      label: Line
+    -
+      value: pie
+      label: Pie
+    -
+      value: doughnut
+      label: Doughnut
+    -
+      value: polararea
+      label: PolarArea
+    -
+      value: radar
+      label: Radar
+    -
+      value: column
+      label: 'HC Column'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
