@@ -85,28 +85,4 @@
     </footer>
   {% endif %}
 
-  <div class="grid">
-    {{ include('sakt:card', {
-      card_heading: 'included heading'
-    }) }}
-
-    {% embed 'sakt:card' with {
-      card_heading: 'embeded centered variant  heading',
-      variant: 'centered'
-    } %}
-      {% block card_body %}
-        <p>embeded body</p>
-      {% endblock %}
-    {% endembed %}
-
-    {% embed 'sakt:card' with {
-      card_heading: 'landscape variant heading',
-      variant: 'landscape'
-    } %}
-      {% block card_body %}
-        <p>embeded body</p>
-      {% endblock %}
-    {% endembed %}
-  </div>
-
 </div>{# /.layout-container #}

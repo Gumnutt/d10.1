@@ -1,0 +1,24 @@
+table {
+  margin: auto;
+  max-width: 48rem;
+  font-family: monospace;
+  border-collapse: collapse;
+  thead {
+    text-transform: uppercase;
+    th {
+      padding-block: 0.75rem;
+      padding-inline: 1.5rem;
+    }
+  }
+  tbody {
+    tr {
+      &:nth-child(odd) {
+        background: gainsboro;
+      }
+    }
+    td {
+      padding-block: 0.75rem;
+      padding-inline: 1.5rem;
+    }
+  }
+}

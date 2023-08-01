@@ -311,11 +311,33 @@
   --border-radius: 1.25rem;
 }
 
-.grid {
+
+.grid{
   display: grid;
   padding-block: var(--size-9);
   grid-template-columns: repeat(var(--column-count, 3), 1fr);
   gap: var(--gap, 1rem);
 }
+table {
+  margin: auto;
+  max-width: 48rem;
+  font-family: monospace;
+  border-collapse: collapse;
+}
+  table thead {
+    text-transform: uppercase;
+  }
+  table thead th {
+      padding-block: 0.75rem;
+      padding-inline: 1.5rem;
+    }
+  table tbody tr:nth-child(odd) {
+        background: gainsboro;
+      }
+  table tbody td {
+      padding-block: 0.75rem;
+      padding-inline: 1.5rem;
+    }
+
 
 

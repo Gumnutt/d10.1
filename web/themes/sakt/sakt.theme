@@ -5,3 +5,20 @@ function sakt_preprocess_page(&$variables) {
     $variables['#attached']['library'][] = 'sakt/live-reload';
   }
 }
+
+// preprocess file
+function sakt_preprocess_file_link(&$variables) {
+  $uri = $variables['file']->getFileUri();
+  $extension = pathinfo($uri, PATHINFO_EXTENSION);
+  
+  if ($extension == 'kml') {
+    $variables['kml_data'] = file_get_contents($uri);
+  }
+}
+
+// create new template suggestion for file link
+function sakt_theme_suggestions_file_link_alter(array &$suggestions, array $variables) {
+  $uri = $variables['file']->getFileUri();
+  $extension = pathinfo($uri, PATHINFO_EXTENSION);
+  $suggestions[] = 'file_link__' . $extension;
+}
