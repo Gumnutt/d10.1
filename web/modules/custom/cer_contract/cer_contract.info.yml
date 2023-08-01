@@ -1,0 +1,15 @@
+name: CER contract
+description: "Provides a migration script for contracts and its relative content type and related configuration."
+type: module
+package: CER
+core_version_requirement: "^9.4 || ^10"
+dependencies:
+  - field
+  - menu_ui
+  - node
+  - path
+  - text
+  - user
+  - drupal:migrate
+  - migrate_source_csv:migrate_source_csv
+  - migrate_plus:migrate_plus

@@ -1,0 +1,20 @@
+uuid: 6397550e-a315-4bfb-bb1e-90a0bf2c426d
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.current_volume_of_abatement
+field_name: current_volume_of_abatement
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

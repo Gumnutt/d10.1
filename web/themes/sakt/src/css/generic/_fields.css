@@ -1,0 +1,18 @@
+.field {
+  &--label-inline {
+    display: flex;
+    gap: 1rem;
+    .field {
+      &__label {
+        display: block;
+        font-weight: 700;
+        white-space: nowrap;
+        &:after {
+          content: ":";
+        }
+      }
+      &__item {
+      }
+    }
+  }
+}

@@ -1,4 +1,4 @@
-uuid: 7ad45e12-09dc-4ea4-ad82-b7f21190bfbc
+uuid: 336ae5b3-a2e2-463b-a01e-b66625ee6945
 langcode: en
 status: true
 dependencies:
@@ -7,9 +7,10 @@ dependencies:
 id: node.accus_total_units_issued
 field_name: accus_total_units_issued
 entity_type: node
-type: string_long
+type: integer
 settings:
-  case_sensitive: false
+  unsigned: false
+  size: normal
 module: core
 locked: false
 cardinality: 1

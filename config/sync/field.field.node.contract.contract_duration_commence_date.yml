@@ -1,0 +1,23 @@
+uuid: 2c2d6c53-3a2e-43d8-9c82-313c1a35d60e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.contract_duration_commence_date
+    - node.type.contract
+id: node.contract.contract_duration_commence_date
+field_name: contract_duration_commence_date
+entity_type: node
+bundle: contract
+label: 'Actual contract duration from commencement date'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

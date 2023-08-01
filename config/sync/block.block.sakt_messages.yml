@@ -1,4 +1,4 @@
-uuid: 4c229d0c-0e80-4160-ad62-0b45aaa78755
+uuid: 25582620-5409-4866-9adf-09aecd03d513
 langcode: en
 status: true
 dependencies:
@@ -7,11 +7,11 @@ dependencies:
   theme:
     - sakt
 _core:
-  default_config_hash: BZ5tpW7H8X4PVGRm3MImTIHd2tN0eF7zOtp4SpRYUA0
+  default_config_hash: '-Ac3ISpIT0PQ-whzD7_dw0SdKi6dAbRFNWdSjOiVDqg'
 id: sakt_messages
 theme: sakt
 region: highlighted
-weight: -5
+weight: 0
 provider: null
 plugin: system_messages_block
 settings:

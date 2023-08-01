@@ -16919,61 +16919,6 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
 
 /***/ }),
 
-/***/ "./src/vue/vueapp.js":
-/*!***************************!*\
-  !*** ./src/vue/vueapp.js ***!
-  \***************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
-/* harmony import */ var _components_VueApp_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/VueApp.vue */ "./src/vue/components/VueApp.vue");
-
-
-(0,vue__WEBPACK_IMPORTED_MODULE_0__.createApp)({
-  components: {
-    VueApp: _components_VueApp_vue__WEBPACK_IMPORTED_MODULE_1__["default"]
-  }
-}).mount('#vue-app');
-
-/***/ }),
-
-/***/ "./components/card/card.pcss":
-/*!***********************************!*\
-  !*** ./components/card/card.pcss ***!
-  \***********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-// extracted by mini-css-extract-plugin
-
-
-/***/ }),
-
-/***/ "./components/button/button.pcss":
-/*!***************************************!*\
-  !*** ./components/button/button.pcss ***!
-  \***************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-// extracted by mini-css-extract-plugin
-
-
-/***/ }),
-
-/***/ "./src/css/main.css":
-/*!**************************!*\
-  !*** ./src/css/main.css ***!
-  \**************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-// extracted by mini-css-extract-plugin
-
-
-/***/ }),
-
 /***/ "./node_modules/vue-loader/dist/exportHelper.js":
 /*!******************************************************!*\
   !*** ./node_modules/vue-loader/dist/exportHelper.js ***!
@@ -17007,13 +16952,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _VueApp_vue_vue_type_template_id_5e325022__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./VueApp.vue?vue&type=template&id=5e325022 */ "./src/vue/components/VueApp.vue?vue&type=template&id=5e325022");
 /* harmony import */ var _VueApp_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./VueApp.vue?vue&type=script&lang=js */ "./src/vue/components/VueApp.vue?vue&type=script&lang=js");
-/* harmony import */ var _Users_alexmonaghan_My_sites_d10_1_web_themes_sakt_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var _Users_brynnbriedis_Sites_playground_drupal_web_themes_sakt_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 
 
 
 ;
-const __exports__ = /*#__PURE__*/(0,_Users_alexmonaghan_My_sites_d10_1_web_themes_sakt_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_VueApp_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_VueApp_vue_vue_type_template_id_5e325022__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"src/vue/components/VueApp.vue"]])
+const __exports__ = /*#__PURE__*/(0,_Users_brynnbriedis_Sites_playground_drupal_web_themes_sakt_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_VueApp_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_VueApp_vue_vue_type_template_id_5e325022__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"src/vue/components/VueApp.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -32577,42 +32522,7 @@ const Scatter = /* #__PURE__ */ createTypedChart("scatter", chart_js__WEBPACK_IM
 /******/ 		return module.exports;
 /******/ 	}
 /******/ 	
-/******/ 	// expose the modules object (__webpack_modules__)
-/******/ 	__webpack_require__.m = __webpack_modules__;
-/******/ 	
 /************************************************************************/
-/******/ 	/* webpack/runtime/chunk loaded */
-/******/ 	(() => {
-/******/ 		var deferred = [];
-/******/ 		__webpack_require__.O = (result, chunkIds, fn, priority) => {
-/******/ 			if(chunkIds) {
-/******/ 				priority = priority || 0;
-/******/ 				for(var i = deferred.length; i > 0 && deferred[i - 1][2] > priority; i--) deferred[i] = deferred[i - 1];
-/******/ 				deferred[i] = [chunkIds, fn, priority];
-/******/ 				return;
-/******/ 			}
-/******/ 			var notFulfilled = Infinity;
-/******/ 			for (var i = 0; i < deferred.length; i++) {
-/******/ 				var [chunkIds, fn, priority] = deferred[i];
-/******/ 				var fulfilled = true;
-/******/ 				for (var j = 0; j < chunkIds.length; j++) {
-/******/ 					if ((priority & 1 === 0 || notFulfilled >= priority) && Object.keys(__webpack_require__.O).every((key) => (__webpack_require__.O[key](chunkIds[j])))) {
-/******/ 						chunkIds.splice(j--, 1);
-/******/ 					} else {
-/******/ 						fulfilled = false;
-/******/ 						if(priority < notFulfilled) notFulfilled = priority;
-/******/ 					}
-/******/ 				}
-/******/ 				if(fulfilled) {
-/******/ 					deferred.splice(i--, 1)
-/******/ 					var r = fn();
-/******/ 					if (r !== undefined) result = r;
-/******/ 				}
-/******/ 			}
-/******/ 			return result;
-/******/ 		};
-/******/ 	})();
-/******/ 	
 /******/ 	/* webpack/runtime/define property getters */
 /******/ 	(() => {
 /******/ 		// define getter functions for harmony exports
@@ -32653,72 +32563,24 @@ const Scatter = /* #__PURE__ */ createTypedChart("scatter", chart_js__WEBPACK_IM
 /******/ 		};
 /******/ 	})();
 /******/ 	
-/******/ 	/* webpack/runtime/jsonp chunk loading */
-/******/ 	(() => {
-/******/ 		// no baseURI
-/******/ 		
-/******/ 		// object to store loaded and loading chunks
-/******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
-/******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
-/******/ 		var installedChunks = {
-/******/ 			"/dist/vueapp": 0,
-/******/ 			"dist/main": 0,
-/******/ 			"components/button/button": 0,
-/******/ 			"components/card/card": 0
-/******/ 		};
-/******/ 		
-/******/ 		// no chunk on demand loading
-/******/ 		
-/******/ 		// no prefetching
-/******/ 		
-/******/ 		// no preloaded
-/******/ 		
-/******/ 		// no HMR
-/******/ 		
-/******/ 		// no HMR manifest
-/******/ 		
-/******/ 		__webpack_require__.O.j = (chunkId) => (installedChunks[chunkId] === 0);
-/******/ 		
-/******/ 		// install a JSONP callback for chunk loading
-/******/ 		var webpackJsonpCallback = (parentChunkLoadingFunction, data) => {
-/******/ 			var [chunkIds, moreModules, runtime] = data;
-/******/ 			// add "moreModules" to the modules object,
-/******/ 			// then flag all "chunkIds" as loaded and fire callback
-/******/ 			var moduleId, chunkId, i = 0;
-/******/ 			if(chunkIds.some((id) => (installedChunks[id] !== 0))) {
-/******/ 				for(moduleId in moreModules) {
-/******/ 					if(__webpack_require__.o(moreModules, moduleId)) {
-/******/ 						__webpack_require__.m[moduleId] = moreModules[moduleId];
-/******/ 					}
-/******/ 				}
-/******/ 				if(runtime) var result = runtime(__webpack_require__);
-/******/ 			}
-/******/ 			if(parentChunkLoadingFunction) parentChunkLoadingFunction(data);
-/******/ 			for(;i < chunkIds.length; i++) {
-/******/ 				chunkId = chunkIds[i];
-/******/ 				if(__webpack_require__.o(installedChunks, chunkId) && installedChunks[chunkId]) {
-/******/ 					installedChunks[chunkId][0]();
-/******/ 				}
-/******/ 				installedChunks[chunkId] = 0;
-/******/ 			}
-/******/ 			return __webpack_require__.O(result);
-/******/ 		}
-/******/ 		
-/******/ 		var chunkLoadingGlobal = self["webpackChunkdrupal"] = self["webpackChunkdrupal"] || [];
-/******/ 		chunkLoadingGlobal.forEach(webpackJsonpCallback.bind(null, 0));
-/******/ 		chunkLoadingGlobal.push = webpackJsonpCallback.bind(null, chunkLoadingGlobal.push.bind(chunkLoadingGlobal));
-/******/ 	})();
-/******/ 	
 /************************************************************************/
-/******/ 	
-/******/ 	// startup
-/******/ 	// Load entry module and return exports
-/******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	__webpack_require__.O(undefined, ["dist/main","components/button/button","components/card/card"], () => (__webpack_require__("./src/vue/vueapp.js")))
-/******/ 	__webpack_require__.O(undefined, ["dist/main","components/button/button","components/card/card"], () => (__webpack_require__("./components/card/card.pcss")))
-/******/ 	__webpack_require__.O(undefined, ["dist/main","components/button/button","components/card/card"], () => (__webpack_require__("./components/button/button.pcss")))
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["dist/main","components/button/button","components/card/card"], () => (__webpack_require__("./src/css/main.css")))
-/******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
-/******/ 	
+var __webpack_exports__ = {};
+// This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
+(() => {
+/*!***************************!*\
+  !*** ./src/vue/vueapp.js ***!
+  \***************************/
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+/* harmony import */ var _components_VueApp_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/VueApp.vue */ "./src/vue/components/VueApp.vue");
+
+
+(0,vue__WEBPACK_IMPORTED_MODULE_0__.createApp)({
+  components: {
+    VueApp: _components_VueApp_vue__WEBPACK_IMPORTED_MODULE_1__["default"]
+  }
+}).mount('#vue-app');
+})();
+
 /******/ })()
 ;

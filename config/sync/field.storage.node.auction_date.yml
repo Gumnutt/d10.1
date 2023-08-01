@@ -1,0 +1,19 @@
+uuid: 8e3354c4-2f31-4741-b0fe-e3774df05de3
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.auction_date
+field_name: auction_date
+entity_type: node
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -5,4 +5,4 @@ web/modules/contrib/
 web/themes/contrib/
 web/profiles/contrib/
 /web/sites/*
-!/web/sites/default/
+web/themes/sakt/dist/

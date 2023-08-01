@@ -1,15 +1,15 @@
-uuid: cfb656d3-312f-48f1-b676-3051e3ed02b3
+uuid: 18eef2db-6c45-438e-94b4-fe34aa963588
 langcode: en
 status: true
 dependencies:
   theme:
     - sakt
 _core:
-  default_config_hash: nGE3EoPQQaQCuqTUtZgw0-KIzmrqdKDzdNQf2JyPUt4
+  default_config_hash: ACjBZI5shAMiiUpsz-inLYVXDqNNXRnSzAWV3kV_8Hw
 id: sakt_primary_local_tasks
 theme: sakt
-region: highlighted
-weight: -4
+region: header
+weight: 0
 provider: null
 plugin: local_tasks_block
 settings:

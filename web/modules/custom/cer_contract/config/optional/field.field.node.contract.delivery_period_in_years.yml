@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.delivery_period_in_years
+    - node.type.contract
+id: node.contract.delivery_period_in_years
+field_name: delivery_period_in_years
+entity_type: node
+bundle: contract
+label: 'Delivery period in years (as set out in the contract)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

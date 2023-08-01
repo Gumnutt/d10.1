@@ -1,4 +1,4 @@
-uuid: 584d0cc4-9117-49e0-898c-baf27b4d479b
+uuid: 7b4ef51e-9e15-4d10-8e07-0a69e92385a6
 langcode: en
 status: true
 dependencies:
@@ -9,7 +9,7 @@ id: node.dataset.project_proponent
 field_name: project_proponent
 entity_type: node
 bundle: dataset
-label: project_proponent
+label: 'Project proponent'
 description: ''
 required: true
 translatable: false

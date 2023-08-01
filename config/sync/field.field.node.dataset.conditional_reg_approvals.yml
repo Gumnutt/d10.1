@@ -1,4 +1,4 @@
-uuid: 9cd7e6ad-6995-4e9b-93ea-e05d7e98045c
+uuid: 93f7e0ea-3c75-4555-a629-7be589fb8db1
 langcode: en
 status: true
 dependencies:
@@ -9,7 +9,7 @@ id: node.dataset.conditional_reg_approvals
 field_name: conditional_reg_approvals
 entity_type: node
 bundle: dataset
-label: conditional_reg_approvals
+label: 'Conditional reg approvals'
 description: ''
 required: true
 translatable: false

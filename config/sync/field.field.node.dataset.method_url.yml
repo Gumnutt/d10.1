@@ -1,4 +1,4 @@
-uuid: ec8f8db9-4b42-41d3-b27d-19ffb0614fee
+uuid: a7494dd9-87f0-46bf-b009-03239a6b172b
 langcode: en
 status: true
 dependencies:
@@ -9,7 +9,7 @@ id: node.dataset.method_url
 field_name: method_url
 entity_type: node
 bundle: dataset
-label: method_url
+label: 'Method URL'
 description: ''
 required: true
 translatable: false

@@ -1,5 +1,6 @@
-@import './variables/_colors.css';
-@import './variables/_sizes.css';
-:root{
+@import "./variables/_colors.css";
+@import "./variables/_sizes.css";
+@import "https://unpkg.com/open-props/fonts.min.css";
+:root {
   --border-radius: 1.25rem;
 }

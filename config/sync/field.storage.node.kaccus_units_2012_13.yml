@@ -1,4 +1,4 @@
-uuid: b25bb748-5a7b-43a4-8098-e6c3fae81d3a
+uuid: 6a65538a-a04c-4516-88e5-75a53f331a5c
 langcode: en
 status: true
 dependencies:
@@ -7,9 +7,10 @@ dependencies:
 id: node.kaccus_units_2012_13
 field_name: kaccus_units_2012_13
 entity_type: node
-type: string_long
+type: integer
 settings:
-  case_sensitive: false
+  unsigned: false
+  size: normal
 module: core
 locked: false
 cardinality: 1

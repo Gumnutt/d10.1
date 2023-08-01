@@ -1,0 +1,23 @@
+uuid: be3ce540-b49f-4ebe-b409-298ec43d14f3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.total_contract_length
+    - node.type.contract
+id: node.contract.total_contract_length
+field_name: total_contract_length
+entity_type: node
+bundle: contract
+label: 'Total contract length including time to fulfil Conditions Precedent (as set out in the contract)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

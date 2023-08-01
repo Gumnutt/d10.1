@@ -1,4 +1,4 @@
-uuid: a12cdaa7-3173-4c73-9379-1614e9d66dde
+uuid: bb33271a-0fcc-44f8-b47d-379882e08ca5
 langcode: en
 status: true
 dependencies:
@@ -13,6 +13,7 @@ dependencies:
     - field.field.node.dataset.contract_id
     - field.field.node.dataset.contracted_on
     - field.field.node.dataset.date_project_registered
+    - field.field.node.dataset.field_kml_file
     - field.field.node.dataset.joint_implementation_project
     - field.field.node.dataset.kaccus_total_units_issued
     - field.field.node.dataset.kaccus_units_2012_13
@@ -82,6 +83,7 @@ hidden:
   contract_id: true
   contracted_on: true
   date_project_registered: true
+  field_kml_file: true
   joint_implementation_project: true
   kaccus_total_units_issued: true
   kaccus_units_2012_13: true

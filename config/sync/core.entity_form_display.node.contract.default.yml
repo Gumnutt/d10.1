@@ -1,0 +1,203 @@
+uuid: ea3523d6-8538-4a2c-9854-04d5b633e726
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.contract.actual_contract_end_date
+    - field.field.node.contract.auction_date
+    - field.field.node.contract.carbon_abatement_contract_id
+    - field.field.node.contract.conditions_precedent_contract
+    - field.field.node.contract.contract_duration_commence_date
+    - field.field.node.contract.contract_duration_contract_date
+    - field.field.node.contract.contract_status
+    - field.field.node.contract.contractor_name
+    - field.field.node.contract.current_volume_of_abatement
+    - field.field.node.contract.delivery_obligation
+    - field.field.node.contract.delivery_period_in_years
+    - field.field.node.contract.original_volume_of_abatement
+    - field.field.node.contract.project_id
+    - field.field.node.contract.projects
+    - field.field.node.contract.total_contract_length
+    - field.field.node.contract.volume_of_abatement
+    - node.type.contract
+  module:
+    - path
+    - text
+id: node.contract.default
+targetEntityType: node
+bundle: contract
+mode: default
+content:
+  actual_contract_end_date:
+    type: text_textarea
+    weight: 125
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  auction_date:
+    type: text_textarea
+    weight: 127
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  carbon_abatement_contract_id:
+    type: text_textarea
+    weight: 121
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  conditions_precedent_contract:
+    type: text_textarea
+    weight: 134
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  contract_duration_commence_date:
+    type: number
+    weight: 135
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  contract_duration_contract_date:
+    type: number
+    weight: 133
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  contract_status:
+    type: text_textarea
+    weight: 126
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  contractor_name:
+    type: text_textarea
+    weight: 122
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  created:
+    type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  current_volume_of_abatement:
+    type: number
+    weight: 129
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  delivery_obligation:
+    type: text_textarea
+    weight: 124
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  delivery_period_in_years:
+    type: number
+    weight: 131
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  original_volume_of_abatement:
+    type: number
+    weight: 128
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  project_id:
+    type: text_textarea
+    weight: 123
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  projects:
+    type: text_textarea
+    weight: 123
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    weight: 15
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 120
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    weight: 16
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  total_contract_length:
+    type: number
+    weight: 132
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  volume_of_abatement:
+    type: number
+    weight: 130
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

@@ -1,4 +1,4 @@
-uuid: 61ba9808-7354-4ec2-b63d-c00de82525ba
+uuid: 4534f68e-8417-47ce-8aa0-5b37e1a2a809
 langcode: en
 status: true
 dependencies:
@@ -9,7 +9,7 @@ id: node.dataset.contracted_on
 field_name: contracted_on
 entity_type: node
 bundle: dataset
-label: contracted_on
+label: 'Contracted on'
 description: ''
 required: true
 translatable: false

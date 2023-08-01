@@ -1,4 +1,4 @@
-uuid: 32e95aa5-cd21-4fb9-9993-c4f25c4f8a48
+uuid: 708695a7-0be0-4b50-8eef-1b26f3ffc7d5
 langcode: en
 status: true
 dependencies:
@@ -9,7 +9,7 @@ id: node.dataset.carbon_est_area_mapping_file_url
 field_name: carbon_est_area_mapping_file_url
 entity_type: node
 bundle: dataset
-label: carbon_est_area_mapping_file_url
+label: 'Carbon EST area mapping file URL'
 description: ''
 required: true
 translatable: false

@@ -1,4 +1,4 @@
-uuid: dd261f11-f714-4533-aeba-f6d032be8686
+uuid: f61aa911-1515-4cb5-9317-f13b17210e84
 langcode: en
 status: true
 dependencies:
@@ -7,9 +7,10 @@ dependencies:
 id: node.kaccus_units_relinquished
 field_name: kaccus_units_relinquished
 entity_type: node
-type: string_long
+type: integer
 settings:
-  case_sensitive: false
+  unsigned: false
+  size: normal
 module: core
 locked: false
 cardinality: 1

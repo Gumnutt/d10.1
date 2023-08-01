@@ -1,4 +1,4 @@
-uuid: fea66adf-c83e-4cfe-8e09-9253c5c3dc8a
+uuid: bcee8ede-9e13-4b78-8781-72a344227ce4
 langcode: en
 status: true
 dependencies:
@@ -12,6 +12,7 @@ dependencies:
     - field.field.node.dataset.contract_id
     - field.field.node.dataset.contracted_on
     - field.field.node.dataset.date_project_registered
+    - field.field.node.dataset.field_kml_file
     - field.field.node.dataset.joint_implementation_project
     - field.field.node.dataset.kaccus_total_units_issued
     - field.field.node.dataset.kaccus_units_2012_13
@@ -67,393 +68,242 @@ bundle: dataset
 mode: default
 content:
   accus_total_units_issued:
-    type: basic_string
-    label: above
-    settings: {  }
+    type: number_integer
+    label: inline
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
     third_party_settings: {  }
-    weight: 124
+    weight: 23
     region: content
   carbon_est_area_mapping_file_url:
     type: basic_string
-    label: above
+    label: inline
     settings: {  }
     third_party_settings: {  }
-    weight: 113
+    weight: 12
     region: content
   carbon_est_area_sup_info:
     type: basic_string
-    label: above
+    label: inline
     settings: {  }
     third_party_settings: {  }
-    weight: 114
+    weight: 13
     region: content
   carbon_maintenance_obligation:
     type: basic_string
-    label: above
+    label: inline
     settings: {  }
     third_party_settings: {  }
-    weight: 117
+    weight: 16
     region: content
   conditional_reg_approvals:
     type: basic_string
-    label: above
+    label: inline
     settings: {  }
     third_party_settings: {  }
-    weight: 118
+    weight: 17
     region: content
   conditional_rel_interest_holders:
     type: basic_string
-    label: above
+    label: inline
     settings: {  }
     third_party_settings: {  }
-    weight: 119
+    weight: 18
     region: content
   contract_id:
     type: basic_string
-    label: above
+    label: inline
     settings: {  }
     third_party_settings: {  }
-    weight: 123
+    weight: 22
     region: content
   contracted_on:
     type: basic_string
-    label: above
+    label: inline
     settings: {  }
     third_party_settings: {  }
-    weight: 122
+    weight: 21
     region: content
   date_project_registered:
     type: basic_string
-    label: above
+    label: inline
     settings: {  }
     third_party_settings: {  }
-    weight: 108
+    weight: 8
     region: content
   joint_implementation_project:
     type: basic_string
-    label: above
+    label: inline
     settings: {  }
     third_party_settings: {  }
-    weight: 116
+    weight: 15
     region: content
   kaccus_total_units_issued:
-    type: basic_string
-    label: above
-    settings: {  }
+    type: number_integer
+    label: inline
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
     third_party_settings: {  }
-    weight: 125
-    region: content
-  kaccus_units_2012_13:
-    type: basic_string
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 126
-    region: content
-  kaccus_units_2013_14:
-    type: basic_string
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 127
-    region: content
-  kaccus_units_2014_15:
-    type: basic_string
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 128
-    region: content
-  kaccus_units_2015_16:
-    type: basic_string
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 129
-    region: content
-  kaccus_units_2016_17:
-    type: basic_string
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 130
-    region: content
-  kaccus_units_2017_18:
-    type: basic_string
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 131
-    region: content
-  kaccus_units_2018_19:
-    type: basic_string
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 132
-    region: content
-  kaccus_units_2019_20:
-    type: basic_string
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 133
-    region: content
-  kaccus_units_2020_21:
-    type: basic_string
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 134
-    region: content
-  kaccus_units_2021_22:
-    type: basic_string
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 135
-    region: content
-  kaccus_units_2022_23:
-    type: basic_string
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 136
-    region: content
-  kaccus_units_2023_24:
-    type: basic_string
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 137
-    region: content
-  kaccus_units_issued_person:
-    type: basic_string
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 138
+    weight: 24
     region: content
   kaccus_units_relinquished:
-    type: basic_string
-    label: above
-    settings: {  }
+    type: number_integer
+    label: inline
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
     third_party_settings: {  }
-    weight: 139
+    weight: 25
     region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 100
+    weight: 0
     region: content
   method:
     type: basic_string
-    label: above
+    label: inline
     settings: {  }
     third_party_settings: {  }
-    weight: 104
+    weight: 3
     region: content
   method_type:
     type: basic_string
-    label: above
+    label: inline
     settings: {  }
     third_party_settings: {  }
-    weight: 106
+    weight: 6
     region: content
   method_url:
     type: basic_string
-    label: above
+    label: inline
     settings: {  }
     third_party_settings: {  }
-    weight: 105
+    weight: 5
     region: content
   nkaccus_total_units_issued:
-    type: basic_string
-    label: above
-    settings: {  }
+    type: number_integer
+    label: inline
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
     third_party_settings: {  }
-    weight: 140
-    region: content
-  nkaccus_units_2012_13:
-    type: basic_string
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 141
-    region: content
-  nkaccus_units_2013_14:
-    type: basic_string
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 142
-    region: content
-  nkaccus_units_2014_15:
-    type: basic_string
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 143
-    region: content
-  nkaccus_units_2015_16:
-    type: basic_string
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 144
-    region: content
-  nkaccus_units_2016_17:
-    type: basic_string
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 145
-    region: content
-  nkaccus_units_2017_18:
-    type: basic_string
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 146
-    region: content
-  nkaccus_units_2018_19:
-    type: basic_string
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 147
-    region: content
-  nkaccus_units_2019_20:
-    type: basic_string
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 148
-    region: content
-  nkaccus_units_2020_21:
-    type: basic_string
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 149
-    region: content
-  nkaccus_units_2021_22:
-    type: basic_string
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 150
-    region: content
-  nkaccus_units_2022_23:
-    type: basic_string
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 151
-    region: content
-  nkaccus_units_2023_24:
-    type: basic_string
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 152
-    region: content
-  nkaccus_units_issued_person:
-    type: basic_string
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 153
+    weight: 26
     region: content
   nkaccus_units_relinquished:
-    type: basic_string
-    label: above
-    settings: {  }
+    type: number_integer
+    label: inline
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
     third_party_settings: {  }
-    weight: 154
+    weight: 27
     region: content
   notes:
     type: basic_string
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 155
+    weight: 28
     region: content
   permanence_period:
     type: basic_string
-    label: above
+    label: inline
     settings: {  }
     third_party_settings: {  }
-    weight: 120
+    weight: 19
     region: content
   permanence_period_finish_date:
     type: basic_string
-    label: above
+    label: inline
     settings: {  }
     third_party_settings: {  }
-    weight: 121
+    weight: 20
     region: content
   project_area:
     type: basic_string
-    label: above
+    label: inline
     settings: {  }
     third_party_settings: {  }
-    weight: 111
+    weight: 11
     region: content
   project_description:
     type: basic_string
-    label: above
+    label: inline
     settings: {  }
     third_party_settings: {  }
-    weight: 107
+    weight: 7
     region: content
   project_id:
     type: basic_string
-    label: above
+    label: inline
     settings: {  }
     third_party_settings: {  }
-    weight: 103
+    weight: 4
     region: content
   project_location:
     type: basic_string
-    label: above
+    label: inline
     settings: {  }
     third_party_settings: {  }
-    weight: 109
+    weight: 9
     region: content
   project_location_postcode:
     type: basic_string
-    label: above
+    label: inline
     settings: {  }
     third_party_settings: {  }
-    weight: 110
-    region: content
-  project_mapping_file_url:
-    type: basic_string
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 112
+    weight: 10
     region: content
   project_name:
     type: basic_string
-    label: above
+    label: inline
     settings: {  }
     third_party_settings: {  }
-    weight: 102
+    weight: 2
     region: content
   project_proponent:
     type: basic_string
-    label: above
+    label: inline
     settings: {  }
     third_party_settings: {  }
-    weight: 101
+    weight: 1
     region: content
   regional_nrm_plan:
     type: basic_string
-    label: above
+    label: inline
     settings: {  }
     third_party_settings: {  }
-    weight: 115
+    weight: 14
     region: content
-hidden: {  }
+hidden:
+  field_kml_file: true
+  kaccus_units_2012_13: true
+  kaccus_units_2013_14: true
+  kaccus_units_2014_15: true
+  kaccus_units_2015_16: true
+  kaccus_units_2016_17: true
+  kaccus_units_2017_18: true
+  kaccus_units_2018_19: true
+  kaccus_units_2019_20: true
+  kaccus_units_2020_21: true
+  kaccus_units_2021_22: true
+  kaccus_units_2022_23: true
+  kaccus_units_2023_24: true
+  kaccus_units_issued_person: true
+  nkaccus_units_2012_13: true
+  nkaccus_units_2013_14: true
+  nkaccus_units_2014_15: true
+  nkaccus_units_2015_16: true
+  nkaccus_units_2016_17: true
+  nkaccus_units_2017_18: true
+  nkaccus_units_2018_19: true
+  nkaccus_units_2019_20: true
+  nkaccus_units_2020_21: true
+  nkaccus_units_2021_22: true
+  nkaccus_units_2022_23: true
+  nkaccus_units_2023_24: true
+  nkaccus_units_issued_person: true
+  project_mapping_file_url: true

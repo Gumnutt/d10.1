@@ -1,0 +1,23 @@
+uuid: 9b26f7db-5cbc-41c9-988b-03d52b429bf3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.original_volume_of_abatement
+    - node.type.contract
+id: node.contract.original_volume_of_abatement
+field_name: original_volume_of_abatement
+entity_type: node
+bundle: contract
+label: 'Original volume of abatement committed under contract'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

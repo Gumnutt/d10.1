@@ -1,4 +1,4 @@
-uuid: 56888f00-f7bc-44d4-bc5b-898f218524d5
+uuid: a14c4231-ee8b-47f0-86ca-17e1ab00ee2a
 langcode: en
 status: true
 dependencies:
@@ -9,7 +9,7 @@ id: node.dataset.contract_id
 field_name: contract_id
 entity_type: node
 bundle: dataset
-label: contract_id
+label: 'Contract ID'
 description: ''
 required: true
 translatable: false

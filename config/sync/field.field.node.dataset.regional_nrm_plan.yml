@@ -1,4 +1,4 @@
-uuid: fd4a130f-ba9a-4990-8e64-1e78ffbde19c
+uuid: 0b4a8580-b6d6-4ddc-add2-443d26286bad
 langcode: en
 status: true
 dependencies:
@@ -9,7 +9,7 @@ id: node.dataset.regional_nrm_plan
 field_name: regional_nrm_plan
 entity_type: node
 bundle: dataset
-label: regional_nrm_plan
+label: 'Regional nrm plan'
 description: ''
 required: true
 translatable: false
