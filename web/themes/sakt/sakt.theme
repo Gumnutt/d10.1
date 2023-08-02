@@ -16,11 +16,16 @@ function sakt_preprocess_paragraph(&$variables){
   if ($paragraph->bundle() == 'data_graph') {
     $name = $variables['elements']['field_view_data'][0]['#title'];
     $id = $paragraph->field_view_data[0]->target_id;
+    // load the current view
+    $view = Views::getView($id);
+    // get path from the current view
+    $path = $view->getPath();
+
     $display_id = $variables['elements']['field_view'][0]['#display_id'];
     $type = $paragraph->field_type[0]->value;
     $library = $paragraph->field_js_library[0]->value;
 
-    $url = Url::fromUri('http://drupal.lndo.site/' . $display_id);
+    $url = Url::fromUri('http://drupal.lndo.site/' . $path . '?_format=json');
     // Fetch the JSON data from the JSON:API endpoint.
     $response = \Drupal::httpClient()->get($url->toString());
     // Check if the request was successful (HTTP status code 200).

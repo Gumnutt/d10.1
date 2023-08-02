@@ -8,8 +8,8 @@ _core:
   default_config_hash: ACjBZI5shAMiiUpsz-inLYVXDqNNXRnSzAWV3kV_8Hw
 id: sakt_primary_local_tasks
 theme: sakt
-region: header
-weight: 0
+region: content
+weight: -4
 provider: null
 plugin: local_tasks_block
 settings:

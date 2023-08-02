@@ -362,6 +362,7 @@ main {
           content: ":";
         }
     .field--label-inline .field__item {
+        white-space: wrap;
       }
 
 table {

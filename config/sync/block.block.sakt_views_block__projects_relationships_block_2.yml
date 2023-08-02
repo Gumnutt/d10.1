@@ -11,7 +11,7 @@ dependencies:
 id: sakt_views_block__projects_relationships_block_2
 theme: sakt
 region: content
-weight: -1
+weight: 1
 provider: null
 plugin: 'views_block:projects_relationships-block_2'
 settings:

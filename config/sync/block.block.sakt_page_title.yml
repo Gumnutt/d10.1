@@ -8,8 +8,8 @@ _core:
   default_config_hash: fNwDdW063tk_ktzSWzZVeQS9wzvLooVO280BQ9WrsIs
 id: sakt_page_title
 theme: sakt
-region: header
-weight: -30
+region: content
+weight: -3
 provider: null
 plugin: page_title_block
 settings:

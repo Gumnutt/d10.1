@@ -11,7 +11,7 @@ dependencies:
 id: sakt_views_block__project_map_block_1
 theme: sakt
 region: content
-weight: -3
+weight: -1
 provider: null
 plugin: 'views_block:project_map-block_1'
 settings:
