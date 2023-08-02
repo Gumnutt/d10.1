@@ -1,6 +1,16 @@
 <template>
   <div>
-    <highcharts class="hc" :options="chartOptions" ref="chart"></highcharts>
+    <label for="componentSelect">Select a type:</label>
+    <select id="componentSelect" v-model="selectedComponent" @change="updateComponent">
+      <option v-for="(type, index) in decodedTypes" :key="type" :value="type">
+        {{ type }}
+      </option>
+    </select>
+    <br>
+
+    <div>
+      <highcharts class="hc" :options="chartOptions" ref="chart"></highcharts>
+    </div>
   </div>
 </template>
 
@@ -21,11 +31,19 @@ export default {
       type: String,
       default: ''
     },
-    name: {
+    title: {
       type: String,
       default: ''
     },
     id: {
+      type: String,
+      default: ''
+    },
+    types: {
+      type: String,
+      default: ''
+    },
+    displays: {
       type: String,
       default: ''
     }
@@ -34,11 +52,11 @@ export default {
     return {
       chartOptions: {
         chart: {
-          type: this.type, // Replace 'chartType' with the desired chart type (e.g., 'line', 'bar', 'pie', etc.)
+          type: 'column', // Replace 'chartType' with the desired chart type (e.g., 'line', 'bar', 'pie', etc.)
           // Additional chart-wide options can be added here
         },
         title: {
-          text: this.name,
+          text: this.title,
           align: 'center',
           // Additional title options can be added here
         },
@@ -74,9 +92,25 @@ export default {
         series: this.getSeries()
         // Additional chart-wide options can be added here
       },
+      selectedComponent: this.type,
     };
   },
   computed:{
+    decodedTypes(){
+      // Assuming this.types is a JSON string containing the data
+      const jsonData = JSON.parse(this.types);
+
+      // Remove the '#' symbol from the keys
+      const updatedData = {};
+      Object.keys(jsonData).forEach((key) => {
+        const updatedKey = key.replace('#', '');
+        updatedData[updatedKey] = jsonData[key];
+      });
+      return updatedData
+    },
+    decodedDisplays(){
+      return JSON.parse(this.displays);
+    },
     structuredObj(){
       var data = JSON.parse(this.data)
       const result = reactive({
@@ -129,7 +163,10 @@ export default {
       }
 
       return series.map(seriesObj => ({ ...seriesObj }));
-    }
+    },
+    updateComponent() {
+      this.chartOptions.chart.type = Object.keys(this.decodedTypes).find((key) => this.decodedTypes[key] === this.selectedComponent)
+    },
   }
 }
 </script>

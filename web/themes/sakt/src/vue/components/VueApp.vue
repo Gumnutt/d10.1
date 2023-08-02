@@ -1,8 +1,8 @@
 <template>
   <div>
-    <label for="componentSelect">Select a component:</label>
+    <label for="componentSelect">Select a type:</label>
     <select id="componentSelect" v-model="selectedComponent" @input="">
-      <option v-for="(type, index) in getTypes" :key="type" :value="type">
+      <option v-for="(type, index) in decodedTypes" :key="type" :value="type">
         {{ type }}
       </option>
     </select>
@@ -10,24 +10,16 @@
     <br>
 
     <label for="dataSelect">Select a dataset:</label>
-    <select id="dataSelect" v-model="selectedData" @input="updateComponent">
-      <option v-for="(display, index) in getDisplays" :key="display" :value="display" >
+    <select id="dataSelect" v-model="selectedData" >
+      <option v-for="(display, index) in decodedDisplays" :key="display" :value="display" >
         {{ display }}
       </option>
     </select>
 
-    <!-- <Transition name="fade" mode="out-in">
-      <h1  v-if="selectedComponent" :key="selectedComponent"> fade </h1>
-    </Transition> -->
-    <Transition name="fade">
-      <div v-if="chosenComponent" :key="chosenComponent">
-        <h1>{{ chosenComponent }}</h1>
-        <div>
-          <component :is="chosenComponent" :data="structuredObj" :options="graphOptions" :key="name" :style="customStyles"/>
-        </div>
-      </div>
-    </Transition>
+    <div>
+      <component :is="selectedComponent" :data="structuredObj" :options="graphOptions" :key="title" :style="customStyles"/>
     </div>
+  </div>
 </template>
 
 <style scoped>
@@ -76,8 +68,7 @@ export default {
   data() {
     return {
       selectedComponent: this.type,
-      selectedData: this.name,
-      chosenComponent: this.type,
+      selectedData: this.title,
     };
   },
   props: {
@@ -89,7 +80,7 @@ export default {
       type: String,
       default: ''
     },
-    name: {
+    title: {
       type: String,
       default: ''
     },
@@ -114,10 +105,10 @@ export default {
     PolarArea,
   },
   computed:{
-    getTypes(){
+    decodedTypes(){
       return JSON.parse(this.types);
     },
-    getDisplays(){
+    decodedDisplays(){
       return JSON.parse(this.displays);
     },
     getIdIndex(){
@@ -174,12 +165,6 @@ export default {
     }
   },
   methods: {
-    updateComponent() {
-      setTimeout(() => {
-        this.chosenComponent = this.getTypes[this.getIdIndex];
-      }, 1000);
-      console.log(this.chosenComponent );
-    }
   },
 }
 </script>

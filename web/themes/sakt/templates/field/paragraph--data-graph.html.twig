@@ -1,14 +1,14 @@
-<h1>Name: {{ g_name }} / {{ g_id }}<br>Library: {{ g_library }}<br>Type: {{ g_type }}</h1>
+<h1>Title: {{ g_title }} / {{ g_id }}<br>Library: {{ g_library }}<br>Type: {{ g_type }}</h1>
 <p>JSON:<br>{{ g_json }}</p>
 
 {% if g_library == 'chartjs' %}
   <div id="vue-app">
-    <vue-app name="{{ g_name }}" id="{{ g_id }}" data="{{ g_json }}" type="{{ g_type }}" types="{{ g_all_types }}" displays="{{ g_all_displays }}"></vue-app>
+    <vue-app title="{{ g_title }}" id="{{ g_id }}" data="{{ g_json }}" type="{{ g_type }}" types="{{ g_all_types }}" displays="{{ g_all_displays }}"></vue-app>
   </div>
   {{ attach_library('sakt/vue-chart') }}
 {% else %}
   <div id="app">
-    <app name="{{ g_name }}" id="{{ g_id }}" data="{{ g_json }}" type="{{ g_type }}"></app>
+    <app title="{{ g_title }}" id="{{ g_id }}" data="{{ g_json }}" type="{{ g_type }}" types="{{ g_all_types }}" displays="{{ g_all_displays }}"></app>
   </div>
   {{ attach_library('sakt/vue-highcharts') }}
 {% endif %}

@@ -21,4 +21,4 @@ live-reload:
 
 vuejs:
   js:
-    dist/vue.js: { attributes: { type: "module" } }
+    dist/vuemap.js: { attributes: { type: "module" } }
