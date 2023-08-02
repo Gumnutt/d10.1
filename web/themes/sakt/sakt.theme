@@ -12,25 +12,8 @@ function sakt_preprocess_paragraph(&$variables){
   $paragraph = $variables['paragraph'];
 
   if ($paragraph->bundle() == 'data_graph') {
-    // get the referenced view id and display id
-
-    $view_id = $variables['paragraph']->get('field_view')->getValue()[0]['target_id'];
-    $view_display_id = $variables['paragraph']->get('field_view')->getValue()[0]['display_id'];
-
-    // load the view
-    $view = \Drupal\views\Entity\View::load($view_id)->get('display');
-
-    // get the title and path of the display
-    $title = $view[$view_display_id]['display_title'];
-    $path = $view[$view_display_id]['display_options']['path'];
-
-
-
-
-
-
-    $id = $variables['elements']['field_view'][0]["#view_id"]; // view id
-    $display_id = $variables['elements']['field_view'][0]["#display_id"]; //a views specific display id
+    $id = $variables['paragraph']->get('field_view')->getValue()[0]['target_id']; // view id
+    $display_id = $variables['paragraph']->get('field_view')->getValue()[0]['display_id']; //a views specific display id
     $view = \Drupal\views\Entity\View::load($id)->get('display'); //specific display object
     $title = $view[$display_id]['display_title']; // title of specific display
     $type = $variables['elements']['field_type'][0]["#markup"]; // type of graph
