@@ -1,8 +1,38 @@
 <template>
   <div>
-    <component :is="type" :data="structuredObj" :options="graphOptions" :key="name" :style="customStyles"/>
+    <label for="componentSelect">Select a type:</label>
+    <select id="componentSelect" v-model="selectedComponent" @input="">
+      <option v-for="(type, index) in decodedTypes" :key="type" :value="type">
+        {{ type }}
+      </option>
+    </select>
+
+    <br>
+
+    <label for="dataSelect">Select a dataset:</label>
+    <select id="dataSelect" v-model="selectedData" >
+      <option v-for="(display, index) in decodedDisplays" :key="display" :value="display" >
+        {{ display }}
+      </option>
+    </select>
+
+    <div>
+      <component :is="selectedComponent" :data="structuredObj" :options="graphOptions" :key="title" :style="customStyles"/>
+    </div>
   </div>
 </template>
+
+<style scoped>
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 1s ease;
+}
+
+.fade-enter-from,
+.fade-leave-active {
+  opacity: 0;
+}
+</style>
 
 <script>
 import { reactive } from 'vue';
@@ -35,6 +65,12 @@ ChartJS.register(
 )
 
 export default {
+  data() {
+    return {
+      selectedComponent: this.type,
+      selectedData: this.title,
+    };
+  },
   props: {
     data:{
       type: String,
@@ -44,11 +80,19 @@ export default {
       type: String,
       default: ''
     },
-    name: {
+    title: {
       type: String,
       default: ''
     },
     id: {
+      type: String,
+      default: ''
+    },
+    types: {
+      type: String,
+      default: ''
+    },
+    displays: {
       type: String,
       default: ''
     }
@@ -61,6 +105,15 @@ export default {
     PolarArea,
   },
   computed:{
+    decodedTypes(){
+      return JSON.parse(this.types);
+    },
+    decodedDisplays(){
+      return JSON.parse(this.displays);
+    },
+    getIdIndex(){
+      return this.getTypes.indexOf(this.type)
+    },
     structuredObj(){
       var data = JSON.parse(this.data);
       const result = reactive({
@@ -110,6 +163,8 @@ export default {
         position: 'relative'
       }
     }
+  },
+  methods: {
   },
 }
 </script>

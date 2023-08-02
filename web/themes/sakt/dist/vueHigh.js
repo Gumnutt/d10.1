@@ -16835,11 +16835,19 @@ highcharts_modules_exporting__WEBPACK_IMPORTED_MODULE_2___default()((highcharts_
       type: String,
       "default": ''
     },
-    name: {
+    title: {
       type: String,
       "default": ''
     },
     id: {
+      type: String,
+      "default": ''
+    },
+    types: {
+      type: String,
+      "default": ''
+    },
+    displays: {
       type: String,
       "default": ''
     }
@@ -16848,12 +16856,12 @@ highcharts_modules_exporting__WEBPACK_IMPORTED_MODULE_2___default()((highcharts_
     return {
       chartOptions: {
         chart: {
-          type: this.type // Replace 'chartType' with the desired chart type (e.g., 'line', 'bar', 'pie', etc.)
+          type: 'column' // Replace 'chartType' with the desired chart type (e.g., 'line', 'bar', 'pie', etc.)
           // Additional chart-wide options can be added here
         },
 
         title: {
-          text: this.name,
+          text: this.title,
           align: 'center'
           // Additional title options can be added here
         },
@@ -16894,11 +16902,27 @@ highcharts_modules_exporting__WEBPACK_IMPORTED_MODULE_2___default()((highcharts_
         },
         series: this.getSeries()
         // Additional chart-wide options can be added here
-      }
+      },
+
+      selectedComponent: this.type
     };
   },
-
   computed: {
+    decodedTypes: function decodedTypes() {
+      // Assuming this.types is a JSON string containing the data
+      var jsonData = JSON.parse(this.types);
+
+      // Remove the '#' symbol from the keys
+      var updatedData = {};
+      Object.keys(jsonData).forEach(function (key) {
+        var updatedKey = key.replace('#', '');
+        updatedData[updatedKey] = jsonData[key];
+      });
+      return updatedData;
+    },
+    decodedDisplays: function decodedDisplays() {
+      return JSON.parse(this.displays);
+    },
     structuredObj: function structuredObj() {
       var data = JSON.parse(this.data);
       var result = (0,vue__WEBPACK_IMPORTED_MODULE_0__.reactive)({
@@ -16937,21 +16961,19 @@ highcharts_modules_exporting__WEBPACK_IMPORTED_MODULE_2___default()((highcharts_
           }
         });
       });
-      console.log(result, "<- reuslt");
       return result;
     }
   },
   methods: {
     getId: function getId() {
       var data = JSON.parse(this.data);
-      // console.log(data.map(item => item.id));
       return data.map(function (item) {
         return item.id;
       });
     },
     getSeries: function getSeries() {
       var data = JSON.parse(this.data);
-      var idKey = "id"; // Change this to the actual key that represents the id in your data objects
+      var idKey = "id";
       var series = [];
       for (var key in data[0]) {
         if (key !== idKey) {
@@ -16960,14 +16982,18 @@ highcharts_modules_exporting__WEBPACK_IMPORTED_MODULE_2___default()((highcharts_
             data: data.map(function (item) {
               return parseFloat(item[key].replace(/,/g, ''));
             })
-            // Additional series options can be added here
           };
-
           series.push(seriesObj);
         }
       }
       return series.map(function (seriesObj) {
         return _objectSpread({}, seriesObj);
+      });
+    },
+    updateComponent: function updateComponent() {
+      var _this = this;
+      this.chartOptions.chart.type = Object.keys(this.decodedTypes).find(function (key) {
+        return _this.decodedTypes[key] === _this.selectedComponent;
       });
     }
   }
@@ -16988,13 +17014,32 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
+var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
+  "for": "componentSelect"
+}, "Select a type:", -1 /* HOISTED */);
+var _hoisted_2 = ["value"];
+var _hoisted_3 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br", null, null, -1 /* HOISTED */);
+
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_highcharts = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("highcharts");
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_highcharts, {
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", null, [_hoisted_1, (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("select", {
+    id: "componentSelect",
+    "onUpdate:modelValue": _cache[0] || (_cache[0] = function ($event) {
+      return $data.selectedComponent = $event;
+    }),
+    onChange: _cache[1] || (_cache[1] = function () {
+      return $options.updateComponent && $options.updateComponent.apply($options, arguments);
+    })
+  }, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($options.decodedTypes, function (type, index) {
+    return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("option", {
+      key: type,
+      value: type
+    }, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(type), 9 /* TEXT, PROPS */, _hoisted_2);
+  }), 128 /* KEYED_FRAGMENT */))], 544 /* HYDRATE_EVENTS, NEED_PATCH */), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelSelect, $data.selectedComponent]]), _hoisted_3, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_highcharts, {
     "class": "hc",
     options: $data.chartOptions,
     ref: "chart"
-  }, null, 8 /* PROPS */, ["options"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(this.getSeries()), 1 /* TEXT */)]);
+  }, null, 8 /* PROPS */, ["options"])])]);
 }
 
 /***/ }),
@@ -17685,13 +17730,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _App_vue_vue_type_template_id_0e4c836c__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./App.vue?vue&type=template&id=0e4c836c */ "./src/vue/components/App.vue?vue&type=template&id=0e4c836c");
 /* harmony import */ var _App_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./App.vue?vue&type=script&lang=js */ "./src/vue/components/App.vue?vue&type=script&lang=js");
-/* harmony import */ var _Users_brynnbriedis_Sites_playground_drupal_web_themes_sakt_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var _Users_alexmonaghan_My_sites_d10_1_web_themes_sakt_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 
 
 
 ;
-const __exports__ = /*#__PURE__*/(0,_Users_brynnbriedis_Sites_playground_drupal_web_themes_sakt_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_App_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_App_vue_vue_type_template_id_0e4c836c__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"src/vue/components/App.vue"]])
+const __exports__ = /*#__PURE__*/(0,_Users_alexmonaghan_My_sites_d10_1_web_themes_sakt_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_App_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_App_vue_vue_type_template_id_0e4c836c__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"src/vue/components/App.vue"]])
 /* hot reload */
 if (false) {}
 

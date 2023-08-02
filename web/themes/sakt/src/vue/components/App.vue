@@ -1,7 +1,16 @@
 <template>
   <div>
-    <highcharts class="hc" :options="chartOptions" ref="chart"></highcharts>
-    {{ this.getSeries() }}
+    <label for="componentSelect">Select a type:</label>
+    <select id="componentSelect" v-model="selectedComponent" @change="updateComponent">
+      <option v-for="(type, index) in decodedTypes" :key="type" :value="type">
+        {{ type }}
+      </option>
+    </select>
+    <br>
+
+    <div>
+      <highcharts class="hc" :options="chartOptions" ref="chart"></highcharts>
+    </div>
   </div>
 </template>
 
@@ -22,11 +31,19 @@ export default {
       type: String,
       default: ''
     },
-    name: {
+    title: {
       type: String,
       default: ''
     },
     id: {
+      type: String,
+      default: ''
+    },
+    types: {
+      type: String,
+      default: ''
+    },
+    displays: {
       type: String,
       default: ''
     }
@@ -35,11 +52,11 @@ export default {
     return {
       chartOptions: {
         chart: {
-          type: this.type, // Replace 'chartType' with the desired chart type (e.g., 'line', 'bar', 'pie', etc.)
+          type: 'column', // Replace 'chartType' with the desired chart type (e.g., 'line', 'bar', 'pie', etc.)
           // Additional chart-wide options can be added here
         },
         title: {
-          text: this.name,
+          text: this.title,
           align: 'center',
           // Additional title options can be added here
         },
@@ -75,9 +92,25 @@ export default {
         series: this.getSeries()
         // Additional chart-wide options can be added here
       },
+      selectedComponent: this.type,
     };
   },
   computed:{
+    decodedTypes(){
+      // Assuming this.types is a JSON string containing the data
+      const jsonData = JSON.parse(this.types);
+
+      // Remove the '#' symbol from the keys
+      const updatedData = {};
+      Object.keys(jsonData).forEach((key) => {
+        const updatedKey = key.replace('#', '');
+        updatedData[updatedKey] = jsonData[key];
+      });
+      return updatedData
+    },
+    decodedDisplays(){
+      return JSON.parse(this.displays);
+    },
     structuredObj(){
       var data = JSON.parse(this.data)
       const result = reactive({
@@ -106,19 +139,17 @@ export default {
           }
         });
       });
-      console.log(result, "<- reuslt");
       return result;
     },
   },
   methods: {
     getId(){
       var data = JSON.parse(this.data)
-      // console.log(data.map(item => item.id));
       return data.map(item => item.id)
     },
     getSeries() {
       var data = JSON.parse(this.data);
-      var idKey = "id"; // Change this to the actual key that represents the id in your data objects
+      var idKey = "id";
       var series = [];
 
       for (var key in data[0]) {
@@ -126,14 +157,16 @@ export default {
           var seriesObj = {
             name: key,
             data: data.map(item => parseFloat(item[key].replace(/,/g, ''))),
-            // Additional series options can be added here
           };
           series.push(seriesObj);
         }
       }
 
       return series.map(seriesObj => ({ ...seriesObj }));
-    }
+    },
+    updateComponent() {
+      this.chartOptions.chart.type = Object.keys(this.decodedTypes).find((key) => this.decodedTypes[key] === this.selectedComponent)
+    },
   }
 }
 </script>
