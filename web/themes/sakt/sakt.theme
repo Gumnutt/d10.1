@@ -12,11 +12,27 @@ function sakt_preprocess_paragraph(&$variables){
   $paragraph = $variables['paragraph'];
 
   if ($paragraph->bundle() == 'data_graph') {
+    // get the referenced view id and display id
+
+    $view_id = $variables['paragraph']->get('field_view')->getValue()[0]['target_id'];
+    $view_display_id = $variables['paragraph']->get('field_view')->getValue()[0]['display_id'];
+
+    // load the view
+    $view = \Drupal\views\Entity\View::load($view_id)->get('display');
+
+    // get the title and path of the display
+    $title = $view[$view_display_id]['display_title'];
+    $path = $view[$view_display_id]['display_options']['path'];
+
+
+
+
+
+
     $id = $variables['elements']['field_view'][0]["#view_id"]; // view id
     $display_id = $variables['elements']['field_view'][0]["#display_id"]; //a views specific display id
     $view = \Drupal\views\Entity\View::load($id)->get('display'); //specific display object
     $title = $view[$display_id]['display_title']; // title of specific display
-    $path = $view[$display_id]['display_options']['path']; // path of specific display
     $type = $variables['elements']['field_type'][0]["#markup"]; // type of graph
     $library = $paragraph->field_js_library[0]->value; // js library
 
@@ -33,21 +49,15 @@ function sakt_preprocess_paragraph(&$variables){
       $allTypes["#".$key] = $value;
     }
 
-    $url = Url::fromUri('http://drupal.lndo.site/' . $path); // get url from specific display
-    $response = \Drupal::httpClient()->get($url->toString()); // Fetch the JSON data from the JSON:API endpoint.
-    if ($response->getStatusCode() === 200) { // Check if the request was successful (HTTP status code 200).
-      $jsonString = json_encode($response->getBody()->getContents()); // Get the JSON response as a string.
-      $jsonData = json_decode($jsonString, TRUE); // Convert the JSON string to an associative array using Drupal's JSON decoder.
-
-      $variables['g_json'] = $jsonData;
-      $variables['g_title'] = $title;
-      $variables['g_id'] = $id;
-      $variables['g_type'] = $type;
-      $variables['g_library'] = $library;
-      $variables['g_display_id'] = $display_id;
-      $variables['g_all_types'] = json_encode($allTypes);
-      $variables['g_all_displays'] = json_encode($allDisplays);
-    }
+    $url = Url::fromUri(_sakt_build_endpoint_url($id, $display_id)); // get url from specific display
+    $variables['g_json'] = _sakt_get_json_data($url);
+    $variables['g_title'] = $title;
+    $variables['g_id'] = $id;
+    $variables['g_type'] = $type;
+    $variables['g_library'] = $library;
+    $variables['g_display_id'] = $display_id;
+    $variables['g_all_types'] = json_encode($allTypes);
+    $variables['g_all_displays'] = json_encode($allDisplays);
   }
 }
 
@@ -66,4 +76,21 @@ function sakt_theme_suggestions_file_link_alter(array &$suggestions, array $vari
   $uri = $variables['file']->getFileUri();
   $extension = pathinfo($uri, PATHINFO_EXTENSION);
   $suggestions[] = 'file_link__' . $extension;
+}
+
+// should return a URL to the REST API endpoint for a view
+function _sakt_build_endpoint_url($view_id, $view_display_id){
+  $url = Url::fromRoute('view.' . $view_id . '.' . $view_display_id);
+  $url->setAbsolute();
+  return $url->toString();
+}
+
+function _sakt_get_json_data($url){
+  $response = \Drupal::httpClient()->get($url->toString());
+  if ($response->getStatusCode() !== 200) {
+    return null;
+  }
+  $jsonString = json_encode($response->getBody()->getContents());
+  $jsonData = json_decode($jsonString, TRUE);
+  return $jsonData;
 }
