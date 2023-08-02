@@ -1,5 +1,40 @@
-<h1>Title: {{ g_title }} / {{ g_id }}<br>Library: {{ g_library }}<br>Type: {{ g_type }}</h1>
-<p>JSON:<br>{{ g_json }}</p>
+<table class="mini">
+  <tr>
+    <td>Title</td>
+    <td>{{ g_title }}</td>
+  </tr>
+  <tr>
+    <td>ID</td>
+    <td>{{ g_id }}</td>
+  </tr>
+  <tr>
+    <td>Library</td>
+    <td>{{ g_library }}</td>
+  </tr>
+  <tr>
+    <td>Type</td>
+    <td>{{ g_type }}</td>
+  </tr>
+  <tr>
+    <td>All Types</td>
+    <td>{{ g_all_types }}</td>
+  </tr>
+  <tr>
+    <td>All Displays</td>
+    <td>{{ g_all_displays }}</td>
+  </tr>
+  <tr>
+    <td>Display ID</td>
+    <td>{{ g_display_id }}</td>
+  </tr>
+  <tr>
+    <td>Path</td>
+    <td>{{ g_path }}</td>
+  </tr>
+  <tr>
+    <td>JSON</td>
+    <td>{{ g_json }}</td>
+</table>
 
 {% if g_library == 'chartjs' %}
   <div id="vue-app">

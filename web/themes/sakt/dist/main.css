@@ -385,6 +385,33 @@ table {
       padding-block: 0.75rem;
       padding-inline: 1.5rem;
     }
+  table.mini{
+    table-layout: fixed;
+    width: 100%;
+    margin: 0;
+    font-size: 0.75rem;
+  }
+  table.mini tbody{
+      display: block;
+      width: 100%;
+    }
+  table.mini tbody tr{
+        display: flex;
+        vertical-align: text-top;
+      }
+  table.mini tbody tr td {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          word-wrap: break-word;
+          padding-block: 0.25rem;
+          padding-inline: 0.75rem;
+          width: 75%;
+          max-height: 100px;
+        }
+  table.mini tbody tr td:first-child {
+            width: 25%;
+            font-weight: bold;
+          }
 
 
 

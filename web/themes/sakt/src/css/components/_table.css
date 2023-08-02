@@ -21,4 +21,31 @@ table {
       padding-inline: 1.5rem;
     }
   }
+  &.mini{
+    table-layout: fixed;
+    width: 100%;
+    margin: 0;
+    font-size: 0.75rem;
+    tbody{
+      display: block;
+      width: 100%;
+      tr{
+        display: flex;
+        vertical-align: text-top;
+        td {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          word-wrap: break-word;
+          padding-block: 0.25rem;
+          padding-inline: 0.75rem;
+          width: 75%;
+          max-height: 100px;
+          &:first-child {
+            width: 25%;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
 }

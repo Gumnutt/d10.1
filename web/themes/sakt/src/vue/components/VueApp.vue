@@ -10,14 +10,14 @@
     <br>
 
     <label for="dataSelect">Select a dataset:</label>
-    <select id="dataSelect" v-model="selectedData" >
+    <select id="dataSelect" v-model="selectedData" @change="updateData" >
       <option v-for="(display, index) in decodedDisplays" :key="display" :value="display" >
         {{ display }}
       </option>
     </select>
 
     <div>
-      <component :is="selectedComponent" :data="structuredObj" :options="graphOptions" :key="title" :style="customStyles"/>
+      <component :is="selectedComponent" :data="updatedD != '' ? this.updatedD : structuredData" :options="graphOptions" :key="title" :style="customStyles"/>
     </div>
   </div>
 </template>
@@ -69,6 +69,7 @@ export default {
     return {
       selectedComponent: this.type,
       selectedData: this.title,
+      updatedD: '',
     };
   },
   props: {
@@ -111,11 +112,45 @@ export default {
     decodedDisplays(){
       return JSON.parse(this.displays);
     },
-    getIdIndex(){
-      return this.getTypes.indexOf(this.type)
+    structuredData(){
+      return this.structuredObj(this.data, 'yes');
     },
-    structuredObj(){
-      var data = JSON.parse(this.data);
+    graphOptions() {
+      return {
+        responsive: true,
+        maintainAspectRatio: true
+      }
+    },
+    customStyles () {
+      return {
+        height: `${500}px`,
+        position: 'relative'
+      }
+    }
+  },
+  methods: {
+    async updateData() {
+      try {
+        const domain = window.location.origin; //get url origin
+        var updatedPath = Object.keys(this.decodedDisplays).find(key => this.decodedDisplays[key] === this.selectedData); //get key from value
+        const fetchUrl = `${domain}/${updatedPath}`; //make url name
+        const response = await fetch(fetchUrl); // fetching data from url
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        const data = await response.json();
+        this.updatedD = this.structuredObj(data);
+      } catch (error) {
+        console.error('Error fetching JSON data:', error);
+      }
+    },
+    structuredObj(unstrucData, x){
+      if (x == "yes") {
+        var data = JSON.parse(unstrucData);
+      } else {
+        var data = unstrucData;
+      }
+
       const result = reactive({
         labels: [],
         datasets: [],
@@ -147,24 +182,9 @@ export default {
           }
         });
       });
-
+      // console.log(data, result);
       return result;
-
     },
-    graphOptions() {
-      return {
-        responsive: true,
-        maintainAspectRatio: true
-      }
-    },
-    customStyles () {
-      return {
-        height: `${500}px`,
-        position: 'relative'
-      }
-    }
-  },
-  methods: {
   },
 }
 </script>

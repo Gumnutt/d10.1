@@ -1,6 +1,7 @@
 <?php
 
 use Drupal\Core\Url;
+use Drupal\views\Entity\View;
 
 function sakt_preprocess_page(&$variables) {
   if (getenv('LANDO_INFO')) {
@@ -12,17 +13,17 @@ function sakt_preprocess_paragraph(&$variables){
   $paragraph = $variables['paragraph'];
 
   if ($paragraph->bundle() == 'data_graph') {
-    $id = $variables['paragraph']->get('field_view')->getValue()[0]['target_id']; // view id
-    $display_id = $variables['paragraph']->get('field_view')->getValue()[0]['display_id']; //a views specific display id
-    $view = \Drupal\views\Entity\View::load($id)->get('display'); //specific display object
+    $id =  $paragraph->get('field_view')->getValue()[0]['target_id']; // view id
+    $display_id = $paragraph->get('field_view')->getValue()[0]['display_id']; //a views specific display id
+    $view = View::load($id)->get('display'); //specific display object
     $title = $view[$display_id]['display_title']; // title of specific display
     $type = $variables['elements']['field_type'][0]["#markup"]; // type of graph
     $library = $paragraph->field_js_library[0]->value; // js library
 
     $allDisplays = []; // getting all displays from view
-    foreach ($view as $display_id => $display) {
+    foreach ($view as $key => $display) {
       if ($display['display_plugin'] == 'rest_export') {
-        $allDisplays["#".$display["id"]] = $display['display_title'];
+        $allDisplays[$display["display_options"]["path"]] = $display['display_title'];
       }
     }
 
@@ -37,6 +38,7 @@ function sakt_preprocess_paragraph(&$variables){
     $variables['g_title'] = $title;
     $variables['g_id'] = $id;
     $variables['g_type'] = $type;
+    $variables['g_path'] = $url;
     $variables['g_library'] = $library;
     $variables['g_display_id'] = $display_id;
     $variables['g_all_types'] = json_encode($allTypes);
