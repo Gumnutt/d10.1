@@ -1,0 +1,14 @@
+<?php
+
+/**
+ * Implements hook_theme().
+ */
+function custom_json_output_theme($existing, $type, $theme, $path) {
+  return [
+    'views_view_custom_json_output' => [
+      'variables' => ['view' => NULL, 'rows' => []],
+      'template' => 'views-view-custom-json-output',
+      'base hook' => 'views_view',
+    ],
+  ];
+}
