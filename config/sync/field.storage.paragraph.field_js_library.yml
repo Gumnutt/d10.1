@@ -17,6 +17,9 @@ settings:
     -
       value: highcharts
       label: Highcharts
+    -
+      value: three
+      label: Three
   allowed_values_function: ''
 module: options
 locked: false
