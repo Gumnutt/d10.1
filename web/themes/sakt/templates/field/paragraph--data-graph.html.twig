@@ -36,9 +36,9 @@
     <td>{{ g_json }}</td>
 </table>
 
-{% if g_library == 'chartjs' %}
+{% if g_library == 'chartjs' or g_library == 'three' %}
   <div id="vue-app">
-    <vue-app title="{{ g_title }}" id="{{ g_id }}" data="{{ g_json }}" type="{{ g_type }}" types="{{ g_all_types }}" displays="{{ g_all_displays }}"></vue-app>
+    <vue-app title="{{ g_title }}" id="{{ g_id }}" data="{{ g_json }}" type="{{ g_type }}" types="{{ g_all_types }}" displays="{{ g_all_displays }}" lib="{{ g_library }}"></vue-app>
   </div>
   {{ attach_library('sakt/vue-chart') }}
 {% else %}

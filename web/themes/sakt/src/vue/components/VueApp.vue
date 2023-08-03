@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div v-if="lib == 'chartjs'">
     <label for="componentSelect">Select a type:</label>
     <select id="componentSelect" v-model="selectedComponent" @input="">
       <option v-for="(type, index) in decodedTypes" :key="type" :value="type">
@@ -19,6 +19,9 @@
     <div>
       <component :is="selectedComponent" :data="updatedD != '' ? this.updatedD : structuredData" :options="graphOptions" :key="title" :style="customStyles"/>
     </div>
+  </div>
+  <div v-else>
+    <ThreeScene :data="updatedD != '' ? this.updatedD : structuredData" />
   </div>
 </template>
 
@@ -50,6 +53,7 @@ import {
   Legend,
 } from 'chart.js'
 import { Line, Pie, Bar, Doughnut, PolarArea } from 'vue-chartjs'
+import ThreeScene from "./ThreeScene.vue";
 
 ChartJS.register(
   ArcElement,
@@ -96,7 +100,11 @@ export default {
     displays: {
       type: String,
       default: ''
-    }
+    },
+    lib: {
+      type: String,
+      default: ''
+    },
   },
   components: {
     Pie,
@@ -104,6 +112,7 @@ export default {
     Bar,
     Doughnut,
     PolarArea,
+    ThreeScene,
   },
   computed:{
     decodedTypes(){
@@ -146,6 +155,9 @@ export default {
     },
     structuredObj(unstrucData, x){
       if (x == "yes") {
+        // if (this.liblib != "chartjs") {
+        //   return unstrucData;
+        // }
         var data = JSON.parse(unstrucData);
       } else {
         var data = unstrucData;
