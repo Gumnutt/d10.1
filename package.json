@@ -1,0 +1,16 @@
+{
+  "name": "d10.1",
+  "version": "1.0.0",
+  "description": "`lando start`",
+  "main": "index.js",
+  "devDependencies": {
+    "husky": "^8.0.0",
+    "lint-staged": "^13.2.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install"
+  },
+  "author": "",
+  "license": "ISC"
+}
