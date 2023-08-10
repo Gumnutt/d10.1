@@ -2,6 +2,7 @@
     "/dist/vuemap.js": "/dist/vuemap.js",
     "/dist/vueapp.js": "/dist/vueapp.js",
     "/dist/vueHigh.js": "/dist/vueHigh.js",
+    "/dist/vuePR.js": "/dist/vuePR.js",
     "/dist/main.css": "/dist/main.css",
     "/components/button/button.css": "/components/button/button.css",
     "/components/card/card.css": "/components/card/card.css"

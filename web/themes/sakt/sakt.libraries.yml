@@ -22,3 +22,7 @@ live-reload:
 vuejs:
   js:
     dist/vuemap.js: { attributes: { type: "module" } }
+
+vuePR:
+  js:
+    dist/vuePR.js: { attributes: { type: "module" } }

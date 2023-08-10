@@ -12,6 +12,7 @@ function sakt_preprocess_page(&$variables) {
 function sakt_preprocess_paragraph(&$variables){
   $paragraph = $variables['paragraph'];
 
+  //Graphs
   if ($paragraph->bundle() == 'data_graph') {
     $id =  $paragraph->get('field_view')->getValue()[0]['target_id']; // view id
     $display_id = $paragraph->get('field_view')->getValue()[0]['display_id']; //a views specific display id
@@ -43,6 +44,30 @@ function sakt_preprocess_paragraph(&$variables){
     $variables['g_display_id'] = $display_id;
     $variables['g_all_types'] = json_encode($allTypes);
     $variables['g_all_displays'] = json_encode($allDisplays);
+  }
+
+  // ERF projects register
+  if ($paragraph->bundle() == 'csv_subset') {
+    $node = \Drupal::routeMatch()->getParameter('node');
+    $node_path = $node->toUrl()->toString();
+    $variables['node_path'] = $node_path;
+
+    $filepath = $paragraph->field_direct_csv->entity->getFileUri();
+    $variables['json'] = _sakt_csv_to_json($filepath);
+
+    if ($node_path == "/project") {
+      $current_url = \Drupal::request()->getUri();
+      $query_string = parse_url($current_url, PHP_URL_QUERY);
+      parse_str($query_string, $query_params);
+      $filter = $query_params['pid']; //?pid=ERF101930
+
+      $json_string = _sakt_csv_to_json($filepath);
+      $csv_data_object = json_decode($json_string, true);
+      $filtered_data = array_filter($csv_data_object, function($row) use ($filter) {
+        return $row['project_id'] == $filter;
+      });
+      $variables['json'] = json_encode(reset($filtered_data));
+    }
   }
 }
 
@@ -78,4 +103,38 @@ function _sakt_get_json_data($url){
   $jsonString = json_encode($response->getBody()->getContents());
   $jsonData = json_decode($jsonString, TRUE);
   return $jsonData;
+}
+
+function _sakt_csv_to_json($file){
+  $csv = fopen($file, 'r');
+  $rows = array();
+  $headers = fgetcsv($csv);
+  $headers = array_map('_sakt_to_snake_case', $headers);
+  while ($row = fgetcsv($csv)) {
+    $row = array_map(function($field) {
+      return mb_convert_encoding($field, 'UTF-8');
+    }, $row);
+    $rows[] = array_combine($headers, $row);
+  }
+
+  // Convert the array into a JSON string
+  $json = json_encode($rows, JSON_PRETTY_PRINT);
+  if ($json) {
+    // Save the JSON string to a file
+    return $json;
+  } else {
+      // json_encode() failed. Check the error message
+      echo json_last_error_msg();
+  }
+}
+
+function _sakt_to_snake_case($str) {
+  $str = preg_replace('~[^\pL\d]+~u', '_', $str);
+  $str = iconv('utf-8', 'us-ascii//TRANSLIT', $str);
+  $str = preg_replace('~[^-\w]+~', '', $str);
+  $str = trim($str, '_');
+  $str = strtolower($str);
+  $str = preg_replace('~\s+~', '_', $str);
+
+  return $str;
 }

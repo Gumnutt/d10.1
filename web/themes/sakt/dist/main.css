@@ -349,6 +349,7 @@ main {
   grid-template-columns: repeat(var(--column-count, 3), 1fr);
   gap: var(--gap, 1rem);
 }
+
 .field--label-inline {
     display: flex;
     gap: 1rem;
@@ -364,6 +365,15 @@ main {
     .field--label-inline .field__item {
         white-space: wrap;
       }
+
+  .field--name-field-components .field__item:not(:first-child):has(table.mini) {
+        border-top: 10px dashed red;
+      }
+
+  .field--name-field-components .field__item:not(:first-child) {
+      margin-top: 4rem;
+      padding-top: 4rem;
+}
 
 table {
   margin: auto;

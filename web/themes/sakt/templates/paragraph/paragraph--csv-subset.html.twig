@@ -1,0 +1,16 @@
+{# <pre>{{json}}</pre> #}
+{% if json == "false"%}
+  This project has no contract
+{% else %}
+  {% if node_path == "/project" %}
+    <div id="app">
+      <cer-project data="{{ json }}"></cer-project>
+    </div>
+  {% else %}
+    <div id="app">
+      <cer-table data="{{ json }}"></cer-table>
+    </div>
+  {% endif %}
+{% endif %}
+
+{{attach_library('sakt/vuePR')}}

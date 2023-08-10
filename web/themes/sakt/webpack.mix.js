@@ -25,6 +25,7 @@ mix.postCss("src/css/main.css", "dist")
 mix.js("src/vue/vuemap.js", "dist").vue()
 mix.js("src/vue/vueapp.js", "dist").vue()
 mix.js("src/vue/vueHigh.js", "dist").vue()
+mix.js("src/vue/vuePR.js", "dist").vue()
 
 // mix.browserSync({
 //   proxy: 'https://drupal.lndo.site',

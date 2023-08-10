@@ -1,4 +1,6 @@
+
 .field {
+
   &--label-inline {
     display: flex;
     gap: 1rem;
@@ -14,6 +16,15 @@
       &__item {
         white-space: wrap;
       }
+    }
+  }
+  &--name-field-components {
+    .field__item:not(:first-child) {
+      &:has(table.mini) {
+        border-top: 10px dashed red;
+      }
+      margin-top: 4rem;
+      padding-top: 4rem;
     }
   }
 }
